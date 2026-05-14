@@ -1,5 +1,5 @@
 {
-"version": "v48",
+"version": "v49",
   "zones": [
     {
       "name": "Meridion",
@@ -225,7 +225,7 @@
               "skill2": "",
               "skill3": "",
               "passive": "",
-              "trinketPassive": ""
+              "trinketPassive": "our [Attack]s grant you 4 [CritChanceRating] for 10, stacking up to 20 times."
             },
             {
               "name": "Gold Pouches",
@@ -772,7 +772,7 @@
               "skill2": "",
               "skill3": "",
               "passive": "",
-              "trinketPassive": ""
+              "trinketPassive": "our [Attack]s grant you 4 [CritChanceRating] for 10, stacking up to 20 times."
             },
             {
               "name": "Judgement",
@@ -1229,7 +1229,7 @@
               "skill2": "",
               "skill3": "",
               "passive": "",
-              "trinketPassive": ""
+              "trinketPassive": "Your [WeaponSkill]s have a chance to summon a bee that will attack enemies for 10."
             },
             {
               "name": "Lady Bee's Ceremonial Stinger",
@@ -1536,7 +1536,7 @@
               "skill2": "",
               "skill3": "",
               "passive": "",
-              "trinketPassive": ""
+              "trinketPassive": "Your [WeaponSkill]s have a chance to summon a bee that will attack enemies for 10."
             },
             {
               "name": "Emblem of Radiant Nectar",
@@ -1852,6 +1852,26 @@
               "skill3": "",
               "passive": "",
               "trinketPassive": ""
+            },
+            {
+              "name": "Raclette Pan",
+              "types": [
+                "Trinket"
+              ],
+              "classes": [
+                "rogue",
+                "warrior",
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": "our [Attack]s grant you 4 [CritChanceRating] for 10, stacking up to 20 times."
             }
           ]
         }
@@ -1939,10 +1959,10 @@
                 "Intelligence",
                 "Critical"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
+              "skill1": "\nSpark Shot\n1.1s\n59% Dexterity + 59% Intellect · Physical · 25% Dexterity + 25% Intellect + 32.5% Intellect + 32.5% Vitality · Magic\nShoots an arrow dealing 59% Dexterity + 59% Intellect Physical to an enemy plus an additional 25% Dexterity + 25% Intellect + 32.5% Intellect + 32.5% Vitality Magic if the enemy is under 35% [Health].",
+              "skill2": "\nHunter Net\ncd 16s · 0.4s\n100% Dexterity + 100% Intellect · Physical\nThrows a net in the targeted direction dealing 100% Dexterity + 100% Intellect Physical to the first enemy hit and slowing them by -30% for 4. If an enemy is hit, you gain Big Game Hunter.\n\n",
+              "skill3": "\nRam Trap\ncd 12s\n100% Dexterity · Physical\nDrops a spark trap on the targeted area. If an enemy steps on it, they are dealt 100% Dexterity Physical, are immobilized for 4 and you gain Big Game Hunter.",
+              "passive": "\nThrill of the Hunter\nYour [WeaponSkill]s' damage mark the enemies for 10. Your next [Attack] against them consumes the mark and deal 50% increased damage.",
               "trinketPassive": ""
             },
             {
