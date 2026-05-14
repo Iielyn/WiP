@@ -1,0 +1,2367 @@
+{
+"version": "v45",
+  "zones": [
+    {
+      "name": "Meridion",
+      "dungeons": [
+        {
+          "name": "Lost City of Mayda · Lv5 · Full Dungeon",
+          "loot": [
+            {
+              "name": "Iron Fins of the Leviathan ",
+              "types": [
+                "Dual Axes"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Vitality",
+                "Strength",
+                "Critical",
+                "Armor Penetration"
+              ],
+              "skill1": "\nCascade\n0.58s\n17.5% Strength + 17.5% Dexterity + 17.5% Strength + 17.5% Dexterity · Physical\nStrikes with both weapons, dealing 35% Strength + 35% Dexterity Physical to an enemy and increasing your [CritDamage] by 2% to 4% for 15, stacking up to 5 times.",
+              "skill2": "\nAbyssal Fury\ncd 20s · 0.4s\nImbues your weapons with tide power for 8, giving all your [Attack]s a 0.3 chance to blast 15% Strength + 15% Dexterity Physical. Blasted damage is considered as an [Attack].",
+              "skill3": "\nGroundswell Strike\ncd 10s · 0.4s\n47.5% Strength + 47.5% Dexterity · Physical\nDeals 47.5% Strength + 47.5% Dexterity Physical to nearby enemies. All your [Attack]s reduce the cooldown by 1.5.",
+              "passive": "\nTide Warlord\nYour [PhysicalMastery] is increased by 15% while fighting under 50% [Health].",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Wings of the Prophet",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "priest",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Nepicur's Vacation Shorts",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Fervor",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Ghost Clams of the Low Tide",
+              "types": [
+                "Halos"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Vitality",
+                "Magic Penetration",
+                "Faith",
+                "Intelligence",
+                "Fervor"
+              ],
+              "skill1": "\nSurging Tide\n1.3s\n38.5% Intellect + 38.5% Faith · Magic\nReleases two water bolts, each dealing 38.5% Intellect + 38.5% Faith Magic to an enemy. Damage increased by 10% for each active [Totem].",
+              "skill2": "\nTidal Totem\ncd 12s · 0.3s\nSummons a [Totem] at the targeted location, healing allies that stand in the area for 6% Intellect + 6% Faith every 2. Lasts 15.",
+              "skill3": "\nRiptide\ncd 18s\n90% Intellect + 90% Faith · Water\nSplashes a huge water burst in a frontal cone, dealing 90% Intellect + 90% Faith Water to enemies.",
+              "passive": "\nPower of the Tides\nUsing a [Skill] causes all your active [Totem]s to erupt, dealing 18.75% Intellect + 18.75% Faith Magic to nearby enemies.",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Charm of the Fisher King",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Poetrident",
+              "types": [
+                "Trinket"
+              ],
+              "classes": [
+                "priest",
+                "mage",
+                "rogue",
+                "warrior"
+              ],
+              "stats": [
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": "Taking damage has a chance to grant you the power of the tides, healing you for 12 over 6."
+            },
+            {
+              "name": "Ceremonial Siren Gloves",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Magic Penetration",
+                "Intelligence"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Tides Hood",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Primevalley",
+      "dungeons": [
+        {
+          "name": "Mine Estrone · Lv7 · Full Dungeon",
+          "loot": [
+            {
+              "name": "Cheese Moon",
+              "types": [
+                "Axe"
+              ],
+              "classes": [
+                "rogue",
+                "warrior"
+              ],
+              "stats": [
+                "Vitality",
+                "Strength",
+                "Dexterity",
+                "Critical",
+                "Armor Penetration"
+              ],
+              "skill1": "\nTear\n0.75s\n45% Strength + 45% Dexterity · Physical\nDeals 45% Strength + 45% Dexterity Physical to an enemy and resets the cooldown of Bonethrow if this critically strikes.",
+              "skill2": "\nBonethrow\ncd 15s · 0.4s\n65% Strength + 65% Dexterity · Physical\nThrows a sharpen bone at an enemy, dealing 65% Strength + 65% Dexterity Physical and causing them to bleed for 40% of the damage dealt over 8. The bone then jumps to 2 enemies.",
+              "skill3": "",
+              "passive": "\nBloodrage Aura\ncd 3s\nIncreases the [CritChance] of all allies within 40 by 3% to 5%.",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Raclette Pan",
+              "types": [
+                "Trinket"
+              ],
+              "classes": [
+                "warrior",
+                "rogue",
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Gold Pouches",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Goldilock's Thrice Latched Jacket",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Flame of Argol ",
+              "types": [
+                "Scepter"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Vitality",
+                "Faith",
+                "Critical"
+              ],
+              "skill1": "\nSearing Furnace\n1s\n100% Faith · Magic\nQuickly casts a fire bolt dealing 100% Faith Magic to an enemy, increasing all damage dealt to them by 4% for 10s.",
+              "skill2": "\nHeat Emission\ncd 8s · 0.35s\nAll your Flamies simultaneously burst some heat around, dealing 50% Faith Magic to nearby enemies.",
+              "skill3": "\nHot, hot, hot!\ncd 20s · 0.1s\nConjures a heat zone in the targeted area for 4. Allies within the zone receive a temporary Flamie for 8.",
+              "passive": "\nFlamie\nYou are permanently followed by a Flamie, healing 10% Faith every 2.",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Spirit of the Spelunker",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Reversible Bib of the Cheese Taster",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Knotr'Edam",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Critical",
+                "Faith"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Unity of the Thirty Kingdoms ",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "priest",
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            }
+          ]
+        },
+        {
+          "name": "Crabgantua's Gorge · Lv8 · Boss Only",
+          "loot": [
+            {
+              "name": "Vesture of the Mussel Hunter",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Dexterity",
+                "Critical",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Jenny Hanibal's Armored Cape",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Armor Penetration",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Crabgantua's Kneecap",
+              "types": [
+                "Shield"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Boots of Abyssal Essence",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Charm of the Fisher King",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Clawdius",
+              "types": [
+                "Fists"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Vitality",
+                "Dexterity",
+                "Critical"
+              ],
+              "skill1": "\nSink to the Bottom\n0.7s\n30% Dexterity + 30% Intellect + 30% Dexterity + 30% Intellect · Physical\nDelivers a strong punch dealing 30% Dexterity + 30% Intellect Physical to an enemy and reduces the cooldown of one random [WeaponSkill] by 0.5.",
+              "skill2": "\nTide Rising Uppercut\ncd 22s · 0.75s\n60% Dexterity + 60% Intellect · Magic\nUnleashes an upward surge of water, dealing 60% Dexterity + 60% Intellect Magic to all nearby enemies. Using a [Skill] increases the damage of your next Tide Rising Uppercut by 50%, stacking up to 10 times.",
+              "skill3": "\nTwin Claws\ncd 6s · 0.4s\n70% Dexterity · Physical · 70% Intellect · Magic\nQuickly strikes with both hands, dealing 70% Dexterity Physical + 70% Intellect Magic to an enemy.",
+              "passive": "\nGoing With the Flow\n20% Intellect + 26% Intellect · Magic\nErupts water, dealing 20% Intellect + 26% Intellect Magic to nearby enemies when using a [ComboAttack] or [WeaponSkill] different from the last action.",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Wings of the Phophet",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "High-speed Clamdiggers",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Fin Armor",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Jacket of the Last Pirate",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Critical",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Poetrident",
+              "types": [
+                "Trinket"
+              ],
+              "classes": [
+                "warrior",
+                "rogue",
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": "Taking damage has a chance to grant you the power of the tides, healing you for 12 over 6."
+            },
+            {
+              "name": "Spare Sandals of Young Nephisto",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Palm of the Lagoon",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Armor Penetration",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Crown of the Sea",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Armor Penetration",
+                "Strength"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Cloak of the Third Wave Apostle",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Emblem of the Third Wave",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Magic Penetration",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Burden of the Abyss",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enripit",
+      "dungeons": [
+        {
+          "name": "Ratsar's Lair · Lv10 · Boss Only",
+          "loot": [
+            {
+              "name": "Raclette Pan",
+              "types": [
+                "Trinket"
+              ],
+              "classes": [
+                "warrior",
+                "rogue",
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Judgement",
+              "types": [
+                "Two-Handed Axe"
+              ],
+              "classes": [
+                "warrior"
+              ],
+              "stats": [
+                "Vitality",
+                "Strength",
+                "Armor Penetration"
+              ],
+              "skill1": "\nBrutal Frenzy\n1s\n143% Strength + 30% Strength · Physical\nSmashes the ground and deals 143% Strength Physical to enemies, knocking them back and increasing your [PhysicalMastery] by 3% to 4% for 15, stacking up to 3 times.",
+              "skill2": "\nRampage\ncd 16s · 1s\n250% Strength + 400% Strength + 600% Strength · Physical\nCharges your strike up to 3, then violently smashes the ground, dealing between 250% Strength Physical and 600% Strength Physical to nearby enemies and knocking them back depending on charge time.",
+              "skill3": "\nShockwave\ncd 25s · 1s\n180% Strength · Physical\nHeavily slams in a frontal cone, dealing 180% Strength Physical and stunning enemies for 3.",
+              "passive": "\nDomination\nYou deal 15% increased damage to enemies affected by crowd control effects.",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Unity of the Thirty Kingdoms",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Wrong Trousers",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Gorgon Ratsay's Toothpick",
+              "types": [
+                "Spear"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Critical",
+                "Armor Penetration"
+              ],
+              "skill1": "\nSwift Strike\n1.1s\n62% Dexterity + 62% Faith · Physical · 25% Dexterity + 25% Faith · Magic\nStrikes forward, dealing 62% Dexterity + 62% Faith Physical to an enemy and increasing your [CritChance] by 3%, stacking up to 3 times.",
+              "skill2": "\nSwirling Embers\ncd 18s · 0.5s\nSurrounds yourself with an embers whirlwind dealing 25% Dexterity + 25% Faith + 30% Dexterity + 30% Faith Magic to nearby enemies every 1 for 8.",
+              "skill3": "\nEruption\ncd 20s · 1.3s\n15% Dexterity + 15% Faith + 150% Dexterity + 150% Faith · Magic\nPulls nearby enemies towards you, dealing 15% Dexterity + 15% Faith Magic. Then, releases a lava explosion dealing 150% Dexterity + 150% Faith Magic.",
+              "passive": "\nHeart of the Furnace\nYour [Skill]s and [Attack]s increase your [Armor] by 2%, stacking up to 15 times.",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Twin Fangs of Ratsar",
+              "types": [
+                "Daggers"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Vitality",
+                "Dexterity",
+                "Critical"
+              ],
+              "skill1": "\nCheesebane\n32% Dexterity + 32% Dexterity · Physical\nStrikes with both weapons, dealing 64% Dexterity Physical to an enemy. Each time one your periodic effects deals damage, you have a 0.5 chance to increase the damage of your next Cheesebane by 10%, stacking up to 100%.",
+              "skill2": "\nGaping Wound\ncd 24s · 0.68s\n100% Dexterity + 35% Dexterity · Physical · 20% Dexterity · Magic\nMutilates an enemy, dealing 100% Dexterity Physical and opening a gaping wound, causing them to bleed for 400% Dexterity Raw over 8.",
+              "skill3": "\nShiv\ncd 4s · 0.4s\n60% Dexterity · Physical\nStabs and deals 60% Dexterity Physical to an enemy, triggering the effects of Sharpen Fangs.",
+              "passive": "\nSharpen Fangs\nYour Attacks and Weapon skills have a 0.2 to cause the enemies to bleed for 25% Dexterity Physical over 9, stacking up to 5 times.",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Diskobold's Discus Throw Gloves",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Magic Penetration",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Brie von de Cape",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "mage",
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Magma Mia",
+              "types": [
+                "Shield"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Armor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Goldilock's Thrice Latched Jacket",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Critical",
+                "Faith"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Spelunking Shoes of Emmen Tunnel",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Critical",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Knotr'Edam",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Critical",
+                "Faith"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Miner Ramparts",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Buskins of Essential Emptiness",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Dexterity",
+                "Critical",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Spirit of the Spelunker",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Treasure Hunter's Straps",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Vision of the Cheeseslicer ",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Vows of Prosperity",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Garment of the Aurock Master",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "mage",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Reversible Bib of the Cheese Taster",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Gloves of Ninkilim the Envoy ",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Armor Penetration",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Honeywoods",
+      "dungeons": [
+        {
+          "name": "Trunk of the Hivetree · Lv12 · Full Dungeon",
+          "loot": [
+            {
+              "name": "Eternal Flower Heart",
+              "types": [
+                "Trinket"
+              ],
+              "classes": [
+                "priest",
+                "warrior",
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Lady Bee's Ceremonial Stinger",
+              "types": [
+                "Spear"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Armor Penetration",
+                "Fervor"
+              ],
+              "skill1": "Hive Assault\n1.1s\n62% Strength + 62% Intellect + 0% Strength · Physical · 70% Intellect · Magic\nStrikes forward, dealing 62% Strength + 62% Intellect Physical to an enemy and generates a Dart, stacking up to 3 times. At 3 stacks, your next Hive Assault releases the darts, dealing randomly 70% Intellect Magic or Physical(?).",
+              "skill2": "Stingerang\ncd 8s\n125% Intellect · Magic · 180% Strength · Physical\nFires a piercing stinger in the targeted direction, dealing 125% Intellect Magic to enemies and knocking them back. After 2, the stinger returns to you, dealing 180% Strength Physical on its way back, drawing enemies toward you.",
+              "skill3": "Apix Dash\ncd 12s\n45% Strength + 45% Intellect · Magic\nDashes forward and releases a burst of honey dealing 45% Strength + 45% Intellect Magic to nearby enemies.",
+              "passive": "Unstable Goo\nMagic critical strikes coat enemies in goo for 8, slowing them by -30%. Physical critical strikes ignite Goo to deal 140% Intellect Magic over.",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Thornlace",
+              "types": [
+                "Crescent"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "skill1": "\nFloral Euphoria\n0.8s\n5% Dexterity + 5% Faith + 40% Dexterity + 40% Faith · Physical\nStrikes the ground, dealing 5% Dexterity + 5% Faith Physical to nearby enemies and increasing your [CritChance] by 2% for 15, stacking up to 4 times.",
+              "skill2": "\nFlower Spiral\ncd 12s\n18% Dexterity + 18% Faith + 18% Dexterity + 18% Faith · Magic\nSpins to deal 18% Dexterity + 18% Faith Magic to nearby enemies. Consumes all stacks of Psychoactive Petal to spin additional times. During combat, generates a stack of Psychoactive Petal every 4 and after every [ComboAttack], stacking up to 6 times.",
+              "skill3": "\nBloom\ncd 16s · 0.4s\nFor 4, all damage you deal heals allies within 15 for 25% of the damage dealt.",
+              "passive": "\nNectar-infused Blade\n12% Faith · Magic\nYour [Attack]s deal an additional 12% Faith Magic and slow enemies by 70% for 3.",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Flying Trousers Prototype",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Magic Penetration",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Casual Clothes of the Pollincess",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Fervor",
+                "Magic Penetration",
+                "Intelligence",
+                "Faith",
+                "Vitality",
+                "Armor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Dancing Hivetree Belt",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Cleo's Ethereal Blossoms",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Vitality",
+                "Faith",
+                "Magic Penetration",
+                "Armor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Flight of the Rumblebee",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Vambraces of the Swarm ",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            }
+          ]
+        },
+        {
+          "name": "Lady Bee's Palace · Lv13 · Boss Only",
+          "loot": [
+            {
+              "name": "Propolis Heart of Apix",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Ipheion, Star Blossom",
+              "types": [
+                "Thrown"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Fervor"
+              ],
+              "skill1": "\nScatterbloom\n1.1s\n20% Dexterity + 20% Intellect · Physical\nThrows three sharpened petals dealing 20% Dexterity + 20% Intellect Physical to an enemy. Each Petal has a 0.35 chance to plant a stack of Ravenous Sprout.",
+              "skill2": "\nHarvesting Scythe\ncd 15s · 1s\n150% Dexterity + 195% Dexterity · Physical\nThrows a rotating flower in the targeted direction, dealing 150% Dexterity + 195% Dexterity Physical to enemies. Harvests all Ravenous Sprout stacks, releasing a poison dealing 35% Intellect Magic over 6.",
+              "skill3": "\nVerdant Impetus\ncd 24s · 0.5s\nYour Ranged [Attack]s become bouncing for 6, dealing 15% increased damage and planting a stack of Ravenous Sprout.",
+              "passive": "\nNatural Ascendancy\nYour damage and healing done to a target increase by 2% for each different periodic effect on them, up to 6%.",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Whirring Gem of Apix",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Beefury, Blessed Blade of the Farseeker",
+              "types": [
+                "Sword"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "skill1": "\nHive Bite\n0.75s\n42.5% Strength + 42.5% Faith · Physical · 20% Faith\nA thrust that deals 42.5% Strength + 42.5% Faith Physical to an enemy, healing you and all nearby allies for 20% Faith.",
+              "skill2": "\nHive's Sunder\ncd 18s · 0.7s\n100% Strength + 100% Faith · Physical\nPerforms a strong cleave dealing 100% Strength + 100% Faith Physical to nearby enemies and reducing their [MagicArmor] by -30% to -40% for 10.",
+              "skill3": "",
+              "passive": "\nSwarm Lord\nYour Weapon Skills surround you with an Hive Swarm for 10. Hive Swarm deals 30% Faith Magic to nearby enemies and heals you for that amount every 2.",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Flight of the Rumblebee",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Magic Penetration",
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Eternal Flower Heart",
+              "types": [
+                "Trinket"
+              ],
+              "classes": [
+                "warrior",
+                "priest",
+                "rogue",
+                "mage"
+              ],
+              "stats": [],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Emblem of Radiant Nectar",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "War Sabatons of Apix",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Reflective Vest of the Hive Worker",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Dexterity",
+                "Armor Penetration",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Gauntlets of the Royal Guard",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Dexterity",
+                "Armor Penetration",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Azuram",
+      "dungeons": [
+        {
+          "name": "Ruins of Gorgon's Hollow · Lv15 · Full Dungeon",
+          "loot": [
+            {
+              "name": "Magma Mia",
+              "types": [
+                "Shield"
+              ],
+              "classes": [
+                "mage",
+                "warrior"
+              ],
+              "stats": [
+                "Armor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Unity of the Thirty Kingdoms ",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Critical",
+                "Strength"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Spelunking Shoes of Emmen Tunnel",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Critical",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Knotr'Edam",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Critical",
+                "Faith"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Gorgon Ratsay's Toothpick",
+              "types": [
+                "Spear"
+              ],
+              "classes": [
+                "priest",
+                "rogue"
+              ],
+              "stats": [
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Critical",
+                "Armor Penetration"
+              ],
+              "skill1": "\nSwift Strike\n1.1s\n62% Dexterity + 62% Faith · Physical · 25% Dexterity + 25% Faith · Magic\nStrikes forward, dealing 62% Dexterity + 62% Faith Physical to an enemy and increasing your [CritChance] by 3%, stacking up to 3 times.",
+              "skill2": "\nSwirling Embers\ncd 18s · 0.5s\nSurrounds yourself with an embers whirlwind dealing 25% Dexterity + 25% Faith + 30% Dexterity + 30% Faith Magic to nearby enemies every 1 for 8.",
+              "skill3": "\nEruption\ncd 20s · 1.3s\n15% Dexterity + 15% Faith + 150% Dexterity + 150% Faith · Magic\nPulls nearby enemies towards you, dealing 15% Dexterity + 15% Faith Magic. Then, releases a lava explosion dealing 150% Dexterity + 150% Faith Magic.",
+              "passive": "\nHeart of the Furnace\nYour [Skill]s and [Attack]s increase your [Armor] by 2%, stacking up to 15 times.",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Treasure Hunter's Straps",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Magic Penetration",
+                "Intelligence"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Gold Pouches",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Magic Penetration",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Brie von de Cape",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Krisomal",
+      "dungeons": [
+        {
+          "name": "Abyss of New Atlaan · Lv16 · Full Dungeon",
+          "loot": [
+            {
+              "name": "Vesture of the Mussel Hunter",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Dexterity",
+                "Critical",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Wings of the Prophet ",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Poetrident",
+              "types": [
+                "Trinket"
+              ],
+              "classes": [],
+              "stats": [
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": "Taking damage has a chance to grant you the power of the tides, healing you for 12 over 6."
+            },
+            {
+              "name": "Horns of the Wind",
+              "types": [
+                "Bow"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Jacket of the Last Pirate",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Critical",
+                "Faith",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Burden of the Abyss",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Vitality",
+                "Armor",
+                "Critical",
+                "Dexterity"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nescent",
+      "dungeons": [
+        {
+          "name": "Honeyzabeth's Hivetrunk · Lv19 · Boss Only",
+          "loot": [
+            {
+              "name": "Queen Spikes",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Pocket Hive",
+              "types": [
+                "Two-Handed Mace"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Vitality",
+                "Faith",
+                "Strength",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "skill1": "\n33% Strength · Physical\nHoney Crush\n1s\n89.5% Strength + 89.5% Faith · Physical\nSmashes the ground and deals 89.5% Strength + 89.5% Faith Physical to enemies, knocking them back and generating 2 stacks of Buzzing.",
+              "skill2": "\nReverse Honey Spin\ncd 16s · 1.5s\n40% Strength + 40% Faith + 150% Strength + 150% Faith · Magic\nDraws all nearby enemies before you, dealing them 40% Strength + 40% Faith Magic, then slams the ground, dealing 150% Strength + 150% Faith Magic.",
+              "skill3": "\nBrood Leap\ncd 24s · 0.1s\n125% Strength + 125% Faith + 156.3% Strength + 156.3% Faith + 100% Faith + 125% Faith + 40% Faith · Physical\nLeaps through the air towards the targeted area, dealing 125% Strength + 125% Faith + 156.25% Strength + 156.25% Faith Physical and leaving an area upon arrival dealing 100% Faith + 125% Faith Physical over 12.",
+              "passive": "\nMad Buzz\nDealing and taking damage has a 0.2 chance to generate a stack of Buzzing, stacking up to 10 times. At 10 stacks, summons an angry bee that starts attacking enemies for 15, dealing 80% Faith Magic every 3.",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Wingsabers",
+              "types": [
+                "Dual Sword"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Armor Penetration",
+                "Fervor"
+              ],
+              "skill1": "\nRoyal Severance\n0.85s\n50% Strength · Physical · 50% Intellect · Magic\nStrikes with both weapons, dealing 50% Strength Physical, 50% Intellect Magic to enemies in a frontal cone and generate a stack of Bladeleaf, stacking up to 2 times. Using your [SignatureSkill] consumes all stacks and throws them at the nearest enemy, each dealing them 35% Strength + 35% Intellect Magic.",
+              "skill2": "\nHiveborn Blossom\ncd 12s · 0.7s\n25% Strength + 25% Strength · Physical · 25% Intellect + 25% Intellect · Magic\nSpins to deal 50% Strength Physical, 50% Intellect Magic to nearby enemies. You can recast this within the next 4 seconds, with damage increased by 100%.",
+              "skill3": "\nSwarmstrike Accord\ncd 45s · 0.65s\nGrants a blessing to all allies within 40, causing all their [Attack]s to deal an additional 30% Intellect Magic for 8.",
+              "passive": "\nQueen's Decree\ncd 30s\n20% Intellect · Magic\nThe next time one of your skills deals [Magic] damage, it is increased by 100% (30 cooldown).",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Flying Trousers Prototype",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Ipheion, Star Blossom ",
+              "types": [
+                "Thrown"
+              ],
+              "classes": [
+                "mage",
+                "rogue"
+              ],
+              "stats": [
+                "Dexterity",
+                "Vitality",
+                "Intelligence",
+                "Fervor"
+              ],
+              "skill1": "\nScatterbloom\n1.1s\n20% Dexterity + 20% Intellect · Physical\nThrows three sharpened petals dealing 20% Dexterity + 20% Intellect Physical to an enemy. Each Petal has a 0.35 chance to plant a stack of Ravenous Sprout.",
+              "skill2": "\nHarvesting Scythe\ncd 15s · 1s\n150% Dexterity + 195% Dexterity · Physical\nThrows a rotating flower in the targeted direction, dealing 150% Dexterity + 195% Dexterity Physical to enemies. Harvests all Ravenous Sprout stacks, releasing a poison dealing 35% Intellect Magic over 6.",
+              "skill3": "\nVerdant Impetus\ncd 24s · 0.5s\nYour Ranged [Attack]s become bouncing for 6, dealing 15% increased damage and planting a stack of Ravenous Sprout.",
+              "passive": "\nNatural Ascendancy\nYour damage and healing done to a target increase by 2% for each different periodic effect on them, up to 6%.",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Hive Spouts",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Vitality",
+                "Armor",
+                "Intelligence",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Reflective Vest of the Hive Worker",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Dexterity",
+                "Fervor",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Royal Chamber Helmet",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Fervor",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Gauntlets of the Royal Guard",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Dexterity",
+                "Fervor",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Whirring Gem of Apix",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Armor Penetration",
+                "Strength"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Eksod",
+      "dungeons": [
+        {
+          "name": "Cheese Station · Lv19 · Full Dungeon",
+          "loot": [
+            {
+              "name": "Amon Ram, the Creator",
+              "types": [
+                "Mace"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Vitality",
+                "Strength",
+                "Fervor",
+                "Faith"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Armored Docker Cap",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Vision of the Cheeseslicer",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Magic Penetration",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Dust Scarf",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Faith",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Buskins of Essential Emptiness ",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Strength",
+                "Vitality",
+                "Dexterity",
+                "Critical",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Twin Pillars of Justice",
+              "types": [
+                "Dual Maces"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Vitality",
+                "Strength",
+                "Dexterity",
+                "Critical",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Miner Ramparts",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Treasure Hunter's Straps",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Magic Penetration",
+                "Intelligence"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
