@@ -1,5 +1,5 @@
 {
-"version": "v46",
+"version": "v47",
   "zones": [
     {
       "name": "Meridion",
@@ -1803,6 +1803,49 @@
                 "Intelligence",
                 "Critical",
                 "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Cheese-Covered Shoulderpads",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Armor Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Spirit of the Spelunker",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Magic Penetration",
+                "Armor Penetration",
+                "Intelligence"
               ],
               "skill1": "",
               "skill2": "",
