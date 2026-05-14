@@ -1,5 +1,5 @@
 {
-"version": "v47",
+"version": "v48",
   "zones": [
     {
       "name": "Meridion",
@@ -2356,10 +2356,10 @@
                 "Critical",
                 "Fervor"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
+              "skill1": "\nSentence\n0.58s\n16.5% Strength + 16.5% Dexterity + 16.5% Strength + 16.5% Dexterity + 30% Faith · Physical\nStrikes with both weapons, dealing 33% Strength + 33% Dexterity + 30% Faith Physical to an enemy and sentencing them to die, increasing all damage you deal to them by 10%.",
+              "skill2": "\nZealous Spins\ncd 10s · 0.55s\n7.5% Strength + 7.5% Dexterity + 8.6% Strength + 8.6% Dexterity + 7.5% Strength + 7.5% Dexterity + 8.6% Strength + 8.6% Dexterity + 7.5% Strength + 7.5% Dexterity + 8.6% Strength + 8.6% Dexterity · Physical\nSpins foward, dealing 7.5% Strength + 7.5% Dexterity + 8.625% Strength + 8.625% Dexterity Physical to enemies thrice on your path. If an enemy is hit, you can recast it within 3.",
+              "skill3": "\nIron Cyclone\ncd 10s · 0.55s\n35% Strength + 35% Dexterity + 35% Strength + 35% Dexterity + 35% Strength + 35% Dexterity + 35% Strength + 35% Dexterity · Physical\nCharges straight ahead, dealing four times 35% Strength + 35% Dexterity Physical to enemies and stunning them for 1.",
+              "passive": "\nZeal\nYour [Attack]s and [WeaponSkill]s generate a stack of Zeal, stacking up to 10 times. At 10 stacks, your next [ComboAttack] consums all stacks to reset the cooldown of Zealous Spins and increase its damage by 50%.",
               "trinketPassive": ""
             },
             {
