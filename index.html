@@ -382,17 +382,87 @@
         @keyframes slideIn { from { opacity:0; transform:translateX(40px); } to { opacity:1; transform:translateX(0); } }
         @keyframes fadeOut { from { opacity:1; } to { opacity:0; transform:translateY(-10px); } }
         @media (max-width:1000px) {
-            .loot-table { min-width:750px; } .tag { font-size:0.58rem; padding:2px 6px; }
-            .header { padding:14px 16px; min-height:auto; } .header h1 { font-size:1.3rem; }
-            .container { padding:16px 10px 36px; } .zone-header { padding:12px 14px; gap:8px; }
-            .zone-body { padding:10px 12px 14px; } .dungeon-header { padding:10px 12px; gap:6px; }
-            .dungeon-body { padding:6px 8px 10px; } .loot-table { font-size:0.7rem; }
-            .zone-name-display { font-size:0.95rem; } .dungeon-name-display { font-size:0.8rem; }
-            .filter-bar { padding:10px 14px; gap:8px; }
-            .filter-group-header { padding:5px 10px; } .filter-group-header .label { font-size:0.65rem; }
-            .filter-dropdown { max-height:350px; } .search-input { width:140px; } .search-input:focus { width:170px; }
-            .site-footer { padding:12px 16px; font-size:0.65rem; }
-        }
+			.loot-table {
+				min-width: 600px;
+				font-size: 0.62rem;
+            }
+			.loot-table thead th {
+				font-size: 0.6rem;
+				padding: 5px 5px;
+			}
+			.loot-table tbody td {
+				padding: 5px 5px;
+			}
+			.tag {
+				font-size: 0.55rem;
+			padding: 2px 6px;
+			}
+			.badge {
+				font-size: 0.6rem;
+				padding: 1px 6px;
+			}
+			.item-detail-cell {
+				padding: 6px 10px;
+				font-size: 0.7rem;
+			}
+			.header {
+				padding: 14px 16px;
+				min-height: auto;
+			}
+			.header h1 {
+				font-size: 1.3rem;
+			}
+			.container {
+				padding: 16px 10px 36px;
+			}
+			.zone-header {
+				padding: 12px 14px;
+				gap: 8px;
+			}
+			.zone-body {
+				padding: 10px 12px 14px;
+			}
+			.dungeon-header {
+				padding: 10px 12px;
+				gap: 6px;
+			}
+			.dungeon-body {
+				padding: 6px 8px 10px;
+			}
+			.zone-name-display {
+				font-size: 0.95rem;
+			}
+			.dungeon-name-display {
+				font-size: 0.8rem;
+			}
+			.filter-bar {
+				padding: 10px 14px;
+				gap: 8px;
+			}
+			.filter-group-header {
+				padding: 5px 10px;
+			}
+			.filter-group-header .label {
+				font-size: 0.65rem;
+			}
+			.filter-dropdown {
+				max-height: 350px;
+			}
+			.search-input {
+				width: 140px;
+			}
+			.search-input:focus {
+				width: 170px;
+			}
+			.site-footer {
+				padding: 12px 16px;
+				font-size: 0.65rem;
+			}
+			.suggest-btn {
+				font-size: 0.75rem;
+				padding: 5px 10px;
+			}
+		}	
 
         .suggest-btn {
             background: none;
