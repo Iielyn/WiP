@@ -952,7 +952,8 @@
             const classTags = sortedClasses.map(cls => `<span class="tag class-${cls}">${CLASS_LABELS[cls]}</span>`).join('');
 
             let detailHtml = '';
-            if (isWeapon(item) && hasAbilities(item)) {
+            // Show ability details for weapons OR shields with filled skills
+            if ((isWeapon(item) || item.types.includes('Shield')) && hasAbilities(item)) {
                 const abils = [];
                 if (item.skill1) abils.push(`<div><strong class="${typeColorClass}">Skill 1:</strong> ${escapeHtml(item.skill1)}</div>`);
 				if (item.skill2) abils.push(`<div><strong class="${typeColorClass}">Skill 2:</strong> ${escapeHtml(item.skill2)}</div>`);
