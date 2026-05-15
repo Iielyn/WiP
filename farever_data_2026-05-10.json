@@ -1,5 +1,5 @@
 {
-"version": "v61",
+"version": "v62",
   "zones": [
     {
       "name": "Meridion",
@@ -1158,7 +1158,33 @@
                 "Armor"
               ],
               "skill1": "\nFurnace Roar\ncd 18s\n45% Intellect · Magic\nChannels a fire breath dealing up to 45% Intellect Magic over 3 to enemies in front of you.",
-              "passive": "\nCinder Coat\n15% Armor · Physical\nBlocking an attack engulfs you in flames for 4, dealing 30% Intellect Magic to nearby enemies every 1."
+              "passive": "\nCinder Coat\n15% Armor · Physical\nBlocking an attack engulfs you in flames for 4, dealing 30% Intellect Magic to nearby enemies every 1.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Armor": 403
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Armor": 468
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Armor": 436
+                  }
+                }
+              ]
             },
             {
               "name": "Goldilock's Thrice Latched Jacket",
