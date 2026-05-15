@@ -1,5 +1,5 @@
 {
-"version": "v64",
+"version": "v65",
   "zones": [
     {
       "name": "Meridion",
@@ -1174,7 +1174,31 @@
               "skill1": "\nCheesebane\n32% Dexterity + 32% Dexterity · Physical\nStrikes with both weapons, dealing 64% Dexterity Physical to an enemy. Each time one your periodic effects deals damage, you have a 0.5 chance to increase the damage of your next Cheesebane by 10%, stacking up to 100%.",
               "skill2": "\nGaping Wound\ncd 24s · 0.68s\n100% Dexterity + 35% Dexterity · Physical · 20% Dexterity · Magic\nMutilates an enemy, dealing 100% Dexterity Physical and opening a gaping wound, causing them to bleed for 400% Dexterity Raw over 8.",
               "skill3": "\nShiv\ncd 4s · 0.4s\n60% Dexterity · Physical\nStabs and deals 60% Dexterity Physical to an enemy, triggering the effects of Sharpen Fangs.",
-              "passive": "\nSharpen Fangs\nYour Attacks and Weapon skills have a 0.2 to cause the enemies to bleed for 25% Dexterity Physical over 9, stacking up to 5 times."
+              "passive": "\nSharpen Fangs\nYour Attacks and Weapon skills have a 0.2 to cause the enemies to bleed for 25% Dexterity Physical over 9, stacking up to 5 times.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 10,
+                  "damageMax": 14,
+                  "statValues": {
+                    "Vitality": 22,
+                    "Dexterity": 26,
+                    "Critical": 64
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {}
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {}
+                }
+              ]
             },
             {
               "name": "Diskobold's Discus Throw Gloves",
