@@ -1,5 +1,5 @@
 {
-"version": "v62",
+"version": "v63",
   "zones": [
     {
       "name": "Meridion",
@@ -129,22 +129,53 @@
               ],
               "stats": [
                 "Vitality",
-                "Magic Penetration",
                 "Faith",
                 "Intelligence",
+                "Magic Penetration",
                 "Fervor"
               ],
               "skill1": "\nSurging Tide\n1.3s\n38.5% Intellect + 38.5% Faith · Magic\nReleases two water bolts, each dealing 38.5% Intellect + 38.5% Faith Magic to an enemy. Damage increased by 10% for each active [Totem].",
               "skill2": "\nTidal Totem\ncd 12s · 0.3s\nSummons a [Totem] at the targeted location, healing allies that stand in the area for 6% Intellect + 6% Faith every 2. Lasts 15.",
               "skill3": "\nRiptide\ncd 18s\n90% Intellect + 90% Faith · Water\nSplashes a huge water burst in a frontal cone, dealing 90% Intellect + 90% Faith Water to enemies.",
               "passive": "\nPower of the Tides\nUsing a [Skill] causes all your active [Totem]s to erupt, dealing 18.75% Intellect + 18.75% Faith Magic to nearby enemies.",
-              "statValues": {
-                "Vitality": 22,
-                "Faith": 9,
-                "Intelligence": 10,
-                "Magic Penetration": 28,
-                "Fervor": 28
-              }
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 9,
+                  "damageMax": 12,
+                  "statValues": {
+                    "Vitality": 22,
+                    "Faith": 9,
+                    "Intelligence": 10,
+                    "Magic Penetration": 28,
+                    "Fervor": 28
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 9,
+                  "damageMax": 12,
+                  "statValues": {
+                    "Vitality": 26,
+                    "Faith": 10,
+                    "Intelligence": 12,
+                    "Magic Penetration": 31,
+                    "Fervor": 31
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 10,
+                  "damageMax": 14,
+                  "statValues": {
+                    "Vitality": 30,
+                    "Faith": 12,
+                    "Intelligence": 14,
+                    "Magic Penetration": 33,
+                    "Fervor": 33
+                  }
+                }
+              ]
             },
             {
               "name": "Charm of the Fisher King",
