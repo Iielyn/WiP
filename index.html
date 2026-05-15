@@ -362,6 +362,13 @@
         .tag.stat-magic-penetration { background:rgba(192,132,252,0.20); border-color:#c084fc; color:#e0b4ff; }
         .tag.stat-fervor { background:rgba(251,146,60,0.22); border-color:#fb923c; color:#fdb980; }
 
+        .stat-value {
+            font-size: 0.85em;
+            color: #fff;
+            font-weight: 400;
+            margin-left: 2px;
+        }
+
         .site-footer {
             background: var(--surface); border-top: 1px solid var(--border);
             padding: 16px 32px; text-align: center; font-size: 0.7rem;
@@ -814,6 +821,7 @@
                         types: Array.isArray(item.types) ? [...item.types] : [],
                         classes: Array.isArray(item.classes) ? [...item.classes] : [],
                         stats: Array.isArray(item.stats) ? [...item.stats] : [],
+                        statValues: (item.statValues && typeof item.statValues === 'object') ? {...item.statValues} : {},
                         skill1: item.skill1 || '',
                         skill2: item.skill2 || '',
                         skill3: item.skill3 || '',
@@ -884,6 +892,7 @@
                         loot: d.loot.map(l => ({
                             id: l.id, name: l.name,
                             types: [...l.types], classes: [...l.classes], stats: [...l.stats],
+                            statValues: (l.statValues && typeof l.statValues === 'object') ? {...l.statValues} : {},
                             skill1: l.skill1, skill2: l.skill2, skill3: l.skill3,
                             passive: l.passive, trinketPassive: l.trinketPassive
                         }))
@@ -936,7 +945,10 @@
             const sortedClasses = sortByOrder(item.classes, CLASS_OPTIONS);
             const sortedStats = sortByOrder(item.stats, STAT_OPTIONS);
             const typeTags = sortedTypes.map(t => `<span class="tag type-tag type-${toSlug(t)}">${escapeHtml(t)}</span>`).join('');
-            const statTags = sortedStats.map(s => `<span class="tag stat-tag stat-${toSlug(s)}">${escapeHtml(s)}</span>`).join('');
+            const statTags = sortedStats.map(s => {
+                const val = (item.statValues && item.statValues[s]) ? ` <span class="stat-value">${item.statValues[s]}</span>` : '';
+                return `<span class="tag stat-tag stat-${toSlug(s)}">${escapeHtml(s)}${val}</span>`;
+            }).join('');
             const classTags = sortedClasses.map(cls => `<span class="tag class-${cls}">${CLASS_LABELS[cls]}</span>`).join('');
 
             let detailHtml = '';
