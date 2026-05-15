@@ -1,5 +1,5 @@
 {
-"version": "v66",
+"version": "v67",
   "zones": [
     {
       "name": "Meridion",
@@ -1314,19 +1314,19 @@
               "variants": [
                 {
                   "rarity": "blue",
-                  "damageMin": 10,
-                  "damageMax": 14,
-                  "statValues": {
-                    "Vitality": 22,
-                    "Dexterity": 26,
-                    "Critical": 64
-                  }
-                },
-                {
-                  "rarity": "purple",
                   "damageMin": 0,
                   "damageMax": 0,
                   "statValues": {}
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 8,
+                  "damageMax": 10,
+                  "statValues": {
+                    "Vitality": 21,
+                    "Dexterity": 24,
+                    "Critical": 62
+                  }
                 },
                 {
                   "rarity": "legendary",
@@ -1733,6 +1733,27 @@
               "statValues": {
                 "Armor": 138,
                 "Vitality": 5,
+                "Dexterity": 6,
+                "Armor Penetration": 18
+              }
+            },
+            {
+              "name": "Relic of the Four Hundred",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Armor Penetration"
+              ],
+              "statValues": {
+                "Armor": 117,
+                "Vitality": 4,
                 "Dexterity": 6,
                 "Armor Penetration": 18
               }
