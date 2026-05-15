@@ -688,34 +688,29 @@
             });
         }
         function setupRaritySwitcher() {
-            const container = document.getElementById('zones-container');
-            container.addEventListener('click', (e) => {
-                const btn = e.target.closest('.rarity-btn');
-                if(!btn) return;
-                e.stopPropagation();
-                const switcher = btn.closest('.rarity-switcher');
-                const row = switcher.closest('tr.item-main-row');
-                const itemId = row.dataset.itemId;
-                const item = allItemsMap.get(itemId);
-                if(!item || !item.variants) return;
-                const rarity = btn.dataset.rarity;
-                const variantIndex = item.variants.findIndex(v => v.rarity === rarity);
-                if(variantIndex === -1) return;
-                switcher.querySelectorAll('.rarity-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                const statContainer = row.querySelector('.stat-tags-container');
-                if(statContainer) { statContainer.innerHTML = buildStatTagsHtml(item, variantIndex); }
-                    const v = item.variants[variantIndex];
-                    const dmgMin = v.damageMin !== undefined ? v.damageMin : '';
-                    const dmgMax = v.damageMax !== undefined ? v.damageMax : '';
-                    if(dmgMin !== '' && dmgMax !== '') {
-                        damageLine.innerHTML = `<strong class="${getTypeColorClass(getPrimaryType(item))}">Damage:</strong> ${dmgMin} - ${dmgMax}`;
-                    } else {
-                        damageLine.innerHTML = '';
-                    }
-                }
-            });
+    const container = document.getElementById('zones-container');
+    container.addEventListener('click', (e) => {
+        const btn = e.target.closest('.rarity-btn');
+        if (!btn) return;
+        e.stopPropagation();
+        const switcher = btn.closest('.rarity-switcher');
+        const row = switcher.closest('tr.item-main-row');
+        const itemId = row.dataset.itemId;
+        const item = allItemsMap.get(itemId);
+        if (!item || !item.variants) return;
+        const rarity = btn.dataset.rarity;
+        const variantIndex = item.variants.findIndex(v => v.rarity === rarity);
+        if (variantIndex === -1) return;
+
+        switcher.querySelectorAll('.rarity-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const statContainer = row.querySelector('.stat-tags-container');
+        if (statContainer) {
+            statContainer.innerHTML = buildStatTagsHtml(item, variantIndex);
         }
+    });
+}
         function showToast(msg) {
             const container = document.getElementById('toast-container');
             const el = document.createElement('div'); el.className = 'toast'; el.textContent = msg;
