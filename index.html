@@ -32,135 +32,63 @@
             --rarity-purple: #a855f7;
             --rarity-legendary: #f59e0b;
         }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { margin:0; padding:0; box-sizing:border-box; }
         body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: var(--font);
-            min-height: 100vh;
-            background-image:
-                radial-gradient(ellipse at 50% 0%, rgba(201, 164, 75, 0.04) 0%, transparent 60%),
-                radial-gradient(ellipse at 80% 100%, rgba(91, 140, 189, 0.03) 0%, transparent 60%);
-            background-attachment: fixed;
-            display: flex;
-            flex-direction: column;
+            background: var(--bg); color: var(--text); font-family: var(--font); min-height:100vh;
+            background-image: radial-gradient(ellipse at 50% 0%, rgba(201,164,75,0.04) 0%, transparent 60%),
+                            radial-gradient(ellipse at 80% 100%, rgba(91,140,189,0.03) 0%, transparent 60%);
+            background-attachment: fixed; display:flex; flex-direction:column;
         }
         .header {
-            background: var(--surface);
-            border-bottom: 1px solid var(--border);
-            padding: 20px 32px;
-            display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
-            gap: 16px; box-shadow: 0 2px 16px rgba(0,0,0,0.4);
-            position: sticky; top: 0; z-index: 100; min-height: var(--header-height);
+            background: var(--surface); border-bottom:1px solid var(--border); padding:20px 32px;
+            display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;
+            box-shadow:0 2px 16px rgba(0,0,0,0.4); position:sticky; top:0; z-index:100; min-height:var(--header-height);
         }
-        .header-brand { display: flex; align-items: center; gap: 12px; }
+        .header-brand { display:flex; align-items:center; gap:12px; }
         .header-icon {
-            width: 44px; height: 44px;
-            background: linear-gradient(135deg, #3a2f1f, #5a4025);
-            border: 2px solid var(--gold-dim);
-            border-radius: var(--radius-sm);
-            display: flex; align-items: center; justify-content: center;
-            font-size: 22px; color: var(--gold); flex-shrink: 0;
+            width:44px; height:44px; background:linear-gradient(135deg,#3a2f1f,#5a4025);
+            border:2px solid var(--gold-dim); border-radius:var(--radius-sm); display:flex;
+            align-items:center; justify-content:center; font-size:22px; color:var(--gold); flex-shrink:0;
         }
-        .header h1 {
-            font-family: var(--font-display); font-size: 1.8rem;
-            color: var(--gold); letter-spacing: 0.04em; font-weight: 400;
-        }
-        .header-subtitle {
-            font-size: 0.75rem; color: var(--text-dim);
-            letter-spacing: 0.1em; text-transform: uppercase;
-        }
+        .header h1 { font-family:var(--font-display); font-size:1.8rem; color:var(--gold); letter-spacing:0.04em; font-weight:400; }
+        .header-subtitle { font-size:0.75rem; color:var(--text-dim); letter-spacing:0.1em; text-transform:uppercase; }
         .cap-badge {
-            display: inline-flex; align-items: center;
-            padding: 2px 10px; border-radius: 12px;
-            font-size: 0.68rem; font-weight: 700;
-            letter-spacing: 0.05em; text-transform: uppercase;
-            background: rgba(201, 164, 75, 0.12);
-            border: 1px solid var(--gold-dim);
-            color: var(--gold);
-            margin-left: 8px;
-            white-space: nowrap;
+            display:inline-flex; align-items:center; padding:2px 10px; border-radius:12px;
+            font-size:0.68rem; font-weight:700; letter-spacing:0.05em; text-transform:uppercase;
+            background:rgba(201,164,75,0.12); border:1px solid var(--gold-dim); color:var(--gold); margin-left:8px; white-space:nowrap;
         }
-        .header-right { display: flex; align-items: center; gap: 16px; }
-        .search-wrapper { position: relative; }
+        .header-right { display:flex; align-items:center; gap:16px; }
+        .search-wrapper { position:relative; }
         .search-input {
-            background: var(--surface2); border: 1px solid var(--border);
-            border-radius: 20px; padding: 8px 16px 8px 36px;
-            font-size: 0.8rem; color: var(--text); font-family: var(--font);
-            width: 200px; transition: all var(--transition); outline: none;
+            background:var(--surface2); border:1px solid var(--border); border-radius:20px; padding:8px 16px 8px 36px;
+            font-size:0.8rem; color:var(--text); font-family:var(--font); width:200px; transition:all var(--transition); outline:none;
         }
-        .search-input::placeholder { color: var(--text-dim); }
-        .search-input:focus {
-            border-color: var(--accent);
-            box-shadow: 0 0 10px rgba(91,140,189,0.2); width: 240px;
-        }
-        .search-icon {
-            position: absolute; left: 12px; top: 50%;
-            transform: translateY(-50%); color: var(--text-dim);
-            font-size: 0.9rem; pointer-events: none;
-        }
+        .search-input::placeholder { color:var(--text-dim); }
+        .search-input:focus { border-color:var(--accent); box-shadow:0 0 10px rgba(91,140,189,0.2); width:240px; }
+        .search-icon { position:absolute; left:12px; top:50%; transform:translateY(-50%); color:var(--text-dim); font-size:0.9rem; pointer-events:none; }
         .filter-bar {
-            background: var(--surface); border-bottom: 1px solid var(--border);
-            padding: 12px 32px; display: flex; flex-wrap: wrap; gap: 12px;
-            align-items: center; box-shadow: 0 2px 12px rgba(0,0,0,0.4);
-            position: sticky; top: var(--header-height); z-index: 90;
+            background:var(--surface); border-bottom:1px solid var(--border); padding:12px 32px;
+            display:flex; flex-wrap:wrap; gap:12px; align-items:center; box-shadow:0 2px 12px rgba(0,0,0,0.4);
+            position:sticky; top:var(--header-height); z-index:90;
         }
-        .filter-group-wrapper { position: relative; }
-        .filter-group-header {
-            display: flex; align-items: center; gap: 6px;
-            cursor: pointer; user-select: none; padding: 6px 12px;
-            border-radius: 20px; border: 1px solid var(--border);
-            background: transparent; transition: all var(--transition); white-space: nowrap;
-        }
-        .filter-group-header:hover { background: var(--surface2); border-color: #555; }
-        .filter-group-header .arrow {
-            font-size: 0.55rem; transition: transform 0.25s ease; color: var(--text-dim);
-        }
-        .filter-group-wrapper.open .filter-group-header .arrow { transform: rotate(180deg); }
-        .filter-group-header .label {
-            font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em;
-            color: var(--text-dim); font-weight: 600;
-        }
-        .filter-group-header .active-count {
-            background: var(--accent); color: #fff; border-radius: 10px;
-            padding: 1px 6px; font-size: 0.58rem; font-weight: 700;
-        }
-        .filter-dropdown {
-            display: none; position: absolute; top: 100%; left: 0; margin-top: 6px;
-            background: var(--surface2); border: 1px solid var(--border);
-            border-radius: var(--radius-sm); padding: 10px; box-shadow: var(--shadow);
-            z-index: 95; min-width: 220px; max-height: 500px; overflow-y: auto;
-        }
-        .filter-group-wrapper.open .filter-dropdown { display: flex; flex-wrap: wrap; gap: 6px; }
-        .filter-btn {
-            padding: 5px 10px; font-size: 0.68rem; font-weight: 600;
-            letter-spacing: 0.04em; text-transform: uppercase; border-radius: 20px;
-            border: 1px solid var(--border); background: transparent; color: var(--text-dim);
-            cursor: pointer; transition: all var(--transition); font-family: var(--font); white-space: nowrap;
-        }
-        .filter-btn:hover { background: var(--surface2); color: var(--text); border-color: #555; }
-        .filter-btn .item-count { font-size: 0.58rem; opacity: 0.7; margin-left: 2px; }
-        .clear-all-btn {
-            padding: 6px 14px; font-size: 0.7rem; font-weight: 600;
-            letter-spacing: 0.04em; text-transform: uppercase;
-            border-radius: 20px;
-            border: 1px solid rgba(212,90,90,0.6);
-            background: rgba(176,74,74,0.1);
-            color: #e86060; cursor: pointer; transition: all var(--transition);
-            font-family: var(--font); white-space: nowrap;
-            box-shadow: 0 0 8px rgba(176,74,74,0.15);
-        }
-        .clear-all-btn:hover {
-            background: rgba(176,74,74,0.25); border-color: #e86060;
-            color: #ff7070; box-shadow: 0 0 14px rgba(176,74,74,0.35);
-        }
-
-        .class-btn[data-class="warrior"].active { background: rgba(201,66,66,0.35); border-color:#ff4040; color:#ff8080; box-shadow:0 0 12px rgba(201,66,66,0.4); }
-        .class-btn[data-class="rogue"].active { background: rgba(201,164,75,0.35); border-color:#e0b840; color:#fddd80; box-shadow:0 0 12px rgba(201,164,75,0.4); }
-        .class-btn[data-class="mage"].active { background: rgba(123,94,204,0.35); border-color:#9060f0; color:#c0a0ff; box-shadow:0 0 12px rgba(123,94,204,0.4); }
-        .class-btn[data-class="priest"].active { background: rgba(232,232,232,0.25); border-color:#ffffff; color:#ffffff; box-shadow:0 0 12px rgba(232,232,232,0.35); }
-
+        .filter-group-wrapper { position:relative; }
+        .filter-group-header { display:flex; align-items:center; gap:6px; cursor:pointer; user-select:none; padding:6px 12px; border-radius:20px; border:1px solid var(--border); background:transparent; transition:all var(--transition); white-space:nowrap; }
+        .filter-group-header:hover { background:var(--surface2); border-color:#555; }
+        .filter-group-header .arrow { font-size:0.55rem; transition:transform 0.25s ease; color:var(--text-dim); }
+        .filter-group-wrapper.open .filter-group-header .arrow { transform:rotate(180deg); }
+        .filter-group-header .label { font-size:0.7rem; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-dim); font-weight:600; }
+        .filter-group-header .active-count { background:var(--accent); color:#fff; border-radius:10px; padding:1px 6px; font-size:0.58rem; font-weight:700; }
+        .filter-dropdown { display:none; position:absolute; top:100%; left:0; margin-top:6px; background:var(--surface2); border:1px solid var(--border); border-radius:var(--radius-sm); padding:10px; box-shadow:var(--shadow); z-index:95; min-width:220px; max-height:500px; overflow-y:auto; }
+        .filter-group-wrapper.open .filter-dropdown { display:flex; flex-wrap:wrap; gap:6px; }
+        .filter-btn { padding:5px 10px; font-size:0.68rem; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; border-radius:20px; border:1px solid var(--border); background:transparent; color:var(--text-dim); cursor:pointer; transition:all var(--transition); font-family:var(--font); white-space:nowrap; }
+        .filter-btn:hover { background:var(--surface2); color:var(--text); border-color:#555; }
+        .filter-btn .item-count { font-size:0.58rem; opacity:0.7; margin-left:2px; }
+        .clear-all-btn { padding:6px 14px; font-size:0.7rem; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; border-radius:20px; border:1px solid rgba(212,90,90,0.6); background:rgba(176,74,74,0.1); color:#e86060; cursor:pointer; transition:all var(--transition); font-family:var(--font); white-space:nowrap; box-shadow:0 0 8px rgba(176,74,74,0.15); }
+        .clear-all-btn:hover { background:rgba(176,74,74,0.25); border-color:#e86060; color:#ff7070; box-shadow:0 0 14px rgba(176,74,74,0.35); }
+        .class-btn[data-class="warrior"].active { background:rgba(201,66,66,0.35); border-color:#ff4040; color:#ff8080; box-shadow:0 0 12px rgba(201,66,66,0.4); }
+        .class-btn[data-class="rogue"].active { background:rgba(201,164,75,0.35); border-color:#e0b840; color:#fddd80; box-shadow:0 0 12px rgba(201,164,75,0.4); }
+        .class-btn[data-class="mage"].active { background:rgba(123,94,204,0.35); border-color:#9060f0; color:#c0a0ff; box-shadow:0 0 12px rgba(123,94,204,0.4); }
+        .class-btn[data-class="priest"].active { background:rgba(232,232,232,0.25); border-color:#ffffff; color:#ffffff; box-shadow:0 0 12px rgba(232,232,232,0.35); }
         .type-btn[data-type="Sword"].active { background:rgba(125,211,252,0.20); border-color:#7dd3fc; color:#bae6fd; box-shadow:0 0 10px rgba(125,211,252,0.38); }
         .type-btn[data-type="Dual Sword"].active { background:rgba(56,189,248,0.20); border-color:#38bdf8; color:#7dd3fc; box-shadow:0 0 10px rgba(56,189,248,0.38); }
         .type-btn[data-type="Axe"].active { background:rgba(220,38,38,0.22); border-color:#dc2626; color:#f87171; box-shadow:0 0 10px rgba(220,38,38,0.38); }
@@ -188,7 +116,6 @@
         .type-btn[data-type="Feet"].active { background:rgba(201,151,107,0.20); border-color:#c9976b; color:#e0b48a; box-shadow:0 0 8px rgba(201,151,107,0.30); }
         .type-btn[data-type="Waist"].active { background:rgba(184,132,92,0.20); border-color:#b8845c; color:#d4a074; box-shadow:0 0 8px rgba(184,132,92,0.30); }
         .type-btn[data-type="Trinket"].active { background:rgba(244,114,182,0.20); border-color:#f472b6; color:#f9a8d4; box-shadow:0 0 10px rgba(244,114,182,0.35); }
-
         .stat-btn[data-stat="Armor"].active { background:rgba(156,163,175,0.20); border-color:#9ca3af; color:#d1d5db; box-shadow:0 0 8px rgba(156,163,175,0.32); }
         .stat-btn[data-stat="Vitality"].active { background:rgba(52,211,153,0.20); border-color:#34d399; color:#6ee7b7; box-shadow:0 0 10px rgba(52,211,153,0.38); }
         .stat-btn[data-stat="Strength"].active { background:rgba(248,113,113,0.22); border-color:#f87171; color:#fca5a5; box-shadow:0 0 10px rgba(248,113,113,0.38); }
@@ -199,106 +126,48 @@
         .stat-btn[data-stat="Armor Penetration"].active { background:rgba(232,121,94,0.22); border-color:#e8795e; color:#f4a28e; box-shadow:0 0 10px rgba(232,121,94,0.38); }
         .stat-btn[data-stat="Magic Penetration"].active { background:rgba(192,132,252,0.20); border-color:#c084fc; color:#e0b4ff; box-shadow:0 0 10px rgba(192,132,252,0.38); }
         .stat-btn[data-stat="Fervor"].active { background:rgba(251,146,60,0.22); border-color:#fb923c; color:#fdb980; box-shadow:0 0 12px rgba(251,146,60,0.40); }
-
-        .main-content { flex: 1; }
-        .container { max-width: 1300px; margin: 0 auto; padding: 28px 20px 48px; }
-        .zone-card {
-            background: var(--surface); border: 1px solid var(--border);
-            border-radius: var(--radius); margin-bottom: 20px;
-            box-shadow: var(--shadow); overflow: hidden; transition: all var(--transition);
-        }
-        .zone-card:hover { border-color: #444; }
-        .zone-header {
-            display: flex; align-items: center; gap: 12px; padding: 16px 20px;
-            cursor: pointer; user-select: none; background: var(--surface2);
-            border-bottom: 1px solid var(--border); transition: background var(--transition);
-        }
-        .zone-header:hover { background: #252a35; }
-        .zone-chevron {
-            font-size: 0.7rem; color: var(--gold); transition: transform 0.25s ease;
-            flex-shrink: 0; width: 18px; text-align: center;
-        }
-        .zone-card.open .zone-chevron { transform: rotate(90deg); }
-        .zone-icon { font-size: 1.4rem; flex-shrink: 0; }
-        .zone-info { flex: 1; min-width: 0; }
-        .zone-name-display {
-            color: var(--gold); font-size: 1.15rem; font-weight: 700;
-            font-family: var(--font-display); letter-spacing: 0.03em;
-        }
-        .zone-meta {
-            font-size: 0.72rem; color: var(--text-dim); margin-top: 2px;
-            display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
-        }
-        .badge {
-            display: inline-flex; align-items: center; gap: 3px;
-            padding: 2px 8px; border-radius: 10px; font-size: 0.65rem;
-            font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
-        }
-        .badge-dungeon {
-            background: rgba(248,113,113,0.18); border: 1px solid var(--dungeon-red);
-            color: var(--dungeon-red); box-shadow: 0 0 6px rgba(248,113,113,0.25);
-        }
-        .badge-item {
-            background: rgba(74,222,128,0.15); border: 1px solid var(--item-green);
-            color: var(--item-green); box-shadow: 0 0 6px rgba(74,222,128,0.25);
-        }
-        .zone-body { display: none; padding: 16px 20px 20px; background: var(--bg); }
-        .zone-card.open .zone-body { display: block; }
-        .dungeons-list { display: flex; flex-direction: column; gap: 12px; }
-        .empty-msg { text-align: center; color: var(--text-dim); font-style: italic; font-size: 0.85rem; padding: 18px; }
-        .dungeon-card {
-            background: var(--surface2); border: 1px solid var(--border);
-            border-radius: var(--radius-sm); overflow: hidden; transition: all var(--transition);
-        }
-        .dungeon-card:hover { border-color: #444; }
-        .dungeon-header {
-            display: flex; align-items: center; gap: 10px; padding: 12px 16px;
-            cursor: pointer; user-select: none; background: rgba(0,0,0,0.2);
-            border-bottom: 1px solid transparent; transition: all var(--transition);
-        }
-        .dungeon-card.open .dungeon-header {
-            border-bottom-color: var(--border); background: rgba(0,0,0,0.35);
-        }
-        .dungeon-header:hover { background: rgba(255,255,255,0.02); }
-        .dungeon-chevron {
-            font-size: 0.6rem; color: var(--accent); transition: transform 0.25s ease;
-            flex-shrink: 0; width: 14px; text-align: center;
-        }
-        .dungeon-card.open .dungeon-chevron { transform: rotate(90deg); }
-        .dungeon-icon { font-size: 1.1rem; flex-shrink: 0; }
-        .dungeon-info {
-            flex: 1; min-width: 0; display: flex; flex-wrap: wrap;
-            align-items: center; gap: 8px;
-        }
-        .dungeon-name-display { font-size: 0.95rem; font-weight: 600; }
-        .dungeon-lv { color: var(--dungeon-lv); font-weight: 700; }
-        .dungeon-tag-full { color: var(--dungeon-full); font-weight: 600; font-size: 0.85rem; }
-        .dungeon-tag-boss { color: var(--dungeon-boss); font-weight: 600; font-size: 0.85rem; }
-        .dungeon-tag-full::before, .dungeon-tag-boss::before { content: ' · '; color: var(--text-dim); font-weight: 400; }
-        .dungeon-body {
-            display: none; padding: 8px 16px 14px;
-            background: rgba(0,0,0,0.15); overflow-x: auto;
-        }
-        .dungeon-card.open .dungeon-body { display: block; }
-        .loot-table {
-            width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 900px;
-        }
-        .loot-table thead th {
-            text-align: left; padding: 8px 8px; font-size: 0.68rem;
-            text-transform: uppercase; letter-spacing: 0.07em;
-            color: var(--text-dim); border-bottom: 1px solid var(--border); font-weight: 600;
-        }
-        .loot-table tbody td {
-            padding: 7px 8px; border-bottom: 1px solid rgba(255,255,255,0.03); vertical-align: top;
-        }
-        .loot-table tbody tr { transition: background var(--transition); }
-        .loot-table tbody tr:hover { background: rgba(255,255,255,0.02); }
-        .loot-table tbody tr:last-child td { border-bottom: none; }
-        .item-name {
-            font-weight: 700; transition: color var(--transition);
-            display: inline-flex; align-items: center; gap: 4px;
-        }
-
+        .main-content { flex:1; }
+        .container { max-width:1300px; margin:0 auto; padding:28px 20px 48px; }
+        .zone-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); margin-bottom:20px; box-shadow:var(--shadow); overflow:hidden; transition:all var(--transition); }
+        .zone-card:hover { border-color:#444; }
+        .zone-header { display:flex; align-items:center; gap:12px; padding:16px 20px; cursor:pointer; user-select:none; background:var(--surface2); border-bottom:1px solid var(--border); transition:background var(--transition); }
+        .zone-header:hover { background:#252a35; }
+        .zone-chevron { font-size:0.7rem; color:var(--gold); transition:transform 0.25s ease; flex-shrink:0; width:18px; text-align:center; }
+        .zone-card.open .zone-chevron { transform:rotate(90deg); }
+        .zone-icon { font-size:1.4rem; flex-shrink:0; }
+        .zone-info { flex:1; min-width:0; }
+        .zone-name-display { color:var(--gold); font-size:1.15rem; font-weight:700; font-family:var(--font-display); letter-spacing:0.03em; }
+        .zone-meta { font-size:0.72rem; color:var(--text-dim); margin-top:2px; display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+        .badge { display:inline-flex; align-items:center; gap:3px; padding:2px 8px; border-radius:10px; font-size:0.65rem; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; }
+        .badge-dungeon { background:rgba(248,113,113,0.18); border:1px solid var(--dungeon-red); color:var(--dungeon-red); box-shadow:0 0 6px rgba(248,113,113,0.25); }
+        .badge-item { background:rgba(74,222,128,0.15); border:1px solid var(--item-green); color:var(--item-green); box-shadow:0 0 6px rgba(74,222,128,0.25); }
+        .zone-body { display:none; padding:16px 20px 20px; background:var(--bg); }
+        .zone-card.open .zone-body { display:block; }
+        .dungeons-list { display:flex; flex-direction:column; gap:12px; }
+        .empty-msg { text-align:center; color:var(--text-dim); font-style:italic; font-size:0.85rem; padding:18px; }
+        .dungeon-card { background:var(--surface2); border:1px solid var(--border); border-radius:var(--radius-sm); overflow:hidden; transition:all var(--transition); }
+        .dungeon-card:hover { border-color:#444; }
+        .dungeon-header { display:flex; align-items:center; gap:10px; padding:12px 16px; cursor:pointer; user-select:none; background:rgba(0,0,0,0.2); border-bottom:1px solid transparent; transition:all var(--transition); }
+        .dungeon-card.open .dungeon-header { border-bottom-color:var(--border); background:rgba(0,0,0,0.35); }
+        .dungeon-header:hover { background:rgba(255,255,255,0.02); }
+        .dungeon-chevron { font-size:0.6rem; color:var(--accent); transition:transform 0.25s ease; flex-shrink:0; width:14px; text-align:center; }
+        .dungeon-card.open .dungeon-chevron { transform:rotate(90deg); }
+        .dungeon-icon { font-size:1.1rem; flex-shrink:0; }
+        .dungeon-info { flex:1; min-width:0; display:flex; flex-wrap:wrap; align-items:center; gap:8px; }
+        .dungeon-name-display { font-size:0.95rem; font-weight:600; }
+        .dungeon-lv { color:var(--dungeon-lv); font-weight:700; }
+        .dungeon-tag-full { color:var(--dungeon-full); font-weight:600; font-size:0.85rem; }
+        .dungeon-tag-boss { color:var(--dungeon-boss); font-weight:600; font-size:0.85rem; }
+        .dungeon-tag-full::before, .dungeon-tag-boss::before { content:' · '; color:var(--text-dim); font-weight:400; }
+        .dungeon-body { display:none; padding:8px 16px 14px; background:rgba(0,0,0,0.15); overflow-x:auto; }
+        .dungeon-card.open .dungeon-body { display:block; }
+        .loot-table { width:100%; border-collapse:collapse; font-size:0.82rem; min-width:900px; }
+        .loot-table thead th { text-align:left; padding:8px 8px; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-dim); border-bottom:1px solid var(--border); font-weight:600; }
+        .loot-table tbody td { padding:7px 8px; border-bottom:1px solid rgba(255,255,255,0.03); vertical-align:top; }
+        .loot-table tbody tr { transition:background var(--transition); }
+        .loot-table tbody tr:hover { background:rgba(255,255,255,0.02); }
+        .loot-table tbody tr:last-child td { border-bottom:none; }
+        .item-name { font-weight:700; transition:color var(--transition); display:inline-flex; align-items:center; gap:4px; }
         .type-color-sword { color:#bae6fd; text-shadow:0 0 8px rgba(125,211,252,0.35); }
         .type-color-dual-sword { color:#7dd3fc; text-shadow:0 0 8px rgba(56,189,248,0.35); }
         .type-color-axe { color:#f87171; text-shadow:0 0 8px rgba(220,38,38,0.35); }
@@ -326,14 +195,8 @@
         .type-color-feet { color:#e0b48a; text-shadow:0 0 8px rgba(201,151,107,0.28); }
         .type-color-waist { color:#d4a074; text-shadow:0 0 8px rgba(184,132,92,0.28); }
         .type-color-trinket { color:#f9a8d4; text-shadow:0 0 8px rgba(244,114,182,0.32); }
-
-        .tag-container { display: flex; flex-wrap: wrap; gap: 3px; }
-        .tag {
-            display: inline-flex; align-items: center; gap: 3px;
-            padding: 3px 9px; border-radius: 12px; font-size: 0.63rem;
-            font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase;
-            border: 1px solid transparent; transition: all var(--transition);
-        }
+        .tag-container { display:flex; flex-wrap:wrap; gap:3px; }
+        .tag { display:inline-flex; align-items:center; gap:3px; padding:3px 9px; border-radius:12px; font-size:0.63rem; font-weight:700; letter-spacing:0.03em; text-transform:uppercase; border:1px solid transparent; transition:all var(--transition); }
         .tag.class-warrior { background:rgba(201,66,66,0.35); border-color:#ff4040; color:#ff8080; }
         .tag.class-rogue { background:rgba(201,164,75,0.35); border-color:#e0b840; color:#fddd80; }
         .tag.class-mage { background:rgba(123,94,204,0.35); border-color:#9060f0; color:#c0a0ff; }
@@ -375,358 +238,81 @@
         .tag.stat-armor-penetration { background:rgba(232,121,94,0.22); border-color:#e8795e; color:#f4a28e; }
         .tag.stat-magic-penetration { background:rgba(192,132,252,0.20); border-color:#c084fc; color:#e0b4ff; }
         .tag.stat-fervor { background:rgba(251,146,60,0.22); border-color:#fb923c; color:#fdb980; }
-
-        .stat-value {
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: #ffffff;
-            margin-left: 2px;
-            text-shadow: 0 0 4px rgba(255,255,255,0.25);
-        }
-
-        .rarity-switcher {
-            display: flex;
-            gap: 4px;
-            margin-bottom: 6px;
-        }
-        .rarity-btn {
-            padding: 2px 6px;
-            font-size: 0.58rem;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            border-radius: 8px;
-            border: 1px solid transparent;
-            background: transparent;
-            color: var(--text-dim);
-            cursor: pointer;
-            transition: all var(--transition);
-            font-family: var(--font);
-            text-transform: uppercase;
-        }
-        .rarity-btn:hover {
-            background: var(--surface2);
-            color: var(--text);
-        }
-        .rarity-btn[data-rarity="blue"] {
-            border-color: rgba(59,130,246,0.5);
-            color: var(--rarity-blue);
-        }
-        .rarity-btn[data-rarity="blue"].active {
-            background: rgba(59,130,246,0.25);
-            border-color: var(--rarity-blue);
-            box-shadow: 0 0 8px rgba(59,130,246,0.4);
-            color: #60a5fa;
-        }
-        .rarity-btn[data-rarity="purple"] {
-            border-color: rgba(168,85,247,0.5);
-            color: var(--rarity-purple);
-        }
-        .rarity-btn[data-rarity="purple"].active {
-            background: rgba(168,85,247,0.25);
-            border-color: var(--rarity-purple);
-            box-shadow: 0 0 8px rgba(168,85,247,0.4);
-            color: #c084fc;
-        }
-        .rarity-btn[data-rarity="legendary"] {
-            border-color: rgba(245,158,11,0.5);
-            color: var(--rarity-legendary);
-        }
-        .rarity-btn[data-rarity="legendary"].active {
-            background: rgba(245,158,11,0.25);
-            border-color: var(--rarity-legendary);
-            box-shadow: 0 0 10px rgba(245,158,11,0.5);
-            color: #fbbf24;
-            text-shadow: 0 0 6px rgba(245,158,11,0.5);
-        }
-
-        .site-footer {
-            background: var(--surface); border-top: 1px solid var(--border);
-            padding: 16px 32px; text-align: center; font-size: 0.7rem;
-            color: var(--text-dim); letter-spacing: 0.05em; margin-top: auto;
-        }
-        .site-footer .copyright-symbol { color: var(--gold-dim); }
-        .site-footer .creator-name { color: var(--gold); font-weight: 600; }
-        .toast-container {
-            position: fixed; bottom: 24px; right: 24px; z-index: 999;
-            display: flex; flex-direction: column; gap: 8px;
-        }
-        .toast {
-            background: var(--surface2); border: 1px solid var(--border);
-            padding: 10px 16px; border-radius: var(--radius-sm); font-size: 0.8rem;
-            color: var(--text); box-shadow: var(--shadow);
-            animation: slideIn 0.3s ease, fadeOut 0.3s ease 1.8s forwards; max-width: 340px;
-        }
-        @keyframes slideIn { from { opacity:0; transform:translateX(40px); } to { opacity:1; transform:translateX(0); } }
-        @keyframes fadeOut { from { opacity:1; } to { opacity:0; transform:translateY(-10px); } }
+        .stat-value { font-size:0.8rem; font-weight:600; color:#ffffff; margin-left:2px; text-shadow:0 0 4px rgba(255,255,255,0.25); }
+        .rarity-switcher { display:flex; gap:4px; margin-bottom:6px; }
+        .rarity-btn { padding:2px 6px; font-size:0.58rem; font-weight:700; letter-spacing:0.05em; border-radius:8px; border:1px solid transparent; background:transparent; color:var(--text-dim); cursor:pointer; transition:all var(--transition); font-family:var(--font); text-transform:uppercase; }
+        .rarity-btn:hover { background:var(--surface2); color:var(--text); }
+        .rarity-btn[data-rarity="blue"] { border-color:rgba(59,130,246,0.5); color:var(--rarity-blue); }
+        .rarity-btn[data-rarity="blue"].active { background:rgba(59,130,246,0.25); border-color:var(--rarity-blue); box-shadow:0 0 8px rgba(59,130,246,0.4); color:#60a5fa; }
+        .rarity-btn[data-rarity="purple"] { border-color:rgba(168,85,247,0.5); color:var(--rarity-purple); }
+        .rarity-btn[data-rarity="purple"].active { background:rgba(168,85,247,0.25); border-color:var(--rarity-purple); box-shadow:0 0 8px rgba(168,85,247,0.4); color:#c084fc; }
+        .rarity-btn[data-rarity="legendary"] { border-color:rgba(245,158,11,0.5); color:var(--rarity-legendary); }
+        .rarity-btn[data-rarity="legendary"].active { background:rgba(245,158,11,0.25); border-color:var(--rarity-legendary); box-shadow:0 0 10px rgba(245,158,11,0.5); color:#fbbf24; text-shadow:0 0 6px rgba(245,158,11,0.5); }
+        .site-footer { background:var(--surface); border-top:1px solid var(--border); padding:16px 32px; text-align:center; font-size:0.7rem; color:var(--text-dim); letter-spacing:0.05em; margin-top:auto; }
+        .site-footer .copyright-symbol { color:var(--gold-dim); }
+        .site-footer .creator-name { color:var(--gold); font-weight:600; }
+        .toast-container { position:fixed; bottom:24px; right:24px; z-index:999; display:flex; flex-direction:column; gap:8px; }
+        .toast { background:var(--surface2); border:1px solid var(--border); padding:10px 16px; border-radius:var(--radius-sm); font-size:0.8rem; color:var(--text); box-shadow:var(--shadow); animation:slideIn 0.3s ease, fadeOut 0.3s ease 1.8s forwards; max-width:340px; }
+        @keyframes slideIn { from{opacity:0;transform:translateX(40px);} to{opacity:1;transform:translateX(0);} }
+        @keyframes fadeOut { from{opacity:1;} to{opacity:0;transform:translateY(-10px);} }
         @media (max-width:1000px) {
-            .loot-table {
-                min-width: 100%;
-                width: 100%;
-                font-size: 0.58rem;
-                table-layout: auto;
-            }
-            .loot-table thead th {
-                font-size: 0.55rem;
-                padding: 3px 4px;
-            }
-            .loot-table tbody td {
-                padding: 3px 4px;
-                word-break: break-word;
-            }
-            .tag {
-                font-size: 0.5rem;
-                padding: 1px 4px;
-            }
-            .badge {
-                font-size: 0.55rem;
-                padding: 1px 5px;
-            }
-            .item-detail-cell {
-                padding: 4px 8px;
-                font-size: 0.6rem;
-            }
-            .header {
-                padding: 14px 16px;
-                min-height: auto;
-            }
-            .header h1 {
-                font-size: 1.3rem;
-            }
-            .container {
-                padding: 16px 10px 36px;
-            }
-            .zone-header {
-                padding: 12px 14px;
-                gap: 8px;
-            }
-            .zone-body {
-                padding: 10px 12px 14px;
-            }
-            .dungeon-header {
-                padding: 10px 12px;
-                gap: 6px;
-            }
-            .dungeon-body {
-                padding: 6px 8px 10px;
-            }
-            .zone-name-display {
-                font-size: 0.95rem;
-            }
-            .dungeon-name-display {
-                font-size: 0.8rem;
-            }
-            .filter-bar {
-                padding: 10px 14px;
-                gap: 8px;
-            }
-            .filter-group-header {
-                padding: 5px 10px;
-            }
-            .filter-group-header .label {
-                font-size: 0.65rem;
-            }
-            .filter-dropdown {
-                max-height: 350px;
-            }
-            .search-input {
-                width: 140px;
-            }
-            .search-input:focus {
-                width: 170px;
-            }
-            .site-footer {
-                padding: 12px 16px;
-                font-size: 0.65rem;
-            }
-            .suggest-btn {
-                font-size: 0.75rem;
-                padding: 5px 10px;
-            }
-            .stat-value {
-                font-size: 0.7rem;
-            }
-            .rarity-btn {
-                font-size: 0.5rem;
-                padding: 1px 4px;
-            }
+            .loot-table { min-width:100%; width:100%; font-size:0.58rem; table-layout:auto; }
+            .loot-table thead th { font-size:0.55rem; padding:3px 4px; }
+            .loot-table tbody td { padding:3px 4px; word-break:break-word; }
+            .tag { font-size:0.5rem; padding:1px 4px; }
+            .badge { font-size:0.55rem; padding:1px 5px; }
+            .item-detail-cell { padding:4px 8px; font-size:0.6rem; }
+            .header { padding:14px 16px; min-height:auto; }
+            .header h1 { font-size:1.3rem; }
+            .container { padding:16px 10px 36px; }
+            .zone-header { padding:12px 14px; gap:8px; }
+            .zone-body { padding:10px 12px 14px; }
+            .dungeon-header { padding:10px 12px; gap:6px; }
+            .dungeon-body { padding:6px 8px 10px; }
+            .zone-name-display { font-size:0.95rem; }
+            .dungeon-name-display { font-size:0.8rem; }
+            .filter-bar { padding:10px 14px; gap:8px; }
+            .filter-group-header { padding:5px 10px; }
+            .filter-group-header .label { font-size:0.65rem; }
+            .filter-dropdown { max-height:350px; }
+            .search-input { width:140px; }
+            .search-input:focus { width:170px; }
+            .site-footer { padding:12px 16px; font-size:0.65rem; }
+            .suggest-btn { font-size:0.75rem; padding:5px 10px; }
+            .stat-value { font-size:0.7rem; }
         }
-
-        .suggest-btn {
-            background: none;
-            border: 1px solid var(--border);
-            color: var(--text-dim);
-            border-radius: 20px;
-            padding: 6px 14px;
-            font-size: 0.82rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all var(--transition);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-family: var(--font);
-            white-space: nowrap;
-        }
-        .suggest-btn:hover {
-            background: var(--surface2);
-            color: var(--gold);
-            border-color: var(--gold-dim);
-            box-shadow: 0 0 10px rgba(201,164,75,0.2);
-        }
-        .suggest-text { letter-spacing: 0.03em; }
-        @media (max-width: 1000px) {
-            .suggest-btn { font-size: 0.75rem; padding: 5px 10px; }
-        }
-
-        .modal-overlay {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.8);
-            z-index: 10001;
-            justify-content: center;
-            align-items: center;
-        }
-        .modal-overlay.active { display: flex; }
-
-        .modal-content {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 24px;
-            width: 90%;
-            max-width: 420px;
-            box-shadow: 0 12px 40px rgba(0,0,0,0.8);
-        }
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 18px;
-        }
-        .modal-header h2 {
-            color: var(--gold);
-            font-family: var(--font-display);
-            font-size: 1.3rem;
-            margin: 0;
-        }
-        .modal-close {
-            background: none;
-            border: none;
-            color: var(--text-dim);
-            font-size: 1.5rem;
-            cursor: pointer;
-            line-height: 1;
-        }
-        .modal-close:hover { color: var(--text); }
-        .modal-form input,
-        .modal-form select,
-        .modal-form textarea {
-            width: 100%;
-            background: var(--surface2);
-            border: 1px solid var(--border);
-            color: var(--text);
-            padding: 8px 12px;
-            border-radius: var(--radius-sm);
-            margin-bottom: 10px;
-            font-family: var(--font);
-        }
-        .modal-form textarea { resize: vertical; min-height: 80px; }
-        .modal-form button {
-            padding: 10px;
-            border: none;
-            border-radius: var(--radius-sm);
-            font-weight: 700;
-            cursor: pointer;
-            font-family: var(--font);
-        }
-        .modal-form .submit-btn {
-            background: var(--accent);
-            color: #fff;
-        }
-        .modal-form .submit-btn:hover { background: var(--accent-hover); }
-        .modal-form .cancel-btn {
-            background: var(--surface2);
-            color: var(--text);
-            border: 1px solid var(--border);
-            margin-left: 10px;
-        }
-        .modal-form .cancel-btn:hover { background: #2a2f3a; }
-        .modal-footer-text {
-            font-size: 0.7rem;
-            color: var(--text-dim);
-            margin-top: 12px;
-            text-align: center;
-        }
-
-        #class-dropdown { min-width: 260px; }
-
-        .filter-group-wrapper.open #type-dropdown {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 6px;
-            max-height: none;
-            overflow-y: visible;
-            min-width: 360px;
-        }
-
-        body.loading #zones-container,
-        body.loading .site-footer {
-            opacity: 0;
-            transition: opacity 0.2s ease;
-        }
-
-        #zones-container,
-        .site-footer {
-            transition: opacity 0.3s ease;
-        }
-
-        .item-main-row.item-row-has-details {
-            cursor: pointer;
-            transition: background var(--transition);
-        }
-        .item-main-row.item-row-has-details:hover {
-            background: rgba(255,255,255,0.03);
-        }
-        .detail-indicator {
-            font-size: 0.6em;
-            margin-left: 4px;
-            color: var(--text-dim);
-            transition: transform 0.2s ease;
-            display: inline-block;
-        }
-        .item-main-row.expanded .detail-indicator {
-            transform: rotate(90deg);
-        }
-        .item-detail-cell {
-            padding: 10px 16px;
-            background: rgba(0,0,0,0.2);
-            border-top: 1px solid var(--border);
-            font-size: 0.82rem;
-            color: var(--text);
-            line-height: 1.6;
-        }
-        .item-detail-content {
-            max-width: 100%;
-            word-break: break-word;
-        }
-        .item-detail-content div {
-            margin-bottom: 4px;
-        }
-        .item-detail-content strong {
-            font-size: 0.95rem;
-            font-weight: 600;
-            letter-spacing: 0.02em;
-        }
-        @media (max-width: 1000px) {
-            .item-detail-cell {
-                padding: 8px 12px;
-                font-size: 0.75rem;
-            }
-            .item-detail-content strong {
-                font-size: 0.82rem;
-            }
-        }
+        .suggest-btn { background:none; border:1px solid var(--border); color:var(--text-dim); border-radius:20px; padding:6px 14px; font-size:0.82rem; font-weight:600; cursor:pointer; transition:all var(--transition); display:flex; align-items:center; gap:6px; font-family:var(--font); white-space:nowrap; }
+        .suggest-btn:hover { background:var(--surface2); color:var(--gold); border-color:var(--gold-dim); box-shadow:0 0 10px rgba(201,164,75,0.2); }
+        .suggest-text { letter-spacing:0.03em; }
+        @media (max-width:1000px) { .suggest-btn { font-size:0.75rem; padding:5px 10px; } }
+        .modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); z-index:10001; justify-content:center; align-items:center; }
+        .modal-overlay.active { display:flex; }
+        .modal-content { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:24px; width:90%; max-width:420px; box-shadow:0 12px 40px rgba(0,0,0,0.8); }
+        .modal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; }
+        .modal-header h2 { color:var(--gold); font-family:var(--font-display); font-size:1.3rem; margin:0; }
+        .modal-close { background:none; border:none; color:var(--text-dim); font-size:1.5rem; cursor:pointer; line-height:1; }
+        .modal-close:hover { color:var(--text); }
+        .modal-form input, .modal-form select, .modal-form textarea { width:100%; background:var(--surface2); border:1px solid var(--border); color:var(--text); padding:8px 12px; border-radius:var(--radius-sm); margin-bottom:10px; font-family:var(--font); }
+        .modal-form textarea { resize:vertical; min-height:80px; }
+        .modal-form button { padding:10px; border:none; border-radius:var(--radius-sm); font-weight:700; cursor:pointer; font-family:var(--font); }
+        .modal-form .submit-btn { background:var(--accent); color:#fff; }
+        .modal-form .submit-btn:hover { background:var(--accent-hover); }
+        .modal-form .cancel-btn { background:var(--surface2); color:var(--text); border:1px solid var(--border); margin-left:10px; }
+        .modal-form .cancel-btn:hover { background:#2a2f3a; }
+        .modal-footer-text { font-size:0.7rem; color:var(--text-dim); margin-top:12px; text-align:center; }
+        #class-dropdown { min-width:260px; }
+        .filter-group-wrapper.open #type-dropdown { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; max-height:none; overflow-y:visible; min-width:360px; }
+        body.loading #zones-container, body.loading .site-footer { opacity:0; transition:opacity 0.2s ease; }
+        #zones-container, .site-footer { transition:opacity 0.3s ease; }
+        .item-main-row.item-row-has-details { cursor:pointer; transition:background var(--transition); }
+        .item-main-row.item-row-has-details:hover { background:rgba(255,255,255,0.03); }
+        .detail-indicator { font-size:0.6em; margin-left:4px; color:var(--text-dim); transition:transform 0.2s ease; display:inline-block; }
+        .item-main-row.expanded .detail-indicator { transform:rotate(90deg); }
+        .item-detail-cell { padding:10px 16px; background:rgba(0,0,0,0.2); border-top:1px solid var(--border); font-size:0.82rem; color:var(--text); line-height:1.6; }
+        .item-detail-content { max-width:100%; word-break:break-word; }
+        .item-detail-content div { margin-bottom:4px; }
+        .item-detail-content strong { font-size:0.95rem; font-weight:600; letter-spacing:0.02em; }
+        @media (max-width:1000px) { .item-detail-cell { padding:8px 12px; font-size:0.75rem; } .item-detail-content strong { font-size:0.82rem; } }
     </style>
 </head>
 <body class="loading">
@@ -751,40 +337,27 @@
             </button>
         </div>
     </header>
-
     <div class="filter-bar" id="filter-bar">
         <div class="filter-group-wrapper" id="class-wrapper">
-            <div class="filter-group-header">
-                <span class="arrow">▼</span><span class="label">Class</span>
-                <span class="active-count" id="class-count" style="display:none">0</span>
-            </div>
+            <div class="filter-group-header"><span class="arrow">▼</span><span class="label">Class</span><span class="active-count" id="class-count" style="display:none">0</span></div>
             <div class="filter-dropdown" id="class-dropdown"></div>
         </div>
         <div class="filter-group-wrapper" id="stat-wrapper">
-            <div class="filter-group-header">
-                <span class="arrow">▼</span><span class="label">Stats</span>
-                <span class="active-count" id="stat-count" style="display:none">0</span>
-            </div>
+            <div class="filter-group-header"><span class="arrow">▼</span><span class="label">Stats</span><span class="active-count" id="stat-count" style="display:none">0</span></div>
             <div class="filter-dropdown" id="stat-dropdown"></div>
         </div>
         <div class="filter-group-wrapper" id="type-wrapper">
-            <div class="filter-group-header">
-                <span class="arrow">▼</span><span class="label">Type</span>
-                <span class="active-count" id="type-count" style="display:none">0</span>
-            </div>
+            <div class="filter-group-header"><span class="arrow">▼</span><span class="label">Type</span><span class="active-count" id="type-count" style="display:none">0</span></div>
             <div class="filter-dropdown" id="type-dropdown"></div>
         </div>
-        <button class="clear-all-btn" id="clear-all-btn" style="display: none;">✕ Clear</button>
+        <button class="clear-all-btn" id="clear-all-btn" style="display:none;">✕ Clear</button>
     </div>
-
     <div class="main-content">
         <main class="container" id="zones-container"></main>
     </div>
-
     <footer class="site-footer">
         <span class="copyright-symbol">&copy;</span> 2026 Farever — Created by <span class="creator-name">Iielyn</span>. All rights reserved.
     </footer>
-
     <div class="modal-overlay" id="suggestion-modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -793,7 +366,7 @@
             </div>
             <form class="modal-form" id="suggestion-form">
                 <textarea name="message" placeholder="Type your suggestion, feedback, or missing item details..." required rows="5"></textarea>
-                <div style="display: flex; gap: 10px; margin-top: 12px;">
+                <div style="display:flex; gap:10px; margin-top:12px;">
                     <button type="submit" class="submit-btn" style="flex:1;">Send Suggestion</button>
                     <button type="button" class="cancel-btn" id="cancel-suggestion-modal" style="flex:1;">Cancel</button>
                 </div>
@@ -801,97 +374,47 @@
             <p class="modal-footer-text">Your suggestion is sent privately to the creator.</p>
         </div>
     </div>
-    
     <div class="toast-container" id="toast-container"></div>
-
     <script>
     (function() {
         'use strict';
-
         const STORAGE_KEY = 'farever_data_v9';
         const VERSION_KEY = 'farever_data_version_v1';
         const DATA_URL = './farever_data_2026-05-10.json';
         const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScAUAFWgtKAOMNfr4hipZMp9l8JMeeISnT3PBmS7sLgF-EfYg/formResponse';
         const ENTRY_ID = 'entry.1596480602';
-
         const CLASS_OPTIONS = ['warrior', 'rogue', 'mage', 'priest'];
         const CLASS_LABELS = { warrior: 'War', rogue: 'Rog', mage: 'Mage', priest: 'Pri' };
-
-        const STAT_OPTIONS = [
-            'Armor', 'Vitality', 'Strength', 'Dexterity',
-            'Faith', 'Intelligence', 'Critical', 'Armor Penetration',
-            'Magic Penetration', 'Fervor',
-        ];
-
-        const WEAPON_TYPES = [
-            'Sword', 'Dual Sword', 'Axe', 'Dual Axes', 'Daggers',
-            'Mace', 'Dual Maces', 'Spear', 'Fists',
-            'Two-Handed Axe', 'Two-Handed Mace',
-            'Bow', 'Thrown',
-            'Scepter', 'Crescent', 'Halos'
-        ];
-
-        const ARMOR_TYPES = [
-            'Head', 'Shoulders', 'Chest', 'Hands', 'Legs', 'Feet', 'Waist',
-            'Back', 'Cape', 'Shield'
-        ];
-
+        const STAT_OPTIONS = ['Armor','Vitality','Strength','Dexterity','Faith','Intelligence','Critical','Armor Penetration','Magic Penetration','Fervor'];
+        const WEAPON_TYPES = ['Sword','Dual Sword','Axe','Dual Axes','Daggers','Mace','Dual Maces','Spear','Fists','Two-Handed Axe','Two-Handed Mace','Bow','Thrown','Scepter','Crescent','Halos'];
+        const ARMOR_TYPES = ['Head','Shoulders','Chest','Hands','Legs','Feet','Waist','Back','Cape','Shield'];
         const TRINKET_TYPES = ['Trinket'];
         const TYPE_OPTIONS = [...WEAPON_TYPES, ...ARMOR_TYPES, ...TRINKET_TYPES];
-
         let appData = { zones: [] };
         let filterClasses = [];
         let filterTypes = [];
         let filterStats = [];
         let searchQuery = '';
         const allItemsMap = new Map();
-
         const escapeHtml = str => str ? str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;') : '';
         const toSlug = str => str.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
         const generateId = () => 'id_' + Date.now().toString(36) + '_' + Math.random().toString(36).substring(2,8);
-
-        const sortByOrder = (arr, order) => [...arr].sort((a,b) => {
-            const ia = order.indexOf(a), ib = order.indexOf(b);
-            if (ia === -1 && ib === -1) return 0;
-            if (ia === -1) return 1;
-            if (ib === -1) return -1;
-            return ia - ib;
-        });
-
-        const getPrimaryType = item => {
-            if (!Array.isArray(item.types) || item.types.length === 0) return '';
-            const sorted = sortByOrder(item.types, TYPE_OPTIONS);
-            return sorted[0] || '';
-        };
-
-        const getTypeGroupRank = type => {
-            if (WEAPON_TYPES.includes(type)) return 0;
-            if (ARMOR_TYPES.includes(type)) return 1;
-            if (TRINKET_TYPES.includes(type)) return 2;
-            return 3;
-        };
-
-        const getTypeSubOrder = type => {
-            if (WEAPON_TYPES.includes(type)) return WEAPON_TYPES.indexOf(type);
-            if (ARMOR_TYPES.includes(type)) return ARMOR_TYPES.indexOf(type);
-            if (TRINKET_TYPES.includes(type)) return 0;
-            return -1;
-        };
-
+        const sortByOrder = (arr, order) => [...arr].sort((a,b) => { const ia=order.indexOf(a), ib=order.indexOf(b); if(ia===-1&&ib===-1) return 0; if(ia===-1) return 1; if(ib===-1) return -1; return ia-ib; });
+        const getPrimaryType = item => { if(!Array.isArray(item.types)||item.types.length===0) return ''; const sorted=sortByOrder(item.types,TYPE_OPTIONS); return sorted[0]||''; };
+        const getTypeGroupRank = type => { if(WEAPON_TYPES.includes(type)) return 0; if(ARMOR_TYPES.includes(type)) return 1; if(TRINKET_TYPES.includes(type)) return 2; return 3; };
+        const getTypeSubOrder = type => { if(WEAPON_TYPES.includes(type)) return WEAPON_TYPES.indexOf(type); if(ARMOR_TYPES.includes(type)) return ARMOR_TYPES.indexOf(type); if(TRINKET_TYPES.includes(type)) return 0; return -1; };
         const isWeapon = item => item.types.some(t => WEAPON_TYPES.includes(t));
         const isTrinket = item => item.types.includes('Trinket');
         const hasAbilities = item => item.skill1 || item.skill2 || item.skill3 || item.passive;
         const hasTrinketPassive = item => item.trinketPassive && item.trinketPassive.trim() !== '';
         const getTypeColorClass = type => type ? 'type-color-' + toSlug(type) : '';
-
         const itemPassesFilter = item => {
-            if (filterClasses.length && !filterClasses.some(cls => item.classes.includes(cls))) return false;
-            if (filterTypes.length && !filterTypes.some(t => item.types.includes(t))) return false;
-            if (filterStats.length && !filterStats.every(s => item.stats.includes(s))) return false;
-            if (searchQuery && !item.name.toLowerCase().includes(searchQuery.toLowerCase())) return false;
+            if(filterClasses.length && !filterClasses.some(cls => item.classes.includes(cls))) return false;
+            if(filterTypes.length && !filterTypes.some(t => item.types.includes(t))) return false;
+            if(filterStats.length && !filterStats.every(s => item.stats.includes(s))) return false;
+            if(searchQuery && !item.name.toLowerCase().includes(searchQuery.toLowerCase())) return false;
             return true;
         };
-
         function addDefaultsAndIds(serverData) {
             const zones = serverData.zones.map(zone => {
                 zone.id = zone.id || generateId();
@@ -908,6 +431,8 @@
                         statValues: (item.statValues && typeof item.statValues === 'object') ? {...item.statValues} : {},
                         variants: Array.isArray(item.variants) ? item.variants.map(v => ({
                             rarity: v.rarity || 'blue',
+                            damageMin: v.damageMin !== undefined ? v.damageMin : (v.damage ? parseInt(v.damage.split('-')[0]) || 0 : 0),
+                            damageMax: v.damageMax !== undefined ? v.damageMax : (v.damage ? parseInt(v.damage.split('-')[1]) || 0 : 0),
                             statValues: (v.statValues && typeof v.statValues === 'object') ? {...v.statValues} : {}
                         })) : [],
                         skill1: item.skill1 || '',
@@ -922,120 +447,87 @@
             });
             return { zones };
         }
-
-        async function fetchData(url) {
-            const resp = await fetch(url, { cache: 'no-cache' });
-            if (!resp.ok) throw new Error('Fetch failed');
-            return await resp.json();
-        }
-
+        async function fetchData(url) { const resp = await fetch(url, { cache: 'no-cache' }); if(!resp.ok) throw new Error('Fetch failed'); return await resp.json(); }
         async function loadData() {
             let serverData = null, serverVersion = '0';
-            try {
-                serverData = await fetchData(DATA_URL);
-                serverVersion = serverData.version || '0';
-            } catch (e) {
-                console.warn('Could not load default JSON, trying localStorage fallback.', e);
-            }
-
-            if (!serverData) {
-                try {
-                    const raw = localStorage.getItem(STORAGE_KEY);
-                    if (raw) serverData = JSON.parse(raw);
-                } catch (e) {}
-            }
-
-            if (!serverData || !Array.isArray(serverData.zones)) {
-                return { zones: [], version: '0' };
-            }
-
+            try { serverData = await fetchData(DATA_URL); serverVersion = serverData.version || '0'; } catch(e) {}
+            if(!serverData) { try { const raw = localStorage.getItem(STORAGE_KEY); if(raw) serverData = JSON.parse(raw); } catch(e) {} }
+            if(!serverData || !Array.isArray(serverData.zones)) return { zones:[], version:'0' };
             try {
                 const oldRaw = localStorage.getItem(STORAGE_KEY);
-                if (oldRaw) {
+                if(oldRaw) {
                     const oldData = JSON.parse(oldRaw);
-                    if (oldData && Array.isArray(oldData.zones)) {
+                    if(oldData && Array.isArray(oldData.zones)) {
                         const oldZoneMap = new Map(oldData.zones.map(z => [z.id, z._open]));
                         const oldDungeonMap = new Map();
                         oldData.zones.forEach(z => z.dungeons.forEach(d => oldDungeonMap.set(d.id, d._open)));
-
                         serverData.zones.forEach(zone => {
-                            if (oldZoneMap.has(zone.id)) zone._open = oldZoneMap.get(zone.id);
-                            zone.dungeons.forEach(d => {
-                                if (oldDungeonMap.has(d.id)) d._open = oldDungeonMap.get(d.id);
-                            });
+                            if(oldZoneMap.has(zone.id)) zone._open = oldZoneMap.get(zone.id);
+                            zone.dungeons.forEach(d => { if(oldDungeonMap.has(d.id)) d._open = oldDungeonMap.get(d.id); });
                         });
                     }
                 }
-            } catch (e) {}
-
+            } catch(e) {}
             return { zones: serverData.zones, version: serverVersion };
         }
-
         function saveState() {
-            const clean = {
-                zones: appData.zones.map(z => ({
-                    id: z.id, name: z.name, _open: z._open,
-                    dungeons: z.dungeons.map(d => ({
-                        id: d.id, name: d.name, _open: d._open,
-                        loot: d.loot.map(l => ({
-                            id: l.id, name: l.name,
-                            types: [...l.types], classes: [...l.classes], stats: [...l.stats],
-                            statValues: (l.statValues && typeof l.statValues === 'object') ? {...l.statValues} : {},
-                            variants: l.variants.map(v => ({
-                                rarity: v.rarity,
-                                statValues: {...v.statValues}
-                            })),
-                            skill1: l.skill1, skill2: l.skill2, skill3: l.skill3,
-                            passive: l.passive, trinketPassive: l.trinketPassive
-                        }))
+            const clean = { zones: appData.zones.map(z => ({
+                id: z.id, name: z.name, _open: z._open,
+                dungeons: z.dungeons.map(d => ({
+                    id: d.id, name: d.name, _open: d._open,
+                    loot: d.loot.map(l => ({
+                        id: l.id, name: l.name,
+                        types: [...l.types], classes: [...l.classes], stats: [...l.stats],
+                        statValues: (l.statValues && typeof l.statValues === 'object') ? {...l.statValues} : {},
+                        variants: l.variants.map(v => ({
+                            rarity: v.rarity,
+                            damageMin: v.damageMin !== undefined ? v.damageMin : 0,
+                            damageMax: v.damageMax !== undefined ? v.damageMax : 0,
+                            statValues: {...v.statValues}
+                        })),
+                        skill1: l.skill1, skill2: l.skill2, skill3: l.skill3,
+                        passive: l.passive, trinketPassive: l.trinketPassive
                     }))
                 }))
-            };
+            })) };
             localStorage.setItem(STORAGE_KEY, JSON.stringify(clean));
         }
-
         async function checkForUpdate() {
             try {
                 const serverData = await fetchData(DATA_URL);
                 const serverVer = serverData.version || '0';
                 const localVer = localStorage.getItem(VERSION_KEY) || '0';
-                if (serverVer > localVer && Array.isArray(serverData.zones)) {
+                if(serverVer > localVer && Array.isArray(serverData.zones)) {
                     const newData = addDefaultsAndIds(serverData);
                     const oldZoneMap = new Map(appData.zones.map(z => [z.id, z._open]));
                     const oldDungeonMap = new Map();
                     appData.zones.forEach(z => z.dungeons.forEach(d => oldDungeonMap.set(d.id, d._open)));
-
                     newData.zones.forEach(zone => {
-                        if (oldZoneMap.has(zone.id)) zone._open = oldZoneMap.get(zone.id);
-                        zone.dungeons.forEach(d => {
-                            if (oldDungeonMap.has(d.id)) d._open = oldDungeonMap.get(d.id);
-                        });
+                        if(oldZoneMap.has(zone.id)) zone._open = oldZoneMap.get(zone.id);
+                        zone.dungeons.forEach(d => { if(oldDungeonMap.has(d.id)) d._open = oldDungeonMap.get(d.id); });
                     });
-
                     appData.zones = newData.zones;
                     localStorage.setItem(VERSION_KEY, serverVer);
                     saveState();
                     renderAll();
                     showToast('🔄 Data updated to version ' + serverVer);
                 }
-            } catch (e) { console.warn('Update check failed:', e); }
+            } catch(e) { console.warn('Update check failed:', e); }
         }
-
         function renderDungeonName(name) {
-            if (!name) return '';
+            if(!name) return '';
             let formatted = escapeHtml(name);
             formatted = formatted.replace(/Lv(\d+)/gi, '<span class="dungeon-lv">Lv$1</span>');
             formatted = formatted.replace(/Full Dungeon/gi, '<span class="dungeon-tag-full">Full Dungeon</span>');
             formatted = formatted.replace(/Boss Only/gi, '<span class="dungeon-tag-boss">Boss Only</span>');
             return formatted;
         }
-
         function buildStatTagsHtml(item, variantIndex = null) {
             let statValues = {};
-            if (item.variants && item.variants.length > 1) {
+            if(item.variants && item.variants.length > 1) {
                 const selectedIdx = variantIndex !== null ? variantIndex : (item.variants.findIndex(v => v.rarity === 'blue') !== -1 ? item.variants.findIndex(v => v.rarity === 'blue') : 0);
                 statValues = item.variants[selectedIdx].statValues;
-            } else if (item.variants && item.variants.length === 1) {
+            } else if(item.variants && item.variants.length === 1) {
                 statValues = item.variants[0].statValues;
             } else {
                 statValues = item.statValues || {};
@@ -1046,13 +538,9 @@
                 return `<span class="tag stat-tag stat-${toSlug(s)}">${escapeHtml(s)}${val}</span>`;
             }).join('');
         }
-
         function buildRaritySwitcherHtml(item) {
-            if (!item.variants || item.variants.length <= 1) return '';
-            const sortedVariants = [...item.variants].sort((a, b) => {
-                const order = { blue: 0, purple: 1, legendary: 2 };
-                return (order[a.rarity] || 0) - (order[b.rarity] || 0);
-            });
+            if(!item.variants || item.variants.length <= 1) return '';
+            const sortedVariants = [...item.variants].sort((a,b) => { const order={blue:0,purple:1,legendary:2}; return (order[a.rarity]||0) - (order[b.rarity]||0); });
             const defaultRarity = sortedVariants.find(v => v.rarity === 'blue') || sortedVariants[0];
             const defaultIndex = sortedVariants.indexOf(defaultRarity);
             let buttons = sortedVariants.map((v, idx) => {
@@ -1062,7 +550,6 @@
             }).join('');
             return `<div class="rarity-switcher" data-default-index="${defaultIndex}">${buttons}</div>`;
         }
-
         function renderItemRow(item, index) {
             const primaryType = getPrimaryType(item);
             const typeColorClass = getTypeColorClass(primaryType);
@@ -1070,413 +557,236 @@
             const sortedClasses = sortByOrder(item.classes, CLASS_OPTIONS);
             const typeTags = sortedTypes.map(t => `<span class="tag type-tag type-${toSlug(t)}">${escapeHtml(t)}</span>`).join('');
             const classTags = sortedClasses.map(cls => `<span class="tag class-${cls}">${CLASS_LABELS[cls]}</span>`).join('');
-
             const switcherHtml = buildRaritySwitcherHtml(item);
             const defaultIndex = item.variants && item.variants.length > 1 ? (item.variants.findIndex(v => v.rarity === 'blue') !== -1 ? item.variants.findIndex(v => v.rarity === 'blue') : 0) : 0;
             const statTagsHtml = buildStatTagsHtml(item, defaultIndex);
-
             let detailHtml = '';
-            if ((isWeapon(item) || item.types.includes('Shield')) && hasAbilities(item)) {
+            if((isWeapon(item) || item.types.includes('Shield')) && hasAbilities(item)) {
                 const abils = [];
-                if (item.skill1) abils.push(`<div><strong class="${typeColorClass}">Skill 1:</strong> ${escapeHtml(item.skill1)}</div>`);
-                if (item.skill2) abils.push(`<div><strong class="${typeColorClass}">Skill 2:</strong> ${escapeHtml(item.skill2)}</div>`);
-                if (item.skill3) abils.push(`<div><strong class="${typeColorClass}">Skill 3:</strong> ${escapeHtml(item.skill3)}</div>`);
-                if (item.passive) abils.push(`<div><strong class="${typeColorClass}">Passive:</strong> ${escapeHtml(item.passive)}</div>`);
+                if(item.skill1) abils.push(`<div><strong class="${typeColorClass}">Skill 1:</strong> ${escapeHtml(item.skill1)}</div>`);
+                if(item.skill2) abils.push(`<div><strong class="${typeColorClass}">Skill 2:</strong> ${escapeHtml(item.skill2)}</div>`);
+                if(item.skill3) abils.push(`<div><strong class="${typeColorClass}">Skill 3:</strong> ${escapeHtml(item.skill3)}</div>`);
+                if(item.passive) abils.push(`<div><strong class="${typeColorClass}">Passive:</strong> ${escapeHtml(item.passive)}</div>`);
                 detailHtml = abils.join('');
-            } else if (isTrinket(item) && hasTrinketPassive(item)) {
+            } else if(isTrinket(item) && hasTrinketPassive(item)) {
                 detailHtml = `<div><strong class="${typeColorClass}">Passive:</strong> ${escapeHtml(item.trinketPassive)}</div>`;
             }
-
+            let damageHtml = '';
+            if((isWeapon(item) || item.types.includes('Shield')) && item.variants && item.variants.length > 0) {
+                const defaultVariant = item.variants.find(v => v.rarity === 'blue') || item.variants[0];
+                const dmgMin = defaultVariant.damageMin !== undefined ? defaultVariant.damageMin : '';
+                const dmgMax = defaultVariant.damageMax !== undefined ? defaultVariant.damageMax : '';
+                if(dmgMin !== '' && dmgMax !== '') {
+                    damageHtml = `<div class="item-damage-line" data-item-damage="${item.id}"><strong class="${typeColorClass}">Damage:</strong> ${dmgMin} - ${dmgMax}</div>`;
+                }
+            }
+            detailHtml = damageHtml + detailHtml;
             const rowClass = detailHtml ? ' item-row-has-details' : '';
             const clickHandler = detailHtml ? ` data-action="toggle-item-detail" data-item-id="${item.id}"` : '';
-
             return `<tr class="item-main-row${rowClass}" data-item-id="${item.id}"${clickHandler}>
-                <td>
-                    <span class="item-name ${typeColorClass}">
-                        ${escapeHtml(item.name)}
-                        ${detailHtml ? ' <span class="detail-indicator">▶</span>' : ''}
-                    </span>
-                </td>
+                <td><span class="item-name ${typeColorClass}">${escapeHtml(item.name)}${detailHtml ? ' <span class="detail-indicator">▶</span>' : ''}</span></td>
                 <td><div class="tag-container">${typeTags}</div></td>
                 <td><div class="tag-container">${classTags}</div></td>
-                <td>
-                    ${switcherHtml}
-                    <div class="tag-container stat-tags-container">${statTagsHtml}</div>
-                </td>
+                <td>${switcherHtml}<div class="tag-container stat-tags-container">${statTagsHtml}</div></td>
             </tr>
-            ${detailHtml ? `
-            <tr class="item-detail-row" data-item-detail="${item.id}" style="display:none;">
-                <td colspan="4" class="item-detail-cell">
-                    <div class="item-detail-content">${detailHtml}</div>
-                </td>
-            </tr>` : ''}`;
+            ${detailHtml ? `<tr class="item-detail-row" data-item-detail="${item.id}" style="display:none;"><td colspan="4" class="item-detail-cell"><div class="item-detail-content">${detailHtml}</div></td></tr>` : ''}`;
         }
-
         function renderLootTable(lootItems) {
-            if (lootItems.length === 0) return '';
+            if(lootItems.length === 0) return '';
             const rows = lootItems.map(renderItemRow).join('');
-            return `<table class="loot-table">
-                <thead><tr>
-                    <th style="width:18%;">Item Name</th>
-                    <th style="width:18%;">Item Type</th>
-                    <th style="width:20%;">Classes</th>
-                    <th style="width:38%;">Stats</th>
-                </tr></thead>
-                <tbody>${rows}</tbody>
-            </table>`;
+            return `<table class="loot-table"><thead><tr><th style="width:18%;">Item Name</th><th style="width:18%;">Item Type</th><th style="width:20%;">Classes</th><th style="width:38%;">Stats</th></tr></thead><tbody>${rows}</tbody></table>`;
         }
-
         function renderDungeons(zone) {
-            const visibleDungeons = zone.dungeons
-                .map(dungeon => ({ dungeon, filtered: dungeon.loot.filter(itemPassesFilter) }))
-                .filter(({ filtered }) => filtered.length > 0);
-
-            if (visibleDungeons.length === 0) return '';
-
-            const dList = visibleDungeons.map(({ dungeon, filtered }) => {
-                const sortedLoot = [...filtered].sort((a, b) => {
-                    const rankA = getTypeGroupRank(getPrimaryType(a));
-                    const rankB = getTypeGroupRank(getPrimaryType(b));
-                    if (rankA !== rankB) return rankA - rankB;
-                    const subA = getTypeSubOrder(getPrimaryType(a));
-                    const subB = getTypeSubOrder(getPrimaryType(b));
-                    if (subA !== subB) return subA - subB;
-                    return a.name.localeCompare(b.name);
-                });
-
+            const visibleDungeons = zone.dungeons.map(dungeon => ({ dungeon, filtered: dungeon.loot.filter(itemPassesFilter) })).filter(({filtered}) => filtered.length > 0);
+            if(visibleDungeons.length === 0) return '';
+            const dList = visibleDungeons.map(({dungeon, filtered}) => {
+                const sortedLoot = [...filtered].sort((a,b) => { const rankA=getTypeGroupRank(getPrimaryType(a)), rankB=getTypeGroupRank(getPrimaryType(b)); if(rankA!==rankB) return rankA-rankB; const subA=getTypeSubOrder(getPrimaryType(a)), subB=getTypeSubOrder(getPrimaryType(b)); if(subA!==subB) return subA-subB; return a.name.localeCompare(b.name); });
                 const openClass = dungeon._open ? ' open' : '';
                 return `<div class="dungeon-card${openClass}" data-dungeon-id="${dungeon.id}">
                     <div class="dungeon-header" data-action="toggle-dungeon" data-zone-id="${zone.id}" data-dungeon-id="${dungeon.id}">
-                        <span class="dungeon-chevron">▶</span>
-                        <span class="dungeon-icon">🏰</span>
-                        <div class="dungeon-info">
-                            <div class="dungeon-name-display">${renderDungeonName(dungeon.name)}</div>
-                            <span class="badge badge-item">${filtered.length} item${filtered.length !== 1 ? 's' : ''}</span>
-                        </div>
+                        <span class="dungeon-chevron">▶</span><span class="dungeon-icon">🏰</span>
+                        <div class="dungeon-info"><div class="dungeon-name-display">${renderDungeonName(dungeon.name)}</div><span class="badge badge-item">${filtered.length} item${filtered.length !== 1 ? 's' : ''}</span></div>
                     </div>
                     <div class="dungeon-body">${renderLootTable(sortedLoot)}</div>
                 </div>`;
             }).join('');
-
             return `<div class="dungeons-list">${dList}</div>`;
         }
-
         function renderAll() {
             const container = document.getElementById('zones-container');
             allItemsMap.clear();
             appData.zones.forEach(z => z.dungeons.forEach(d => d.loot.forEach(item => allItemsMap.set(item.id, item))));
-
-            if (appData.zones.length === 0) {
-                container.innerHTML = `<div style="text-align:center;padding:60px 20px;color:var(--text-dim);">
-                    <div style="font-size:3rem;margin-bottom:16px;">🗺️</div>
-                    <p style="font-size:1.1rem;margin-bottom:8px;">No zones available.</p>
-                    <p style="font-size:0.85rem;">Data will appear once the adventure begins.</p>
-                </div>`;
+            if(appData.zones.length === 0) {
+                container.innerHTML = `<div style="text-align:center;padding:60px 20px;color:var(--text-dim);"><div style="font-size:3rem;margin-bottom:16px;">🗺️</div><p style="font-size:1.1rem;margin-bottom:8px;">No zones available.</p><p style="font-size:0.85rem;">Data will appear once the adventure begins.</p></div>`;
                 return;
             }
-
-            const visibleZones = appData.zones
-                .map(zone => {
-                    const total = zone.dungeons.reduce((sum, d) => sum + d.loot.filter(itemPassesFilter).length, 0);
-                    return { zone, total };
-                })
-                .filter(({ total }) => total > 0);
-
-            if (visibleZones.length === 0) {
-                container.innerHTML = `<div style="text-align:center;padding:60px 20px;color:var(--text-dim);">
-                    <div style="font-size:3rem;margin-bottom:16px;">🔍</div>
-                    <p style="font-size:1.1rem;margin-bottom:8px;">No zones or dungeons match your filters.</p>
-                    <p style="font-size:0.85rem;">Try adjusting the search or clearing some filters.</p>
-                </div>`;
+            const visibleZones = appData.zones.map(zone => { const total = zone.dungeons.reduce((sum,d) => sum + d.loot.filter(itemPassesFilter).length, 0); return {zone, total}; }).filter(({total}) => total > 0);
+            if(visibleZones.length === 0) {
+                container.innerHTML = `<div style="text-align:center;padding:60px 20px;color:var(--text-dim);"><div style="font-size:3rem;margin-bottom:16px;">🔍</div><p style="font-size:1.1rem;margin-bottom:8px;">No zones or dungeons match your filters.</p><p style="font-size:0.85rem;">Try adjusting the search or clearing some filters.</p></div>`;
                 return;
             }
-
-            const zonesHtml = visibleZones.map(({ zone, total }) => {
+            const zonesHtml = visibleZones.map(({zone, total}) => {
                 const openClass = zone._open ? ' open' : '';
                 const dungeonCount = zone.dungeons.length;
                 return `<div class="zone-card${openClass}" data-zone-id="${zone.id}">
                     <div class="zone-header" data-action="toggle-zone" data-zone-id="${zone.id}">
-                        <span class="zone-chevron">▶</span>
-                        <span class="zone-icon">🏞️</span>
-                        <div class="zone-info">
-                            <div class="zone-name-display">${escapeHtml(zone.name)}</div>
-                            <div class="zone-meta">
-                                <span class="badge badge-dungeon">${dungeonCount} dungeon${dungeonCount !== 1 ? 's' : ''}</span>
-                                <span class="badge badge-item">${total} item${total !== 1 ? 's' : ''}</span>
-                            </div>
-                        </div>
+                        <span class="zone-chevron">▶</span><span class="zone-icon">🏞️</span>
+                        <div class="zone-info"><div class="zone-name-display">${escapeHtml(zone.name)}</div>
+                        <div class="zone-meta"><span class="badge badge-dungeon">${dungeonCount} dungeon${dungeonCount !== 1 ? 's' : ''}</span><span class="badge badge-item">${total} item${total !== 1 ? 's' : ''}</span></div></div>
                     </div>
                     <div class="zone-body">${renderDungeons(zone)}</div>
                 </div>`;
             }).join('');
-
             container.innerHTML = zonesHtml;
             updateFilterBarUI();
         }
-
         function updateTypeButtonCounts() {
             document.querySelectorAll('#type-dropdown .type-btn').forEach(btn => {
                 const type = btn.dataset.type;
                 const allItems = appData.zones.flatMap(z => z.dungeons.flatMap(d => d.loot));
                 const count = allItems.filter(item => {
-                    if (filterClasses.length && !filterClasses.some(cls => item.classes.includes(cls))) return false;
-                    if (filterStats.length && !filterStats.every(s => item.stats.includes(s))) return false;
-                    if (searchQuery && !item.name.toLowerCase().includes(searchQuery.toLowerCase())) return false;
+                    if(filterClasses.length && !filterClasses.some(cls => item.classes.includes(cls))) return false;
+                    if(filterStats.length && !filterStats.every(s => item.stats.includes(s))) return false;
+                    if(searchQuery && !item.name.toLowerCase().includes(searchQuery.toLowerCase())) return false;
                     return item.types.includes(type);
                 }).length;
                 btn.innerHTML = `${type} <span class="item-count">(${count})</span>`;
             });
         }
-
         function updateFilterBarUI() {
             document.querySelectorAll('#class-dropdown .class-btn').forEach(b => b.classList.toggle('active', filterClasses.includes(b.dataset.class)));
             document.querySelectorAll('#type-dropdown .type-btn').forEach(b => b.classList.toggle('active', filterTypes.includes(b.dataset.type)));
             document.querySelectorAll('#stat-dropdown .stat-btn').forEach(b => b.classList.toggle('active', filterStats.includes(b.dataset.stat)));
-            
-            const classCount = document.getElementById('class-count');
-            classCount.textContent = filterClasses.length;
-            classCount.style.display = filterClasses.length ? 'inline' : 'none';
-            
-            const typeCount = document.getElementById('type-count');
-            typeCount.textContent = filterTypes.length;
-            typeCount.style.display = filterTypes.length ? 'inline' : 'none';
-            
-            const statCount = document.getElementById('stat-count');
-            statCount.textContent = filterStats.length;
-            statCount.style.display = filterStats.length ? 'inline' : 'none';
-            
+            const classCount = document.getElementById('class-count'); classCount.textContent = filterClasses.length; classCount.style.display = filterClasses.length ? 'inline' : 'none';
+            const typeCount = document.getElementById('type-count'); typeCount.textContent = filterTypes.length; typeCount.style.display = filterTypes.length ? 'inline' : 'none';
+            const statCount = document.getElementById('stat-count'); statCount.textContent = filterStats.length; statCount.style.display = filterStats.length ? 'inline' : 'none';
             updateTypeButtonCounts();
-
             const clearBtn = document.getElementById('clear-all-btn');
-            if (filterClasses.length === 0 && filterTypes.length === 0 && filterStats.length === 0 && !searchQuery) {
-                clearBtn.style.display = 'none';
-            } else {
-                clearBtn.style.display = '';
-            }
+            if(filterClasses.length === 0 && filterTypes.length === 0 && filterStats.length === 0 && !searchQuery) { clearBtn.style.display = 'none'; } else { clearBtn.style.display = ''; }
         }
-
         function toggleFilter(type, value) {
-            if (type === 'class') {
-                const idx = filterClasses.indexOf(value);
-                idx === -1 ? filterClasses.push(value) : filterClasses.splice(idx, 1);
-            } else if (type === 'type') {
-                const idx = filterTypes.indexOf(value);
-                idx === -1 ? filterTypes.push(value) : filterTypes.splice(idx, 1);
-            } else if (type === 'stat') {
-                const idx = filterStats.indexOf(value);
-                idx === -1 ? filterStats.push(value) : filterStats.splice(idx, 1);
-            }
+            if(type === 'class') { const idx = filterClasses.indexOf(value); idx === -1 ? filterClasses.push(value) : filterClasses.splice(idx,1); }
+            else if(type === 'type') { const idx = filterTypes.indexOf(value); idx === -1 ? filterTypes.push(value) : filterTypes.splice(idx,1); }
+            else if(type === 'stat') { const idx = filterStats.indexOf(value); idx === -1 ? filterStats.push(value) : filterStats.splice(idx,1); }
             renderAll();
         }
-
-        window.clearAllFilters = function() {
-            filterClasses = []; filterTypes = []; filterStats = [];
-            searchQuery = '';
-            document.getElementById('search-input').value = '';
-            renderAll();
-            showToast('All filters cleared');
-        };
-
-        window.toggleZone = function(zoneId) {
-            const zone = appData.zones.find(z => z.id === zoneId);
-            if (zone) { zone._open = !zone._open; saveState(); renderAll(); }
-        };
-
-        window.toggleDungeon = function(zoneId, dungeonId) {
-            const zone = appData.zones.find(z => z.id === zoneId);
-            if (!zone) return;
-            const dungeon = zone.dungeons.find(d => d.id === dungeonId);
-            if (dungeon) { dungeon._open = !dungeon._open; saveState(); renderAll(); }
-        };
-
+        window.clearAllFilters = function() { filterClasses=[]; filterTypes=[]; filterStats=[]; searchQuery=''; document.getElementById('search-input').value=''; renderAll(); showToast('All filters cleared'); };
+        window.toggleZone = function(zoneId) { const zone=appData.zones.find(z=>z.id===zoneId); if(zone){ zone._open=!zone._open; saveState(); renderAll(); } };
+        window.toggleDungeon = function(zoneId,dungeonId) { const zone=appData.zones.find(z=>z.id===zoneId); if(!zone) return; const dungeon=zone.dungeons.find(d=>d.id===dungeonId); if(dungeon){ dungeon._open=!dungeon._open; saveState(); renderAll(); } };
         function setupItemDetailToggle() {
             const container = document.getElementById('zones-container');
             container.addEventListener('click', (e) => {
-                if (e.target.closest('.rarity-btn')) return;
+                if(e.target.closest('.rarity-btn')) return;
                 const mainRow = e.target.closest('[data-action="toggle-item-detail"]');
-                if (!mainRow) return;
-
+                if(!mainRow) return;
                 const itemId = mainRow.dataset.itemId;
                 const detailRow = container.querySelector(`.item-detail-row[data-item-detail="${itemId}"]`);
-                if (!detailRow) return;
-
+                if(!detailRow) return;
                 const isOpen = detailRow.style.display !== 'none';
-                if (isOpen) {
-                    detailRow.style.display = 'none';
-                    mainRow.classList.remove('expanded');
-                } else {
-                    container.querySelectorAll('.item-detail-row[style*="display: block"]').forEach(r => {
-                        r.style.display = 'none';
-                        const id = r.dataset.itemDetail;
-                        if (id) {
-                            const main = container.querySelector(`.item-main-row[data-item-id="${id}"]`);
-                            if (main) main.classList.remove('expanded');
-                        }
-                    });
-                    detailRow.style.display = 'table-row';
-                    mainRow.classList.add('expanded');
+                if(isOpen) { detailRow.style.display = 'none'; mainRow.classList.remove('expanded'); }
+                else {
+                    container.querySelectorAll('.item-detail-row[style*="display: block"]').forEach(r => { r.style.display = 'none'; const id=r.dataset.itemDetail; if(id){ const main=container.querySelector(`.item-main-row[data-item-id="${id}"]`); if(main) main.classList.remove('expanded'); } });
+                    detailRow.style.display = 'table-row'; mainRow.classList.add('expanded');
                 }
             });
         }
-
         function setupRaritySwitcher() {
             const container = document.getElementById('zones-container');
             container.addEventListener('click', (e) => {
                 const btn = e.target.closest('.rarity-btn');
-                if (!btn) return;
+                if(!btn) return;
                 e.stopPropagation();
                 const switcher = btn.closest('.rarity-switcher');
                 const row = switcher.closest('tr.item-main-row');
                 const itemId = row.dataset.itemId;
                 const item = allItemsMap.get(itemId);
-                if (!item || !item.variants) return;
-
+                if(!item || !item.variants) return;
                 const rarity = btn.dataset.rarity;
                 const variantIndex = item.variants.findIndex(v => v.rarity === rarity);
-                if (variantIndex === -1) return;
-
+                if(variantIndex === -1) return;
                 switcher.querySelectorAll('.rarity-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-
                 const statContainer = row.querySelector('.stat-tags-container');
-                if (statContainer) {
-                    statContainer.innerHTML = buildStatTagsHtml(item, variantIndex);
+                if(statContainer) { statContainer.innerHTML = buildStatTagsHtml(item, variantIndex); }
+                const damageLine = row.closest('table')?.querySelector(`.item-damage-line[data-item-damage="${itemId}"]`);
+                if(damageLine && item.variants[variantIndex]) {
+                    const v = item.variants[variantIndex];
+                    const dmgMin = v.damageMin !== undefined ? v.damageMin : '';
+                    const dmgMax = v.damageMax !== undefined ? v.damageMax : '';
+                    if(dmgMin !== '' && dmgMax !== '') {
+                        damageLine.innerHTML = `<strong class="${getTypeColorClass(getPrimaryType(item))}">Damage:</strong> ${dmgMin} - ${dmgMax}`;
+                    } else {
+                        damageLine.innerHTML = '';
+                    }
                 }
             });
         }
-
         function showToast(msg) {
             const container = document.getElementById('toast-container');
-            const el = document.createElement('div');
-            el.className = 'toast';
-            el.textContent = msg;
-            container.appendChild(el);
-            setTimeout(() => el.remove(), 2200);
+            const el = document.createElement('div'); el.className = 'toast'; el.textContent = msg;
+            container.appendChild(el); setTimeout(() => el.remove(), 2200);
         }
-
         function setupSuggestionModal() {
             const modal = document.getElementById('suggestion-modal');
             const openBtn = document.getElementById('open-suggestion-btn');
             const closeBtn = document.getElementById('close-suggestion-modal');
             const cancelBtn = document.getElementById('cancel-suggestion-modal');
             const form = document.getElementById('suggestion-form');
-
             function openModal() { modal.classList.add('active'); }
             function closeModal() { modal.classList.remove('active'); form.reset(); }
-
             openBtn.addEventListener('click', openModal);
             closeBtn.addEventListener('click', closeModal);
             cancelBtn.addEventListener('click', closeModal);
-            modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-
+            modal.addEventListener('click', (e) => { if(e.target === modal) closeModal(); });
             form.addEventListener('submit', (e) => {
                 e.preventDefault();
                 const message = form.querySelector('textarea[name="message"]').value.trim();
-                if (!message) return;
-
-                const iframe = document.createElement('iframe');
-                iframe.name = 'hidden-suggestion-iframe';
-                iframe.style.display = 'none';
-                document.body.appendChild(iframe);
-
-                const formEl = document.createElement('form');
-                formEl.method = 'POST';
-                formEl.action = FORM_URL;
-                formEl.target = 'hidden-suggestion-iframe';
-                formEl.style.display = 'none';
+                if(!message) return;
+                const iframe = document.createElement('iframe'); iframe.name = 'hidden-suggestion-iframe'; iframe.style.display = 'none'; document.body.appendChild(iframe);
+                const formEl = document.createElement('form'); formEl.method = 'POST'; formEl.action = FORM_URL; formEl.target = 'hidden-suggestion-iframe'; formEl.style.display = 'none';
                 formEl.innerHTML = `<input type="text" name="${ENTRY_ID}" value="${escapeHtml(message)}">`;
-                document.body.appendChild(formEl);
-                formEl.submit();
-
-                setTimeout(() => {
-                    document.body.removeChild(formEl);
-                    document.body.removeChild(iframe);
-                }, 1000);
-
-                showToast('✅ Suggestion sent! Thank you.');
-                closeModal();
+                document.body.appendChild(formEl); formEl.submit();
+                setTimeout(() => { document.body.removeChild(formEl); document.body.removeChild(iframe); }, 1000);
+                showToast('✅ Suggestion sent! Thank you.'); closeModal();
             });
         }
-
         function buildFilterButtons() {
             const classContainer = document.getElementById('class-dropdown');
-            CLASS_OPTIONS.forEach(cls => {
-                const btn = document.createElement('button');
-                btn.className = 'filter-btn class-btn';
-                btn.dataset.class = cls;
-                btn.textContent = CLASS_LABELS[cls];
-                btn.addEventListener('click', () => toggleFilter('class', cls));
-                classContainer.appendChild(btn);
-            });
-
+            CLASS_OPTIONS.forEach(cls => { const btn = document.createElement('button'); btn.className = 'filter-btn class-btn'; btn.dataset.class = cls; btn.textContent = CLASS_LABELS[cls]; btn.addEventListener('click', () => toggleFilter('class', cls)); classContainer.appendChild(btn); });
             const typeContainer = document.getElementById('type-dropdown');
-            TYPE_OPTIONS.forEach(type => {
-                const btn = document.createElement('button');
-                btn.className = 'filter-btn type-btn';
-                btn.dataset.type = type;
-                btn.innerHTML = `${type} <span class="item-count">(0)</span>`;
-                btn.addEventListener('click', () => toggleFilter('type', type));
-                typeContainer.appendChild(btn);
-            });
-
+            TYPE_OPTIONS.forEach(type => { const btn = document.createElement('button'); btn.className = 'filter-btn type-btn'; btn.dataset.type = type; btn.innerHTML = `${type} <span class="item-count">(0)</span>`; btn.addEventListener('click', () => toggleFilter('type', type)); typeContainer.appendChild(btn); });
             const statContainer = document.getElementById('stat-dropdown');
-            STAT_OPTIONS.forEach(stat => {
-                const btn = document.createElement('button');
-                btn.className = 'filter-btn stat-btn';
-                btn.dataset.stat = stat;
-                btn.textContent = stat;
-                btn.addEventListener('click', () => toggleFilter('stat', stat));
-                statContainer.appendChild(btn);
-            });
+            STAT_OPTIONS.forEach(stat => { const btn = document.createElement('button'); btn.className = 'filter-btn stat-btn'; btn.dataset.stat = stat; btn.textContent = stat; btn.addEventListener('click', () => toggleFilter('stat', stat)); statContainer.appendChild(btn); });
         }
-
         function setupFilterDropdowns() {
             document.querySelectorAll('.filter-group-header').forEach(header => {
                 header.addEventListener('click', (e) => {
                     const wrapper = header.closest('.filter-group-wrapper');
                     const isOpen = wrapper.classList.contains('open');
                     document.querySelectorAll('.filter-group-wrapper').forEach(w => w.classList.remove('open'));
-                    if (!isOpen) wrapper.classList.add('open');
+                    if(!isOpen) wrapper.classList.add('open');
                 });
             });
-            document.addEventListener('click', (e) => {
-                if (!e.target.closest('.filter-group-wrapper')) {
-                    document.querySelectorAll('.filter-group-wrapper').forEach(w => w.classList.remove('open'));
-                }
-            });
+            document.addEventListener('click', (e) => { if(!e.target.closest('.filter-group-wrapper')) { document.querySelectorAll('.filter-group-wrapper').forEach(w => w.classList.remove('open')); } });
         }
-
         function setupGlobalListeners() {
             const searchInput = document.getElementById('search-input');
             let debounceTimer;
-            searchInput.addEventListener('input', () => {
-                clearTimeout(debounceTimer);
-                debounceTimer = setTimeout(() => { searchQuery = searchInput.value.trim(); renderAll(); }, 250);
-            });
-
+            searchInput.addEventListener('input', () => { clearTimeout(debounceTimer); debounceTimer = setTimeout(() => { searchQuery = searchInput.value.trim(); renderAll(); }, 250); });
             document.getElementById('clear-all-btn').addEventListener('click', window.clearAllFilters);
-
             document.getElementById('zones-container').addEventListener('click', (e) => {
                 const zoneHeader = e.target.closest('[data-action="toggle-zone"]');
-                if (zoneHeader) {
-                    toggleZone(zoneHeader.dataset.zoneId);
-                    return;
-                }
+                if(zoneHeader) { toggleZone(zoneHeader.dataset.zoneId); return; }
                 const dungeonHeader = e.target.closest('[data-action="toggle-dungeon"]');
-                if (dungeonHeader) {
-                    toggleDungeon(dungeonHeader.dataset.zoneId, dungeonHeader.dataset.dungeonId);
-                }
+                if(dungeonHeader) { toggleDungeon(dungeonHeader.dataset.zoneId, dungeonHeader.dataset.dungeonId); }
             });
         }
-
         async function init() {
             const loaded = await loadData();
             appData = { zones: loaded.zones };
-
             appData.zones = addDefaultsAndIds({ zones: appData.zones }).zones;
             localStorage.setItem(VERSION_KEY, loaded.version || '0');
             saveState();
-
             buildFilterButtons();
             setupFilterDropdowns();
             setupGlobalListeners();
@@ -1485,13 +795,10 @@
             setupSuggestionModal();
             renderAll();
             document.body.classList.remove('loading');
-
-            setInterval(checkForUpdate, 5 * 60 * 1000);
+            setInterval(checkForUpdate, 5*60*1000);
             checkForUpdate();
-
             console.log('%c🗺️ Farever %c— Zones & dungeons hidden when empty.', 'color:#c9a44b;font-size:1.2em;', 'color:#d5d0c8;');
         }
-
         init();
     })();
     </script>
