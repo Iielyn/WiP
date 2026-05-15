@@ -578,21 +578,13 @@
                 detailHtml = `<div><strong class="${typeColorClass}">Passive:</strong> ${escapeHtml(item.trinketPassive)}</div>`;
             }
             let damageHtml = '';
-            if(isWeapon(item) && item.variants && item.variants.length > 0) {
-                const defaultVariant = item.variants.find(v => v.rarity === 'blue') || item.variants[0];
-                const dmgMin = defaultVariant.damageMin !== undefined ? defaultVariant.damageMin : '';
-                const dmgMax = defaultVariant.damageMax !== undefined ? defaultVariant.damageMax : '';
-                if(dmgMin !== '' && dmgMax !== '') {
-                    damageHtml = `<div class="item-damage-line" data-item-damage="${item.id}"><strong class="${typeColorClass}">Damage:</strong> ${dmgMin} - ${dmgMax}</div>`;
-                }
-            }
             const rowClass = detailHtml ? ' item-row-has-details' : '';
             const clickHandler = detailHtml ? ` data-action="toggle-item-detail" data-item-id="${item.id}"` : '';
             return `<tr class="item-main-row${rowClass}" data-item-id="${item.id}"${clickHandler}>
                 <td><span class="item-name ${typeColorClass}">${escapeHtml(item.name)}${detailHtml ? ' <span class="detail-indicator">▶</span>' : ''}</span></td>
                 <td><div class="tag-container">${typeTags}</div></td>
                 <td><div class="tag-container">${classTags}</div></td>
-                <td>${switcherHtml}${damageHtml}<div class="tag-container stat-tags-container">${statTagsHtml}</div></td>
+                <td>${switcherHtml}<div class="tag-container stat-tags-container">${statTagsHtml}</div></td>
             </tr>
             ${detailHtml ? `<tr class="item-detail-row" data-item-detail="${item.id}" style="display:none;"><td colspan="4" class="item-detail-cell"><div class="item-detail-content">${detailHtml}</div></td></tr>` : ''}`;
         }
@@ -713,8 +705,6 @@
                 btn.classList.add('active');
                 const statContainer = row.querySelector('.stat-tags-container');
                 if(statContainer) { statContainer.innerHTML = buildStatTagsHtml(item, variantIndex); }
-                const damageLine = row.querySelector(`.item-damage-line[data-item-damage="${itemId}"]`);
-                if(damageLine && item.variants[variantIndex]) {
                     const v = item.variants[variantIndex];
                     const dmgMin = v.damageMin !== undefined ? v.damageMin : '';
                     const dmgMax = v.damageMax !== undefined ? v.damageMax : '';
