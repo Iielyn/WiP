@@ -1,5 +1,5 @@
 {
-"version": "v54",
+"version": "v55",
   "zones": [
     {
       "name": "Meridion",
@@ -22,12 +22,6 @@
                 "Critical",
                 "Armor Penetration"
               ],
-              "statValues": {
-                "Armor Penetration": 12222230,
-                "Vitality": 3,
-                "Strength": 2,
-                "Critical": 121
-              },
               "skill1": "\nCascade\n0.58s\n17.5% Strength + 17.5% Dexterity + 17.5% Strength + 17.5% Dexterity · Physical\nStrikes with both weapons, dealing 35% Strength + 35% Dexterity Physical to an enemy and increasing your [CritDamage] by 2% to 4% for 15, stacking up to 5 times.",
               "skill2": "\nAbyssal Fury\ncd 20s · 0.4s\nImbues your weapons with tide power for 8, giving all your [Attack]s a 0.3 chance to blast 15% Strength + 15% Dexterity Physical. Blasted damage is considered as an [Attack].",
               "skill3": "\nGroundswell Strike\ncd 10s · 0.4s\n47.5% Strength + 47.5% Dexterity · Physical\nDeals 47.5% Strength + 47.5% Dexterity Physical to nearby enemies. All your [Attack]s reduce the cooldown by 1.5.",
@@ -443,10 +437,10 @@
               "stats": [
                 "Armor"
               ],
-              "skill1": "",
+              "skill1": "\nDepth Shield\ncd 15s\nSpawns a bubble with 3 charges. When an enemy is nearby, the bubble consumes a charge to pulse, dealing 55% Faith Magic to enemies and healing allies for 30% Faith Magic.",
               "skill2": "",
               "skill3": "",
-              "passive": "",
+              "passive": "\nShell of the Devourer\nYour [ComboAttack]s and [AttackBlock]s grant you a stack of Water Infusion. At 4 stacks, your next [AttackBlock] is empowered, dealing 250% Faith Magic to nearby enemies.\n\n",
               "trinketPassive": ""
             },
             {
@@ -724,6 +718,14 @@
                 "Magic Penetration",
                 "Critical"
               ],
+              "statValues": {
+                "Armor": 104,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Intelligence": 3,
+                "Critical": 9,
+                "Magic Penetration": 9
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -786,6 +788,29 @@
                 "Intelligence",
                 "Critical",
                 "Magic Penetration"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Abyssal Shoulderplates",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Dexterity",
+                "Critical",
+                "Armor Penetration"
               ],
               "skill1": "",
               "skill2": "",
@@ -983,10 +1008,10 @@
               "stats": [
                 "Armor"
               ],
-              "skill1": "",
+              "skill1": "\nFurnace Roar\ncd 18s\n45% Intellect · Magic\nChannels a fire breath dealing up to 45% Intellect Magic over 3 to enemies in front of you.",
               "skill2": "",
               "skill3": "",
-              "passive": "",
+              "passive": "\nCinder Coat\n15% Armor · Physical\nBlocking an attack engulfs you in flames for 4, dealing 30% Intellect Magic to nearby enemies every 1.",
               "trinketPassive": ""
             },
             {
@@ -1740,10 +1765,10 @@
               "stats": [
                 "Armor"
               ],
-              "skill1": "",
+              "skill1": "Furnace Roar\ncd 18s\n45% Intellect · Magic\nChannels a fire breath dealing up to 45% Intellect Magic over 3 to enemies in front of you.",
               "skill2": "",
               "skill3": "",
-              "passive": "",
+              "passive": "Cinder Coat\n15% Armor · Physical\nBlocking an attack engulfs you in flames for 4, dealing 30% Intellect Magic to nearby enemies every 1.",
               "trinketPassive": ""
             },
             {
@@ -1803,7 +1828,7 @@
                 "Armor",
                 "Vitality",
                 "Critical",
-                "Faith"
+                "Intelligence"
               ],
               "skill1": "",
               "skill2": "",
@@ -2372,10 +2397,10 @@
                 "Fervor",
                 "Faith"
               ],
-              "skill1": "",
-              "skill2": "",
+              "skill1": "\nSmite\n0.75s\n71.5% Strength · Physical · 20% Faith\nDeals 71.5% Strength Physical to an enemy and generates a stack of Benediction, stacking up to 5 times.",
+              "skill2": "\nRam Veil\ncd 8s · 0.5s\n80% Faith · Magic\nEmits bright light around you, dealing 80% Faith Magic to nearby enemies and consuming all Benediction stacks. If 5 stacks are consumed, this increases your [CritChance] and [Fervor] by 10% for 15.",
               "skill3": "",
-              "passive": "",
+              "passive": "\nBlessing\nYour [WeaponSkill] empower your next 2 [Attack]s that will deal an additional ::dmg:: and generate a Benediction stack, stacking up to 5 times.",
               "trinketPassive": ""
             },
             {
