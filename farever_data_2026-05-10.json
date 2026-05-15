@@ -1,5 +1,5 @@
 {
-"version": "v57",
+"version": "v58",
   "zones": [
     {
       "name": "Meridion",
@@ -169,6 +169,37 @@
                 "Intelligence",
                 "Magic Penetration"
               ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Jacket of the Last Pirate",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Critical",
+                "Fervor"
+              ],
+              "statValues": {
+                "Armor": 170,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Faith": 3,
+                "Critical": 12,
+                "Fervor": 12
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -793,6 +824,12 @@
                 "Dexterity",
                 "Critical"
               ],
+              "statValues": {
+                "Armor": 117,
+                "Vitality": 4,
+                "Dexterity": 6,
+                "Critical": 18
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -2255,6 +2292,12 @@
                 "Critical",
                 "Dexterity"
               ],
+              "statValues": {
+                "Armor": 117,
+                "Vitality": 4,
+                "Dexterity": 6,
+                "Critical": 18
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
