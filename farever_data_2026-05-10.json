@@ -1,5 +1,5 @@
 {
-"version": "v60",
+"version": "v61",
   "zones": [
     {
       "name": "Meridion",
@@ -19,6 +19,7 @@
               "stats": [
                 "Vitality",
                 "Strength",
+                "Dexterity",
                 "Critical",
                 "Armor Penetration"
               ],
@@ -26,7 +27,44 @@
               "skill2": "\nAbyssal Fury\ncd 20s · 0.4s\nImbues your weapons with tide power for 8, giving all your [Attack]s a 0.3 chance to blast 15% Strength + 15% Dexterity Physical. Blasted damage is considered as an [Attack].",
               "skill3": "\nGroundswell Strike\ncd 10s · 0.4s\n47.5% Strength + 47.5% Dexterity · Physical\nDeals 47.5% Strength + 47.5% Dexterity Physical to nearby enemies. All your [Attack]s reduce the cooldown by 1.5.",
               "passive": "\nTide Warlord\nYour [PhysicalMastery] is increased by 15% while fighting under 50% [Health].",
-              "trinketPassive": ""
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 9,
+                  "damageMax": 11,
+                  "statValues": {
+                    "Vitality": 20,
+                    "Strength": 9,
+                    "Dexterity": 10,
+                    "Critical": 28,
+                    "Armor Penetration": 28
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 9,
+                  "damageMax": 11,
+                  "statValues": {
+                    "Vitality": 23,
+                    "Strength": 10,
+                    "Critical": 31,
+                    "Armor Penetration": 31,
+                    "Dexterity": 12
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 9,
+                  "damageMax": 11,
+                  "statValues": {
+                    "Vitality": 27,
+                    "Strength": 12,
+                    "Critical": 33,
+                    "Armor Penetration": 33,
+                    "Dexterity": 14
+                  }
+                }
+              ]
             },
             {
               "name": "Wings of the Prophet",
@@ -52,12 +90,7 @@
                 "Magic Penetration": 7,
                 "Fervor": 7,
                 "Intelligence": 3
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Nepicur's Vacation Shorts",
@@ -83,12 +116,7 @@
                 "Faith": 3,
                 "Critical": 12,
                 "Fervor": 12
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Ghost Clams of the Low Tide",
@@ -106,18 +134,17 @@
                 "Intelligence",
                 "Fervor"
               ],
+              "skill1": "\nSurging Tide\n1.3s\n38.5% Intellect + 38.5% Faith · Magic\nReleases two water bolts, each dealing 38.5% Intellect + 38.5% Faith Magic to an enemy. Damage increased by 10% for each active [Totem].",
+              "skill2": "\nTidal Totem\ncd 12s · 0.3s\nSummons a [Totem] at the targeted location, healing allies that stand in the area for 6% Intellect + 6% Faith every 2. Lasts 15.",
+              "skill3": "\nRiptide\ncd 18s\n90% Intellect + 90% Faith · Water\nSplashes a huge water burst in a frontal cone, dealing 90% Intellect + 90% Faith Water to enemies.",
+              "passive": "\nPower of the Tides\nUsing a [Skill] causes all your active [Totem]s to erupt, dealing 18.75% Intellect + 18.75% Faith Magic to nearby enemies.",
               "statValues": {
                 "Vitality": 22,
                 "Faith": 9,
                 "Intelligence": 10,
                 "Magic Penetration": 28,
                 "Fervor": 28
-              },
-              "skill1": "\nSurging Tide\n1.3s\n38.5% Intellect + 38.5% Faith · Magic\nReleases two water bolts, each dealing 38.5% Intellect + 38.5% Faith Magic to an enemy. Damage increased by 10% for each active [Totem].",
-              "skill2": "\nTidal Totem\ncd 12s · 0.3s\nSummons a [Totem] at the targeted location, healing allies that stand in the area for 6% Intellect + 6% Faith every 2. Lasts 15.",
-              "skill3": "\nRiptide\ncd 18s\n90% Intellect + 90% Faith · Water\nSplashes a huge water burst in a frontal cone, dealing 90% Intellect + 90% Faith Water to enemies.",
-              "passive": "\nPower of the Tides\nUsing a [Skill] causes all your active [Totem]s to erupt, dealing 18.75% Intellect + 18.75% Faith Magic to nearby enemies.",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Charm of the Fisher King",
@@ -138,12 +165,7 @@
                 "Vitality": 8,
                 "Faith": 7,
                 "Fervor": 24
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Poetrident",
@@ -159,14 +181,10 @@
               "stats": [
                 "Fervor"
               ],
+              "trinketPassive": "Taking damage has a chance to grant you the power of the tides, healing you for 12 over 6.",
               "statValues": {
                 "Fervor": 26
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": "Taking damage has a chance to grant you the power of the tides, healing you for 12 over 6."
+              }
             },
             {
               "name": "Ceremonial Siren Gloves",
@@ -182,11 +200,12 @@
                 "Magic Penetration",
                 "Intelligence"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Intelligence": 6,
+                "Magic Penetration": 18
+              }
             },
             {
               "name": "Tides Hood",
@@ -202,11 +221,12 @@
                 "Intelligence",
                 "Magic Penetration"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 116,
+                "Vitality": 8,
+                "Intelligence": 8,
+                "Magic Penetration": 24
+              }
             },
             {
               "name": "Jacket of the Last Pirate",
@@ -232,12 +252,7 @@
                 "Faith": 3,
                 "Critical": 12,
                 "Fervor": 12
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Fin Armor",
@@ -263,12 +278,7 @@
                 "Intelligence": 4,
                 "Armor Penetration": 12,
                 "Magic Penetration": 12
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Abyssal Shoulderplates",
@@ -279,12 +289,22 @@
                 "warrior",
                 "rogue"
               ],
-              "stats": [],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Dexterity",
+                "Critical",
+                "Armor Penetration"
+              ],
+              "statValues": {
+                "Armor": 174,
+                "Vitality": 5,
+                "Strength": 2,
+                "Dexterity": 3,
+                "Critical": 9,
+                "Armor Penetration": 9
+              }
             }
           ]
         }
@@ -314,9 +334,7 @@
               ],
               "skill1": "\nTear\n0.75s\n45% Strength + 45% Dexterity · Physical\nDeals 45% Strength + 45% Dexterity Physical to an enemy and resets the cooldown of Bonethrow if this critically strikes.",
               "skill2": "\nBonethrow\ncd 15s · 0.4s\n65% Strength + 65% Dexterity · Physical\nThrows a sharpen bone at an enemy, dealing 65% Strength + 65% Dexterity Physical and causing them to bleed for 40% of the damage dealt over 8. The bone then jumps to 2 enemies.",
-              "skill3": "",
-              "passive": "\nBloodrage Aura\ncd 3s\nIncreases the [CritChance] of all allies within 40 by 3% to 5%.",
-              "trinketPassive": ""
+              "passive": "\nBloodrage Aura\ncd 3s\nIncreases the [CritChance] of all allies within 40 by 3% to 5%."
             },
             {
               "name": "Raclette Pan",
@@ -332,14 +350,10 @@
               "stats": [
                 "Armor Penetration"
               ],
+              "trinketPassive": "our [Attack]s grant you 4 [CritChanceRating] for 10, stacking up to 20 times.",
               "statValues": {
                 "Armor Penetration": 26
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": "our [Attack]s grant you 4 [CritChanceRating] for 10, stacking up to 20 times."
+              }
             },
             {
               "name": "Gold Pouches",
@@ -358,11 +372,14 @@
                 "Critical",
                 "Magic Penetration"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 99,
+                "Vitality": 6,
+                "Faith": 2,
+                "Intelligence": 3,
+                "Critical": 9,
+                "Magic Penetration": 9
+              }
             },
             {
               "name": "Goldilock's Thrice Latched Jacket",
@@ -383,12 +400,7 @@
                 "Vitality": 8,
                 "Faith": 7,
                 "Critical": 24
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Flame of Argol ",
@@ -406,8 +418,7 @@
               "skill1": "\nSearing Furnace\n1s\n100% Faith · Magic\nQuickly casts a fire bolt dealing 100% Faith Magic to an enemy, increasing all damage dealt to them by 4% for 10s.",
               "skill2": "\nHeat Emission\ncd 8s · 0.35s\nAll your Flamies simultaneously burst some heat around, dealing 50% Faith Magic to nearby enemies.",
               "skill3": "\nHot, hot, hot!\ncd 20s · 0.1s\nConjures a heat zone in the targeted area for 4. Allies within the zone receive a temporary Flamie for 8.",
-              "passive": "\nFlamie\nYou are permanently followed by a Flamie, healing 10% Faith every 2.",
-              "trinketPassive": ""
+              "passive": "\nFlamie\nYou are permanently followed by a Flamie, healing 10% Faith every 2."
             },
             {
               "name": "Spirit of the Spelunker",
@@ -426,11 +437,14 @@
                 "Armor Penetration",
                 "Magic Penetration"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 170,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Intelligence": 4,
+                "Armor Penetration": 12,
+                "Magic Penetration": 12
+              }
             },
             {
               "name": "Reversible Bib of the Cheese Taster",
@@ -451,12 +465,7 @@
                 "Vitality": 3,
                 "Dexterity": 5,
                 "Armor Penetration": 13
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Knotr'Edam",
@@ -472,11 +481,12 @@
                 "Critical",
                 "Faith"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Faith": 5,
+                "Critical": 18
+              }
             },
             {
               "name": "Unity of the Thirty Kingdoms ",
@@ -500,12 +510,7 @@
                 "Strength": 2,
                 "Faith": 2,
                 "Critical": 18
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             }
           ]
         },
@@ -536,12 +541,7 @@
                 "Dexterity": 4,
                 "Critical": 12,
                 "Armor Penetration": 12
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Jenny Hanibal's Armored Cape",
@@ -567,12 +567,7 @@
                 "Faith": 2,
                 "Armor Penetration": 7,
                 "Fervor": 7
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Crabgantua's Kneecap",
@@ -587,10 +582,7 @@
                 "Armor"
               ],
               "skill1": "\nDepth Shield\ncd 15s\nSpawns a bubble with 3 charges. When an enemy is nearby, the bubble consumes a charge to pulse, dealing 55% Faith Magic to enemies and healing allies for 30% Faith Magic.",
-              "skill2": "",
-              "skill3": "",
-              "passive": "\nShell of the Devourer\nYour [ComboAttack]s and [AttackBlock]s grant you a stack of Water Infusion. At 4 stacks, your next [AttackBlock] is empowered, dealing 250% Faith Magic to nearby enemies.\n\n",
-              "trinketPassive": ""
+              "passive": "\nShell of the Devourer\nYour [ComboAttack]s and [AttackBlock]s grant you a stack of Water Infusion. At 4 stacks, your next [AttackBlock] is empowered, dealing 250% Faith Magic to nearby enemies.\n\n"
             },
             {
               "name": "Boots of Abyssal Essence",
@@ -616,12 +608,7 @@
                 "Intelligence": 3,
                 "Armor Penetration": 9,
                 "Magic Penetration": 9
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Charm of the Fisher King",
@@ -642,12 +629,7 @@
                 "Vitality": 8,
                 "Faith": 7,
                 "Fervor": 24
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Clawdius",
@@ -666,8 +648,7 @@
               "skill1": "\nSink to the Bottom\n0.7s\n30% Dexterity + 30% Intellect + 30% Dexterity + 30% Intellect · Physical\nDelivers a strong punch dealing 30% Dexterity + 30% Intellect Physical to an enemy and reduces the cooldown of one random [WeaponSkill] by 0.5.",
               "skill2": "\nTide Rising Uppercut\ncd 22s · 0.75s\n60% Dexterity + 60% Intellect · Magic\nUnleashes an upward surge of water, dealing 60% Dexterity + 60% Intellect Magic to all nearby enemies. Using a [Skill] increases the damage of your next Tide Rising Uppercut by 50%, stacking up to 10 times.",
               "skill3": "\nTwin Claws\ncd 6s · 0.4s\n70% Dexterity · Physical · 70% Intellect · Magic\nQuickly strikes with both hands, dealing 70% Dexterity Physical + 70% Intellect Magic to an enemy.",
-              "passive": "\nGoing With the Flow\n20% Intellect + 26% Intellect · Magic\nErupts water, dealing 20% Intellect + 26% Intellect Magic to nearby enemies when using a [ComboAttack] or [WeaponSkill] different from the last action.",
-              "trinketPassive": ""
+              "passive": "\nGoing With the Flow\n20% Intellect + 26% Intellect · Magic\nErupts water, dealing 20% Intellect + 26% Intellect Magic to nearby enemies when using a [ComboAttack] or [WeaponSkill] different from the last action."
             },
             {
               "name": "Wings of the Phophet",
@@ -693,12 +674,7 @@
                 "Intelligence": 3,
                 "Magic Penetration": 7,
                 "Fervor": 7
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "High-speed Clamdiggers",
@@ -713,12 +689,7 @@
                 "Vitality",
                 "Faith",
                 "Fervor"
-              ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              ]
             },
             {
               "name": "Fin Armor",
@@ -744,12 +715,7 @@
                 "Intelligence": 4,
                 "Armor Penetration": 12,
                 "Magic Penetration": 12
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Jacket of the Last Pirate",
@@ -775,12 +741,7 @@
                 "Faith": 3,
                 "Critical": 10,
                 "Fervor": 10
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Poetrident",
@@ -796,14 +757,10 @@
               "stats": [
                 "Fervor"
               ],
+              "trinketPassive": "Taking damage has a chance to grant you the power of the tides, healing you for 12 over 6.",
               "statValues": {
                 "Fervor": 26
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": "Taking damage has a chance to grant you the power of the tides, healing you for 12 over 6."
+              }
             },
             {
               "name": "Spare Sandals of Young Nephisto",
@@ -818,12 +775,7 @@
                 "Vitality",
                 "Intelligence",
                 "Magic Penetration"
-              ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              ]
             },
             {
               "name": "Palm of the Lagoon",
@@ -849,12 +801,7 @@
                 "Faith": 2,
                 "Armor Penetration": 9,
                 "Fervor": 9
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Crown of the Sea",
@@ -875,12 +822,7 @@
                 "Vitality": 8,
                 "Strength": 7,
                 "Armor Penetration": 24
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Cloak of the Third Wave Apostle",
@@ -898,12 +840,7 @@
                 "Intelligence",
                 "Critical",
                 "Magic Penetration"
-              ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              ]
             },
             {
               "name": "Emblem of the Third Wave",
@@ -929,12 +866,7 @@
                 "Intelligence": 3,
                 "Critical": 9,
                 "Magic Penetration": 9
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Burden of the Abyss",
@@ -955,12 +887,7 @@
                 "Vitality": 4,
                 "Dexterity": 6,
                 "Critical": 18
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Bleak Shell's Knee Pads",
@@ -981,12 +908,7 @@
                 "Vitality": 5,
                 "Dexterity": 6,
                 "Critical": 18
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Fins of the First Fish",
@@ -1012,12 +934,7 @@
                 "Intelligence": 3,
                 "Critical": 9,
                 "Magic Penetration": 9
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Abyssal Shoulderplates",
@@ -1043,12 +960,7 @@
                 "Dexterity": 3,
                 "Critical": 9,
                 "Armor Penetration": 9
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             }
           ]
         }
@@ -1074,14 +986,10 @@
               "stats": [
                 "Armor Penetration"
               ],
+              "trinketPassive": "our [Attack]s grant you 4 [CritChanceRating] for 10, stacking up to 20 times.",
               "statValues": {
                 "Armor Penetration": 26
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": "our [Attack]s grant you 4 [CritChanceRating] for 10, stacking up to 20 times."
+              }
             },
             {
               "name": "Judgement",
@@ -1099,8 +1007,7 @@
               "skill1": "\nBrutal Frenzy\n1s\n143% Strength + 30% Strength · Physical\nSmashes the ground and deals 143% Strength Physical to enemies, knocking them back and increasing your [PhysicalMastery] by 3% to 4% for 15, stacking up to 3 times.",
               "skill2": "\nRampage\ncd 16s · 1s\n250% Strength + 400% Strength + 600% Strength · Physical\nCharges your strike up to 3, then violently smashes the ground, dealing between 250% Strength Physical and 600% Strength Physical to nearby enemies and knocking them back depending on charge time.",
               "skill3": "\nShockwave\ncd 25s · 1s\n180% Strength · Physical\nHeavily slams in a frontal cone, dealing 180% Strength Physical and stunning enemies for 3.",
-              "passive": "\nDomination\nYou deal 15% increased damage to enemies affected by crowd control effects.",
-              "trinketPassive": ""
+              "passive": "\nDomination\nYou deal 15% increased damage to enemies affected by crowd control effects."
             },
             {
               "name": "Unity of the Thirty Kingdoms",
@@ -1124,12 +1031,7 @@
                 "Strength": 2,
                 "Faith": 2,
                 "Critical": 18
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Wrong Trousers",
@@ -1150,12 +1052,7 @@
                 "Vitality": 8,
                 "Strength": 7,
                 "Critical": 24
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Gorgon Ratsay's Toothpick",
@@ -1176,8 +1073,7 @@
               "skill1": "\nSwift Strike\n1.1s\n62% Dexterity + 62% Faith · Physical · 25% Dexterity + 25% Faith · Magic\nStrikes forward, dealing 62% Dexterity + 62% Faith Physical to an enemy and increasing your [CritChance] by 3%, stacking up to 3 times.",
               "skill2": "\nSwirling Embers\ncd 18s · 0.5s\nSurrounds yourself with an embers whirlwind dealing 25% Dexterity + 25% Faith + 30% Dexterity + 30% Faith Magic to nearby enemies every 1 for 8.",
               "skill3": "\nEruption\ncd 20s · 1.3s\n15% Dexterity + 15% Faith + 150% Dexterity + 150% Faith · Magic\nPulls nearby enemies towards you, dealing 15% Dexterity + 15% Faith Magic. Then, releases a lava explosion dealing 150% Dexterity + 150% Faith Magic.",
-              "passive": "\nHeart of the Furnace\nYour [Skill]s and [Attack]s increase your [Armor] by 2%, stacking up to 15 times.",
-              "trinketPassive": ""
+              "passive": "\nHeart of the Furnace\nYour [Skill]s and [Attack]s increase your [Armor] by 2%, stacking up to 15 times."
             },
             {
               "name": "Twin Fangs of Ratsar",
@@ -1195,8 +1091,7 @@
               "skill1": "\nCheesebane\n32% Dexterity + 32% Dexterity · Physical\nStrikes with both weapons, dealing 64% Dexterity Physical to an enemy. Each time one your periodic effects deals damage, you have a 0.5 chance to increase the damage of your next Cheesebane by 10%, stacking up to 100%.",
               "skill2": "\nGaping Wound\ncd 24s · 0.68s\n100% Dexterity + 35% Dexterity · Physical · 20% Dexterity · Magic\nMutilates an enemy, dealing 100% Dexterity Physical and opening a gaping wound, causing them to bleed for 400% Dexterity Raw over 8.",
               "skill3": "\nShiv\ncd 4s · 0.4s\n60% Dexterity · Physical\nStabs and deals 60% Dexterity Physical to an enemy, triggering the effects of Sharpen Fangs.",
-              "passive": "\nSharpen Fangs\nYour Attacks and Weapon skills have a 0.2 to cause the enemies to bleed for 25% Dexterity Physical over 9, stacking up to 5 times.",
-              "trinketPassive": ""
+              "passive": "\nSharpen Fangs\nYour Attacks and Weapon skills have a 0.2 to cause the enemies to bleed for 25% Dexterity Physical over 9, stacking up to 5 times."
             },
             {
               "name": "Diskobold's Discus Throw Gloves",
@@ -1222,12 +1117,7 @@
                 "Intelligence": 3,
                 "Critical": 9,
                 "Magic Penetration": 9
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Brie von de Cape",
@@ -1253,12 +1143,7 @@
                 "Intelligence": 3,
                 "Critical": 7,
                 "Magic Penetration": 7
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Magma Mia",
@@ -1273,10 +1158,7 @@
                 "Armor"
               ],
               "skill1": "\nFurnace Roar\ncd 18s\n45% Intellect · Magic\nChannels a fire breath dealing up to 45% Intellect Magic over 3 to enemies in front of you.",
-              "skill2": "",
-              "skill3": "",
-              "passive": "\nCinder Coat\n15% Armor · Physical\nBlocking an attack engulfs you in flames for 4, dealing 30% Intellect Magic to nearby enemies every 1.",
-              "trinketPassive": ""
+              "passive": "\nCinder Coat\n15% Armor · Physical\nBlocking an attack engulfs you in flames for 4, dealing 30% Intellect Magic to nearby enemies every 1."
             },
             {
               "name": "Goldilock's Thrice Latched Jacket",
@@ -1297,12 +1179,7 @@
                 "Vitality": 8,
                 "Faith": 7,
                 "Critical": 24
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Spelunking Shoes of Emmen Tunnel",
@@ -1321,11 +1198,14 @@
                 "Critical",
                 "Armor Penetration"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 113,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Faith": 2,
+                "Critical": 9,
+                "Armor Penetration": 9
+              }
             },
             {
               "name": "Knotr'Edam",
@@ -1341,11 +1221,12 @@
                 "Critical",
                 "Faith"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Faith": 5,
+                "Critical": 18
+              }
             },
             {
               "name": "Miner Ramparts",
@@ -1361,11 +1242,12 @@
                 "Strength",
                 "Critical"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 215,
+                "Vitality": 6,
+                "Strength": 5,
+                "Critical": 18
+              }
             },
             {
               "name": "Buskins of Essential Emptiness",
@@ -1391,12 +1273,7 @@
                 "Dexterity": 3,
                 "Critical": 9,
                 "Armor Penetration": 9
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Spirit of the Spelunker",
@@ -1415,11 +1292,14 @@
                 "Armor Penetration",
                 "Magic Penetration"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 170,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Intelligence": 4,
+                "Armor Penetration": 12,
+                "Magic Penetration": 12
+              }
             },
             {
               "name": "Treasure Hunter's Straps",
@@ -1435,11 +1315,12 @@
                 "Intelligence",
                 "Magic Penetration"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 108,
+                "Vitality": 6,
+                "Intelligence": 6,
+                "Magic Penetration": 18
+              }
             },
             {
               "name": "Vision of the Cheeseslicer ",
@@ -1458,11 +1339,14 @@
                 "Armor Penetration",
                 "Magic Penetration"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 132,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Intelligence": 4,
+                "Armor Penetration": 12,
+                "Magic Penetration": 12
+              }
             },
             {
               "name": "Vows of Prosperity",
@@ -1488,12 +1372,7 @@
                 "Intelligence": 3,
                 "Critical": 9,
                 "Magic Penetration": 9
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Garment of the Aurock Master",
@@ -1519,12 +1398,7 @@
                 "Intelligence": 4,
                 "Armor Penetration": 12,
                 "Magic Penetration": 12
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Reversible Bib of the Cheese Taster",
@@ -1545,12 +1419,7 @@
                 "Vitality": 3,
                 "Dexterity": 5,
                 "Armor Penetration": 13
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Gloves of Ninkilim the Envoy ",
@@ -1576,12 +1445,7 @@
                 "Faith": 2,
                 "Critical": 9,
                 "Armor Penetration": 9
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Cheese-Covered Shoulderpads",
@@ -1602,12 +1466,7 @@
                 "Vitality": 5,
                 "Dexterity": 6,
                 "Armor Penetration": 18
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             }
           ]
         }
@@ -1633,14 +1492,10 @@
               "stats": [
                 "Magic Penetration"
               ],
+              "trinketPassive": "Your [WeaponSkill]s have a chance to summon a bee that will attack enemies for 10.",
               "statValues": {
                 "Magic Penetration": 26
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": "Your [WeaponSkill]s have a chance to summon a bee that will attack enemies for 10."
+              }
             },
             {
               "name": "Lady Bee's Ceremonial Stinger",
@@ -1661,8 +1516,7 @@
               "skill1": "Hive Assault\n1.1s\n62% Strength + 62% Intellect + 0% Strength · Physical · 70% Intellect · Magic\nStrikes forward, dealing 62% Strength + 62% Intellect Physical to an enemy and generates a Dart, stacking up to 3 times. At 3 stacks, your next Hive Assault releases the darts, dealing randomly 70% Intellect Magic or Physical(?).",
               "skill2": "Stingerang\ncd 8s\n125% Intellect · Magic · 180% Strength · Physical\nFires a piercing stinger in the targeted direction, dealing 125% Intellect Magic to enemies and knocking them back. After 2, the stinger returns to you, dealing 180% Strength Physical on its way back, drawing enemies toward you.",
               "skill3": "Apix Dash\ncd 12s\n45% Strength + 45% Intellect · Magic\nDashes forward and releases a burst of honey dealing 45% Strength + 45% Intellect Magic to nearby enemies.",
-              "passive": "Unstable Goo\nMagic critical strikes coat enemies in goo for 8, slowing them by -30%. Physical critical strikes ignite Goo to deal 140% Intellect Magic over.",
-              "trinketPassive": ""
+              "passive": "Unstable Goo\nMagic critical strikes coat enemies in goo for 8, slowing them by -30%. Physical critical strikes ignite Goo to deal 140% Intellect Magic over."
             },
             {
               "name": "Thornlace",
@@ -1683,8 +1537,7 @@
               "skill1": "\nFloral Euphoria\n0.8s\n5% Dexterity + 5% Faith + 40% Dexterity + 40% Faith · Physical\nStrikes the ground, dealing 5% Dexterity + 5% Faith Physical to nearby enemies and increasing your [CritChance] by 2% for 15, stacking up to 4 times.",
               "skill2": "\nFlower Spiral\ncd 12s\n18% Dexterity + 18% Faith + 18% Dexterity + 18% Faith · Magic\nSpins to deal 18% Dexterity + 18% Faith Magic to nearby enemies. Consumes all stacks of Psychoactive Petal to spin additional times. During combat, generates a stack of Psychoactive Petal every 4 and after every [ComboAttack], stacking up to 6 times.",
               "skill3": "\nBloom\ncd 16s · 0.4s\nFor 4, all damage you deal heals allies within 15 for 25% of the damage dealt.",
-              "passive": "\nNectar-infused Blade\n12% Faith · Magic\nYour [Attack]s deal an additional 12% Faith Magic and slow enemies by 70% for 3.",
-              "trinketPassive": ""
+              "passive": "\nNectar-infused Blade\n12% Faith · Magic\nYour [Attack]s deal an additional 12% Faith Magic and slow enemies by 70% for 3."
             },
             {
               "name": "Flying Trousers Prototype",
@@ -1710,12 +1563,7 @@
                 "Faith": 3,
                 "Armor Penetration": 12,
                 "Magic Penetration": 12
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Casual Clothes of the Pollincess",
@@ -1741,12 +1589,7 @@
                 "Intelligence": 4,
                 "Magic Penetration": 12,
                 "Fervor": 12
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Dancing Hivetree Belt",
@@ -1767,12 +1610,7 @@
                 "Vitality": 6,
                 "Intelligence": 6,
                 "Fervor": 18
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Cleo's Ethereal Blossoms",
@@ -1793,12 +1631,7 @@
                 "Vitality": 6,
                 "Faith": 5,
                 "Magic Penetration": 18
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Flight of the Rumblebee",
@@ -1824,12 +1657,7 @@
                 "Faith": 2,
                 "Magic Penetration": 7,
                 "Fervor": 7
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Vambraces of the Swarm ",
@@ -1853,12 +1681,7 @@
                 "Dexterity": 3,
                 "Intelligence": 3,
                 "Fervor": 18
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             }
           ]
         },
@@ -1889,12 +1712,7 @@
                 "Faith": 2,
                 "Magic Penetration": 9,
                 "Fervor": 9
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Ipheion, Star Blossom",
@@ -1914,8 +1732,7 @@
               "skill1": "\nScatterbloom\n1.1s\n20% Dexterity + 20% Intellect · Physical\nThrows three sharpened petals dealing 20% Dexterity + 20% Intellect Physical to an enemy. Each Petal has a 0.35 chance to plant a stack of Ravenous Sprout.",
               "skill2": "\nHarvesting Scythe\ncd 15s · 1s\n150% Dexterity + 195% Dexterity · Physical\nThrows a rotating flower in the targeted direction, dealing 150% Dexterity + 195% Dexterity Physical to enemies. Harvests all Ravenous Sprout stacks, releasing a poison dealing 35% Intellect Magic over 6.",
               "skill3": "\nVerdant Impetus\ncd 24s · 0.5s\nYour Ranged [Attack]s become bouncing for 6, dealing 15% increased damage and planting a stack of Ravenous Sprout.",
-              "passive": "\nNatural Ascendancy\nYour damage and healing done to a target increase by 2% for each different periodic effect on them, up to 6%.",
-              "trinketPassive": ""
+              "passive": "\nNatural Ascendancy\nYour damage and healing done to a target increase by 2% for each different periodic effect on them, up to 6%."
             },
             {
               "name": "Whirring Gem of Apix",
@@ -1936,12 +1753,7 @@
                 "Vitality": 8,
                 "Strength": 7,
                 "Armor Penetration": 24
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Beefury, Blessed Blade of the Farseeker",
@@ -1961,9 +1773,7 @@
               ],
               "skill1": "\nHive Bite\n0.75s\n42.5% Strength + 42.5% Faith · Physical · 20% Faith\nA thrust that deals 42.5% Strength + 42.5% Faith Physical to an enemy, healing you and all nearby allies for 20% Faith.",
               "skill2": "\nHive's Sunder\ncd 18s · 0.7s\n100% Strength + 100% Faith · Physical\nPerforms a strong cleave dealing 100% Strength + 100% Faith Physical to nearby enemies and reducing their [MagicArmor] by -30% to -40% for 10.",
-              "skill3": "",
-              "passive": "\nSwarm Lord\nYour Weapon Skills surround you with an Hive Swarm for 10. Hive Swarm deals 30% Faith Magic to nearby enemies and heals you for that amount every 2.",
-              "trinketPassive": ""
+              "passive": "\nSwarm Lord\nYour Weapon Skills surround you with an Hive Swarm for 10. Hive Swarm deals 30% Faith Magic to nearby enemies and heals you for that amount every 2."
             },
             {
               "name": "Flight of the Rumblebee",
@@ -1989,12 +1799,7 @@
                 "Faith": 2,
                 "Magic Penetration": 7,
                 "Fervor": 7
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Eternal Flower Heart",
@@ -2010,14 +1815,10 @@
               "stats": [
                 "Magic Penetration"
               ],
+              "trinketPassive": "Your [WeaponSkill]s have a chance to summon a bee that will attack enemies for 10.",
               "statValues": {
                 "Magic Penetration": 26
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": "Your [WeaponSkill]s have a chance to summon a bee that will attack enemies for 10."
+              }
             },
             {
               "name": "Emblem of Radiant Nectar",
@@ -2043,12 +1844,7 @@
                 "Faith": 3,
                 "Magic Penetration": 12,
                 "Fervor": 12
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "War Sabatons of Apix",
@@ -2072,12 +1868,7 @@
                 "Dexterity": 3,
                 "Intelligence": 3,
                 "Fervor": 18
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Reflective Vest of the Hive Worker",
@@ -2103,12 +1894,7 @@
                 "Dexterity": 3,
                 "Armor Penetration": 7,
                 "Fervor": 7
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Gauntlets of the Royal Guard",
@@ -2134,12 +1920,7 @@
                 "Dexterity": 3,
                 "Armor Penetration": 9,
                 "Fervor": 9
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Silhouette of Apix",
@@ -2160,12 +1941,7 @@
                 "Vitality": 6,
                 "Dexterity": 8,
                 "Fervor": 24
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             }
           ]
         }
@@ -2190,10 +1966,7 @@
                 "Armor"
               ],
               "skill1": "Furnace Roar\ncd 18s\n45% Intellect · Magic\nChannels a fire breath dealing up to 45% Intellect Magic over 3 to enemies in front of you.",
-              "skill2": "",
-              "skill3": "",
-              "passive": "Cinder Coat\n15% Armor · Physical\nBlocking an attack engulfs you in flames for 4, dealing 30% Intellect Magic to nearby enemies every 1.",
-              "trinketPassive": ""
+              "passive": "Cinder Coat\n15% Armor · Physical\nBlocking an attack engulfs you in flames for 4, dealing 30% Intellect Magic to nearby enemies every 1."
             },
             {
               "name": "Unity of the Thirty Kingdoms ",
@@ -2217,12 +1990,7 @@
                 "Strength": 2,
                 "Faith": 2,
                 "Critical": 18
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Spelunking Shoes of Emmen Tunnel",
@@ -2241,11 +2009,14 @@
                 "Critical",
                 "Armor Penetration"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 113,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Faith": 2,
+                "Critical": 9,
+                "Armor Penetration": 9
+              }
             },
             {
               "name": "Knotr'Edam",
@@ -2259,13 +2030,14 @@
                 "Armor",
                 "Vitality",
                 "Critical",
-                "Intelligence"
+                "Faith"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Critical": 18,
+                "Faith": 5
+              }
             },
             {
               "name": "Gorgon Ratsay's Toothpick",
@@ -2286,8 +2058,7 @@
               "skill1": "\nSwift Strike\n1.1s\n62% Dexterity + 62% Faith · Physical · 25% Dexterity + 25% Faith · Magic\nStrikes forward, dealing 62% Dexterity + 62% Faith Physical to an enemy and increasing your [CritChance] by 3%, stacking up to 3 times.",
               "skill2": "\nSwirling Embers\ncd 18s · 0.5s\nSurrounds yourself with an embers whirlwind dealing 25% Dexterity + 25% Faith + 30% Dexterity + 30% Faith Magic to nearby enemies every 1 for 8.",
               "skill3": "\nEruption\ncd 20s · 1.3s\n15% Dexterity + 15% Faith + 150% Dexterity + 150% Faith · Magic\nPulls nearby enemies towards you, dealing 15% Dexterity + 15% Faith Magic. Then, releases a lava explosion dealing 150% Dexterity + 150% Faith Magic.",
-              "passive": "\nHeart of the Furnace\nYour [Skill]s and [Attack]s increase your [Armor] by 2%, stacking up to 15 times.",
-              "trinketPassive": ""
+              "passive": "\nHeart of the Furnace\nYour [Skill]s and [Attack]s increase your [Armor] by 2%, stacking up to 15 times."
             },
             {
               "name": "Treasure Hunter's Straps",
@@ -2303,11 +2074,12 @@
                 "Magic Penetration",
                 "Intelligence"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 108,
+                "Vitality": 6,
+                "Intelligence": 6,
+                "Magic Penetration": 18
+              }
             },
             {
               "name": "Gold Pouches",
@@ -2326,11 +2098,14 @@
                 "Magic Penetration",
                 "Critical"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 99,
+                "Vitality": 6,
+                "Faith": 2,
+                "Intelligence": 3,
+                "Critical": 9,
+                "Magic Penetration": 9
+              }
             },
             {
               "name": "Brie von de Cape",
@@ -2356,12 +2131,7 @@
                 "Intelligence": 3,
                 "Critical": 7,
                 "Magic Penetration": 7
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Cheese-Covered Shoulderpads",
@@ -2382,12 +2152,7 @@
                 "Vitality": 5,
                 "Dexterity": 6,
                 "Armor Penetration": 18
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Spirit of the Spelunker",
@@ -2406,11 +2171,14 @@
                 "Armor Penetration",
                 "Intelligence"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 170,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Intelligence": 4,
+                "Armor Penetration": 12,
+                "Magic Penetration": 12
+              }
             },
             {
               "name": "Raclette Pan",
@@ -2426,14 +2194,10 @@
               "stats": [
                 "Armor Penetration"
               ],
+              "trinketPassive": "our [Attack]s grant you 4 [CritChanceRating] for 10, stacking up to 20 times.",
               "statValues": {
                 "Armor Penetration": 26
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": "our [Attack]s grant you 4 [CritChanceRating] for 10, stacking up to 20 times."
+              }
             }
           ]
         }
@@ -2461,12 +2225,7 @@
                 "Dexterity",
                 "Critical",
                 "Armor Penetration"
-              ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              ]
             },
             {
               "name": "Wings of the Prophet ",
@@ -2492,30 +2251,20 @@
                 "Intelligence": 3,
                 "Magic Penetration": 7,
                 "Fervor": 7
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Poetrident",
               "types": [
                 "Trinket"
               ],
-              "classes": [],
               "stats": [
                 "Fervor"
               ],
+              "trinketPassive": "Taking damage has a chance to grant you the power of the tides, healing you for 12 over 6.",
               "statValues": {
                 "Fervor": 26
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": "Taking damage has a chance to grant you the power of the tides, healing you for 12 over 6."
+              }
             },
             {
               "name": "Horns of the Wind",
@@ -2535,8 +2284,7 @@
               "skill1": "\nSpark Shot\n1.1s\n59% Dexterity + 59% Intellect · Physical · 25% Dexterity + 25% Intellect + 32.5% Intellect + 32.5% Vitality · Magic\nShoots an arrow dealing 59% Dexterity + 59% Intellect Physical to an enemy plus an additional 25% Dexterity + 25% Intellect + 32.5% Intellect + 32.5% Vitality Magic if the enemy is under 35% [Health].",
               "skill2": "\nHunter Net\ncd 16s · 0.4s\n100% Dexterity + 100% Intellect · Physical\nThrows a net in the targeted direction dealing 100% Dexterity + 100% Intellect Physical to the first enemy hit and slowing them by -30% for 4. If an enemy is hit, you gain Big Game Hunter.\n\n",
               "skill3": "\nRam Trap\ncd 12s\n100% Dexterity · Physical\nDrops a spark trap on the targeted area. If an enemy steps on it, they are dealt 100% Dexterity Physical, are immobilized for 4 and you gain Big Game Hunter.",
-              "passive": "\nThrill of the Hunter\nYour [WeaponSkill]s' damage mark the enemies for 10. Your next [Attack] against them consumes the mark and deal 50% increased damage.",
-              "trinketPassive": ""
+              "passive": "\nThrill of the Hunter\nYour [WeaponSkill]s' damage mark the enemies for 10. Your next [Attack] against them consumes the mark and deal 50% increased damage."
             },
             {
               "name": "Jacket of the Last Pirate",
@@ -2554,12 +2302,7 @@
                 "Critical",
                 "Faith",
                 "Fervor"
-              ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              ]
             },
             {
               "name": "Burden of the Abyss",
@@ -2580,12 +2323,7 @@
                 "Vitality": 4,
                 "Dexterity": 6,
                 "Critical": 18
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             }
           ]
         }
@@ -2621,12 +2359,7 @@
                 "Faith": 2,
                 "Armor Penetration": 9,
                 "Magic Penetration": 9
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Pocket Hive",
@@ -2647,8 +2380,7 @@
               "skill1": "\n33% Strength · Physical\nHoney Crush\n1s\n89.5% Strength + 89.5% Faith · Physical\nSmashes the ground and deals 89.5% Strength + 89.5% Faith Physical to enemies, knocking them back and generating 2 stacks of Buzzing.",
               "skill2": "\nReverse Honey Spin\ncd 16s · 1.5s\n40% Strength + 40% Faith + 150% Strength + 150% Faith · Magic\nDraws all nearby enemies before you, dealing them 40% Strength + 40% Faith Magic, then slams the ground, dealing 150% Strength + 150% Faith Magic.",
               "skill3": "\nBrood Leap\ncd 24s · 0.1s\n125% Strength + 125% Faith + 156.3% Strength + 156.3% Faith + 100% Faith + 125% Faith + 40% Faith · Physical\nLeaps through the air towards the targeted area, dealing 125% Strength + 125% Faith + 156.25% Strength + 156.25% Faith Physical and leaving an area upon arrival dealing 100% Faith + 125% Faith Physical over 12.",
-              "passive": "\nMad Buzz\nDealing and taking damage has a 0.2 chance to generate a stack of Buzzing, stacking up to 10 times. At 10 stacks, summons an angry bee that starts attacking enemies for 15, dealing 80% Faith Magic every 3.",
-              "trinketPassive": ""
+              "passive": "\nMad Buzz\nDealing and taking damage has a 0.2 chance to generate a stack of Buzzing, stacking up to 10 times. At 10 stacks, summons an angry bee that starts attacking enemies for 15, dealing 80% Faith Magic every 3."
             },
             {
               "name": "Wingsabers",
@@ -2669,8 +2401,7 @@
               "skill1": "\nRoyal Severance\n0.85s\n50% Strength · Physical · 50% Intellect · Magic\nStrikes with both weapons, dealing 50% Strength Physical, 50% Intellect Magic to enemies in a frontal cone and generate a stack of Bladeleaf, stacking up to 2 times. Using your [SignatureSkill] consumes all stacks and throws them at the nearest enemy, each dealing them 35% Strength + 35% Intellect Magic.",
               "skill2": "\nHiveborn Blossom\ncd 12s · 0.7s\n25% Strength + 25% Strength · Physical · 25% Intellect + 25% Intellect · Magic\nSpins to deal 50% Strength Physical, 50% Intellect Magic to nearby enemies. You can recast this within the next 4 seconds, with damage increased by 100%.",
               "skill3": "\nSwarmstrike Accord\ncd 45s · 0.65s\nGrants a blessing to all allies within 40, causing all their [Attack]s to deal an additional 30% Intellect Magic for 8.",
-              "passive": "\nQueen's Decree\ncd 30s\n20% Intellect · Magic\nThe next time one of your skills deals [Magic] damage, it is increased by 100% (30 cooldown).",
-              "trinketPassive": ""
+              "passive": "\nQueen's Decree\ncd 30s\n20% Intellect · Magic\nThe next time one of your skills deals [Magic] damage, it is increased by 100% (30 cooldown)."
             },
             {
               "name": "Flying Trousers Prototype",
@@ -2696,12 +2427,7 @@
                 "Faith": 3,
                 "Armor Penetration": 12,
                 "Magic Penetration": 12
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Ipheion, Star Blossom ",
@@ -2721,8 +2447,7 @@
               "skill1": "\nScatterbloom\n1.1s\n20% Dexterity + 20% Intellect · Physical\nThrows three sharpened petals dealing 20% Dexterity + 20% Intellect Physical to an enemy. Each Petal has a 0.35 chance to plant a stack of Ravenous Sprout.",
               "skill2": "\nHarvesting Scythe\ncd 15s · 1s\n150% Dexterity + 195% Dexterity · Physical\nThrows a rotating flower in the targeted direction, dealing 150% Dexterity + 195% Dexterity Physical to enemies. Harvests all Ravenous Sprout stacks, releasing a poison dealing 35% Intellect Magic over 6.",
               "skill3": "\nVerdant Impetus\ncd 24s · 0.5s\nYour Ranged [Attack]s become bouncing for 6, dealing 15% increased damage and planting a stack of Ravenous Sprout.",
-              "passive": "\nNatural Ascendancy\nYour damage and healing done to a target increase by 2% for each different periodic effect on them, up to 6%.",
-              "trinketPassive": ""
+              "passive": "\nNatural Ascendancy\nYour damage and healing done to a target increase by 2% for each different periodic effect on them, up to 6%."
             },
             {
               "name": "Hive Spouts",
@@ -2737,12 +2462,7 @@
                 "Armor",
                 "Intelligence",
                 "Fervor"
-              ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              ]
             },
             {
               "name": "Reflective Vest of the Hive Worker",
@@ -2768,12 +2488,7 @@
                 "Dexterity": 3,
                 "Armor Penetration": 7,
                 "Fervor": 7
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Royal Chamber Helmet",
@@ -2799,12 +2514,7 @@
                 "Intelligence": 4,
                 "Armor Penetration": 12,
                 "Fervor": 12
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Gauntlets of the Royal Guard",
@@ -2830,12 +2540,7 @@
                 "Dexterity": 3,
                 "Armor Penetration": 9,
                 "Fervor": 9
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Whirring Gem of Apix",
@@ -2856,12 +2561,7 @@
                 "Vitality": 8,
                 "Strength": 7,
                 "Armor Penetration": 24
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Beewings",
@@ -2876,12 +2576,7 @@
                 "Vitality",
                 "Dexterity",
                 "Fervor"
-              ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              ]
             }
           ]
         }
@@ -2910,9 +2605,7 @@
               ],
               "skill1": "\nSmite\n0.75s\n71.5% Strength · Physical · 20% Faith\nDeals 71.5% Strength Physical to an enemy and generates a stack of Benediction, stacking up to 5 times.",
               "skill2": "\nRam Veil\ncd 8s · 0.5s\n80% Faith · Magic\nEmits bright light around you, dealing 80% Faith Magic to nearby enemies and consuming all Benediction stacks. If 5 stacks are consumed, this increases your [CritChance] and [Fervor] by 10% for 15.",
-              "skill3": "",
-              "passive": "\nBlessing\nYour [WeaponSkill] empower your next 2 [Attack]s that will deal an additional ::dmg:: and generate a Benediction stack, stacking up to 5 times.",
-              "trinketPassive": ""
+              "passive": "\nBlessing\nYour [WeaponSkill] empower your next 2 [Attack]s that will deal an additional ::dmg:: and generate a Benediction stack, stacking up to 5 times."
             },
             {
               "name": "Armored Docker Cap",
@@ -2929,12 +2622,7 @@
                 "Strength",
                 "Faith",
                 "Critical"
-              ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              ]
             },
             {
               "name": "Vision of the Cheeseslicer",
@@ -2953,11 +2641,14 @@
                 "Magic Penetration",
                 "Armor Penetration"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 132,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Intelligence": 4,
+                "Armor Penetration": 12,
+                "Magic Penetration": 12
+              }
             },
             {
               "name": "Dust Scarf",
@@ -2976,11 +2667,14 @@
                 "Critical",
                 "Magic Penetration"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 116,
+                "Vitality": 8,
+                "Faith": 3,
+                "Intelligence": 4,
+                "Critical": 12,
+                "Magic Penetration": 12
+              }
             },
             {
               "name": "Buskins of Essential Emptiness ",
@@ -3006,12 +2700,7 @@
                 "Dexterity": 3,
                 "Critical": 9,
                 "Armor Penetration": 9
-              },
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              }
             },
             {
               "name": "Twin Pillars of Justice",
@@ -3032,8 +2721,7 @@
               "skill1": "\nSentence\n0.58s\n16.5% Strength + 16.5% Dexterity + 16.5% Strength + 16.5% Dexterity + 30% Faith · Physical\nStrikes with both weapons, dealing 33% Strength + 33% Dexterity + 30% Faith Physical to an enemy and sentencing them to die, increasing all damage you deal to them by 10%.",
               "skill2": "\nZealous Spins\ncd 10s · 0.55s\n7.5% Strength + 7.5% Dexterity + 8.6% Strength + 8.6% Dexterity + 7.5% Strength + 7.5% Dexterity + 8.6% Strength + 8.6% Dexterity + 7.5% Strength + 7.5% Dexterity + 8.6% Strength + 8.6% Dexterity · Physical\nSpins foward, dealing 7.5% Strength + 7.5% Dexterity + 8.625% Strength + 8.625% Dexterity Physical to enemies thrice on your path. If an enemy is hit, you can recast it within 3.",
               "skill3": "\nIron Cyclone\ncd 10s · 0.55s\n35% Strength + 35% Dexterity + 35% Strength + 35% Dexterity + 35% Strength + 35% Dexterity + 35% Strength + 35% Dexterity · Physical\nCharges straight ahead, dealing four times 35% Strength + 35% Dexterity Physical to enemies and stunning them for 1.",
-              "passive": "\nZeal\nYour [Attack]s and [WeaponSkill]s generate a stack of Zeal, stacking up to 10 times. At 10 stacks, your next [ComboAttack] consums all stacks to reset the cooldown of Zealous Spins and increase its damage by 50%.",
-              "trinketPassive": ""
+              "passive": "\nZeal\nYour [Attack]s and [WeaponSkill]s generate a stack of Zeal, stacking up to 10 times. At 10 stacks, your next [ComboAttack] consums all stacks to reset the cooldown of Zealous Spins and increase its damage by 50%."
             },
             {
               "name": "Miner Ramparts",
@@ -3049,11 +2737,12 @@
                 "Strength",
                 "Critical"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 215,
+                "Vitality": 6,
+                "Strength": 5,
+                "Critical": 18
+              }
             },
             {
               "name": "Treasure Hunter's Straps",
@@ -3069,11 +2758,12 @@
                 "Magic Penetration",
                 "Intelligence"
               ],
-              "skill1": "",
-              "skill2": "",
-              "skill3": "",
-              "passive": "",
-              "trinketPassive": ""
+              "statValues": {
+                "Armor": 108,
+                "Vitality": 6,
+                "Intelligence": 6,
+                "Magic Penetration": 18
+              }
             }
           ]
         }
