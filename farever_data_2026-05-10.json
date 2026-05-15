@@ -1,5 +1,5 @@
 {
-"version": "v53",
+"version": "v54",
   "zones": [
     {
       "name": "Meridion",
@@ -22,6 +22,12 @@
                 "Critical",
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor Penetration": 12222230,
+                "Vitality": 3,
+                "Strength": 2,
+                "Critical": 121
+              },
               "skill1": "\nCascade\n0.58s\n17.5% Strength + 17.5% Dexterity + 17.5% Strength + 17.5% Dexterity · Physical\nStrikes with both weapons, dealing 35% Strength + 35% Dexterity Physical to an enemy and increasing your [CritDamage] by 2% to 4% for 15, stacking up to 5 times.",
               "skill2": "\nAbyssal Fury\ncd 20s · 0.4s\nImbues your weapons with tide power for 8, giving all your [Attack]s a 0.3 chance to blast 15% Strength + 15% Dexterity Physical. Blasted damage is considered as an [Attack].",
               "skill3": "\nGroundswell Strike\ncd 10s · 0.4s\n47.5% Strength + 47.5% Dexterity · Physical\nDeals 47.5% Strength + 47.5% Dexterity Physical to nearby enemies. All your [Attack]s reduce the cooldown by 1.5.",
