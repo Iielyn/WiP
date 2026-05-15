@@ -1,5 +1,5 @@
 {
-"version": "v56",
+"version": "v57",
   "zones": [
     {
       "name": "Meridion",
@@ -405,6 +405,14 @@
                 "Critical",
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor": 214,
+                "Vitality": 7,
+                "Strength": 3,
+                "Dexterity": 4,
+                "Critical": 12,
+                "Armor Penetration": 12
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -421,13 +429,21 @@
                 "priest"
               ],
               "stats": [
-                "Armor",
                 "Vitality",
                 "Strength",
                 "Faith",
                 "Armor Penetration",
-                "Fervor"
+                "Fervor",
+                "Armor"
               ],
+              "statValues": {
+                "Armor": 60,
+                "Vitality": 4,
+                "Strength": 2,
+                "Faith": 2,
+                "Armor Penetration": 7,
+                "Fervor": 7
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -669,6 +685,14 @@
                 "Armor Penetration",
                 "Fervor"
               ],
+              "statValues": {
+                "Armor": 132,
+                "Vitality": 6,
+                "Strength": 2,
+                "Faith": 2,
+                "Armor Penetration": 9,
+                "Fervor": 9
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -689,6 +713,12 @@
                 "Armor Penetration",
                 "Strength"
               ],
+              "statValues": {
+                "Armor": 232,
+                "Vitality": 8,
+                "Strength": 7,
+                "Armor Penetration": 24
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -1001,6 +1031,14 @@
                 "Magic Penetration",
                 "Critical"
               ],
+              "statValues": {
+                "Armor": 132,
+                "Vitality": 6,
+                "Strength": 2,
+                "Intelligence": 3,
+                "Critical": 9,
+                "Magic Penetration": 9
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -1024,6 +1062,14 @@
                 "Critical",
                 "Magic Penetration"
               ],
+              "statValues": {
+                "Armor": 60,
+                "Vitality": 4,
+                "Strength": 2,
+                "Intelligence": 3,
+                "Critical": 7,
+                "Magic Penetration": 7
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -1617,6 +1663,12 @@
                 "Strength",
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor": 298,
+                "Vitality": 8,
+                "Strength": 7,
+                "Armor Penetration": 24
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -1748,6 +1800,14 @@
                 "Armor Penetration",
                 "Fervor"
               ],
+              "statValues": {
+                "Armor": 67,
+                "Vitality": 4,
+                "Strength": 2,
+                "Dexterity": 3,
+                "Armor Penetration": 7,
+                "Fervor": 7
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -1771,6 +1831,14 @@
                 "Armor Penetration",
                 "Fervor"
               ],
+              "statValues": {
+                "Armor": 147,
+                "Vitality": 5,
+                "Strength": 2,
+                "Dexterity": 3,
+                "Armor Penetration": 9,
+                "Fervor": 9
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -1972,6 +2040,14 @@
                 "Critical",
                 "Magic Penetration"
               ],
+              "statValues": {
+                "Armor": 60,
+                "Vitality": 4,
+                "Strength": 2,
+                "Intelligence": 3,
+                "Critical": 7,
+                "Magic Penetration": 7
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -2212,6 +2288,14 @@
                 "Armor Penetration",
                 "Magic Penetration"
               ],
+              "statValues": {
+                "Armor": 156,
+                "Vitality": 6,
+                "Strength": 2,
+                "Faith": 2,
+                "Armor Penetration": 9,
+                "Magic Penetration": 9
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -2343,6 +2427,14 @@
                 "Fervor",
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor": 67,
+                "Vitality": 4,
+                "Strength": 2,
+                "Dexterity": 3,
+                "Armor Penetration": 7,
+                "Fervor": 7
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -2366,6 +2458,14 @@
                 "Fervor",
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor": 168,
+                "Vitality": 8,
+                "Strength": 3,
+                "Intelligence": 4,
+                "Armor Penetration": 12,
+                "Fervor": 12
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -2389,6 +2489,14 @@
                 "Fervor",
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor": 147,
+                "Vitality": 5,
+                "Strength": 2,
+                "Dexterity": 3,
+                "Armor Penetration": 9,
+                "Fervor": 9
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -2409,6 +2517,12 @@
                 "Armor Penetration",
                 "Strength"
               ],
+              "statValues": {
+                "Armor": 298,
+                "Vitality": 8,
+                "Strength": 7,
+                "Armor Penetration": 24
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
