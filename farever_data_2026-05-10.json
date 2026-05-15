@@ -1,5 +1,5 @@
 {
-"version": "v58",
+"version": "v59",
   "zones": [
     {
       "name": "Meridion",
@@ -89,6 +89,13 @@
                 "Intelligence",
                 "Fervor"
               ],
+              "statValues": {
+                "Vitality": 22,
+                "Faith": 9,
+                "Intelligence": 10,
+                "Magic Penetration": 28,
+                "Fervor": 28
+              },
               "skill1": "\nSurging Tide\n1.3s\n38.5% Intellect + 38.5% Faith · Magic\nReleases two water bolts, each dealing 38.5% Intellect + 38.5% Faith Magic to an enemy. Damage increased by 10% for each active [Totem].",
               "skill2": "\nTidal Totem\ncd 12s · 0.3s\nSummons a [Totem] at the targeted location, healing allies that stand in the area for 6% Intellect + 6% Faith every 2. Lasts 15.",
               "skill3": "\nRiptide\ncd 18s\n90% Intellect + 90% Faith · Water\nSplashes a huge water burst in a frontal cone, dealing 90% Intellect + 90% Faith Water to enemies.",
@@ -129,6 +136,9 @@
               "stats": [
                 "Fervor"
               ],
+              "statValues": {
+                "Fervor": 26
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -199,6 +209,37 @@
                 "Faith": 3,
                 "Critical": 12,
                 "Fervor": 12
+              },
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Fin Armor",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "statValues": {
+                "Armor": 215,
+                "Vitality": 8,
+                "Strength": 3,
+                "Intelligence": 4,
+                "Armor Penetration": 12,
+                "Magic Penetration": 12
               },
               "skill1": "",
               "skill2": "",
@@ -622,6 +663,14 @@
                 "Armor Penetration",
                 "Magic Penetration"
               ],
+              "statValues": {
+                "Armor": 215,
+                "Vitality": 8,
+                "Strength": 3,
+                "Intelligence": 4,
+                "Armor Penetration": 12,
+                "Magic Penetration": 12
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -673,6 +722,9 @@
               "stats": [
                 "Fervor"
               ],
+              "statValues": {
+                "Fervor": 26
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -2228,6 +2280,9 @@
               "stats": [
                 "Fervor"
               ],
+              "statValues": {
+                "Fervor": 26
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
