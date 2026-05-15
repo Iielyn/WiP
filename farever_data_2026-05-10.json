@@ -1,5 +1,5 @@
 {
-"version": "v63",
+"version": "v64",
   "zones": [
     {
       "name": "Meridion",
@@ -720,7 +720,13 @@
                 "Vitality",
                 "Faith",
                 "Fervor"
-              ]
+              ],
+              "statValues": {
+                "Armor": 133,
+                "Vitality": 8,
+                "Faith": 7,
+                "Fervor": 24
+              }
             },
             {
               "name": "Fin Armor",
@@ -806,7 +812,13 @@
                 "Vitality",
                 "Intelligence",
                 "Magic Penetration"
-              ]
+              ],
+              "statValues": {
+                "Armor": 99,
+                "Vitality": 6,
+                "Intelligence": 6,
+                "Magic Penetration": 18
+              }
             },
             {
               "name": "Palm of the Lagoon",
@@ -871,7 +883,15 @@
                 "Intelligence",
                 "Critical",
                 "Magic Penetration"
-              ]
+              ],
+              "statValues": {
+                "Armor": 47,
+                "Vitality": 4,
+                "Dexterity": 3,
+                "Intelligence": 3,
+                "Critical": 7,
+                "Magic Penetration": 7
+              }
             },
             {
               "name": "Emblem of the Third Wave",
@@ -1038,7 +1058,39 @@
               "skill1": "\nBrutal Frenzy\n1s\n143% Strength + 30% Strength · Physical\nSmashes the ground and deals 143% Strength Physical to enemies, knocking them back and increasing your [PhysicalMastery] by 3% to 4% for 15, stacking up to 3 times.",
               "skill2": "\nRampage\ncd 16s · 1s\n250% Strength + 400% Strength + 600% Strength · Physical\nCharges your strike up to 3, then violently smashes the ground, dealing between 250% Strength Physical and 600% Strength Physical to nearby enemies and knocking them back depending on charge time.",
               "skill3": "\nShockwave\ncd 25s · 1s\n180% Strength · Physical\nHeavily slams in a frontal cone, dealing 180% Strength Physical and stunning enemies for 3.",
-              "passive": "\nDomination\nYou deal 15% increased damage to enemies affected by crowd control effects."
+              "passive": "\nDomination\nYou deal 15% increased damage to enemies affected by crowd control effects.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 19,
+                  "damageMax": 25,
+                  "statValues": {
+                    "Vitality": 22,
+                    "Strength": 17,
+                    "Armor Penetration": 57
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 19,
+                  "damageMax": 25,
+                  "statValues": {
+                    "Vitality": 26,
+                    "Strength": 20,
+                    "Armor Penetration": 62
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 19,
+                  "damageMax": 25,
+                  "statValues": {
+                    "Vitality": 30,
+                    "Strength": 23,
+                    "Armor Penetration": 66
+                  }
+                }
+              ]
             },
             {
               "name": "Unity of the Thirty Kingdoms",
