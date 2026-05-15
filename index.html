@@ -578,7 +578,7 @@
                 detailHtml = `<div><strong class="${typeColorClass}">Passive:</strong> ${escapeHtml(item.trinketPassive)}</div>`;
             }
             let damageHtml = '';
-            if((isWeapon(item) || item.types.includes('Shield')) && item.variants && item.variants.length > 0) {
+            if(isWeapon(item) && item.variants && item.variants.length > 0) {
                 const defaultVariant = item.variants.find(v => v.rarity === 'blue') || item.variants[0];
                 const dmgMin = defaultVariant.damageMin !== undefined ? defaultVariant.damageMin : '';
                 const dmgMax = defaultVariant.damageMax !== undefined ? defaultVariant.damageMax : '';
