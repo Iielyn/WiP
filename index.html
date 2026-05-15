@@ -28,6 +28,9 @@
             --dungeon-lv: #f0c060;
             --dungeon-full: #5baf6b;
             --dungeon-boss: #c97a3a;
+            --rarity-blue: #3b82f6;
+            --rarity-purple: #a855f7;
+            --rarity-legendary: #f59e0b;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -381,6 +384,61 @@
             text-shadow: 0 0 4px rgba(255,255,255,0.25);
         }
 
+        .rarity-switcher {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 6px;
+        }
+        .rarity-btn {
+            padding: 2px 6px;
+            font-size: 0.58rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            background: transparent;
+            color: var(--text-dim);
+            cursor: pointer;
+            transition: all var(--transition);
+            font-family: var(--font);
+            text-transform: uppercase;
+        }
+        .rarity-btn:hover {
+            background: var(--surface2);
+            color: var(--text);
+        }
+        .rarity-btn[data-rarity="blue"] {
+            border-color: rgba(59,130,246,0.5);
+            color: var(--rarity-blue);
+        }
+        .rarity-btn[data-rarity="blue"].active {
+            background: rgba(59,130,246,0.25);
+            border-color: var(--rarity-blue);
+            box-shadow: 0 0 8px rgba(59,130,246,0.4);
+            color: #60a5fa;
+        }
+        .rarity-btn[data-rarity="purple"] {
+            border-color: rgba(168,85,247,0.5);
+            color: var(--rarity-purple);
+        }
+        .rarity-btn[data-rarity="purple"].active {
+            background: rgba(168,85,247,0.25);
+            border-color: var(--rarity-purple);
+            box-shadow: 0 0 8px rgba(168,85,247,0.4);
+            color: #c084fc;
+        }
+        .rarity-btn[data-rarity="legendary"] {
+            border-color: rgba(245,158,11,0.5);
+            color: var(--rarity-legendary);
+        }
+        .rarity-btn[data-rarity="legendary"].active {
+            background: rgba(245,158,11,0.25);
+            border-color: var(--rarity-legendary);
+            box-shadow: 0 0 10px rgba(245,158,11,0.5);
+            color: #fbbf24;
+            text-shadow: 0 0 6px rgba(245,158,11,0.5);
+        }
+
         .site-footer {
             background: var(--surface); border-top: 1px solid var(--border);
             padding: 16px 32px; text-align: center; font-size: 0.7rem;
@@ -486,6 +544,10 @@
             }
             .stat-value {
                 font-size: 0.7rem;
+            }
+            .rarity-btn {
+                font-size: 0.5rem;
+                padding: 1px 4px;
             }
         }
 
@@ -782,6 +844,7 @@
         let filterTypes = [];
         let filterStats = [];
         let searchQuery = '';
+        const allItemsMap = new Map();
 
         const escapeHtml = str => str ? str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;') : '';
         const toSlug = str => str.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
@@ -843,6 +906,10 @@
                         classes: Array.isArray(item.classes) ? [...item.classes] : [],
                         stats: Array.isArray(item.stats) ? [...item.stats] : [],
                         statValues: (item.statValues && typeof item.statValues === 'object') ? {...item.statValues} : {},
+                        variants: Array.isArray(item.variants) ? item.variants.map(v => ({
+                            rarity: v.rarity || 'blue',
+                            statValues: (v.statValues && typeof v.statValues === 'object') ? {...v.statValues} : {}
+                        })) : [],
                         skill1: item.skill1 || '',
                         skill2: item.skill2 || '',
                         skill3: item.skill3 || '',
@@ -914,6 +981,10 @@
                             id: l.id, name: l.name,
                             types: [...l.types], classes: [...l.classes], stats: [...l.stats],
                             statValues: (l.statValues && typeof l.statValues === 'object') ? {...l.statValues} : {},
+                            variants: l.variants.map(v => ({
+                                rarity: v.rarity,
+                                statValues: {...v.statValues}
+                            })),
                             skill1: l.skill1, skill2: l.skill2, skill3: l.skill3,
                             passive: l.passive, trinketPassive: l.trinketPassive
                         }))
@@ -959,18 +1030,50 @@
             return formatted;
         }
 
+        function buildStatTagsHtml(item, variantIndex = null) {
+            let statValues = {};
+            if (item.variants && item.variants.length > 1) {
+                const selectedIdx = variantIndex !== null ? variantIndex : (item.variants.findIndex(v => v.rarity === 'blue') !== -1 ? item.variants.findIndex(v => v.rarity === 'blue') : 0);
+                statValues = item.variants[selectedIdx].statValues;
+            } else if (item.variants && item.variants.length === 1) {
+                statValues = item.variants[0].statValues;
+            } else {
+                statValues = item.statValues || {};
+            }
+            const sortedStats = sortByOrder(item.stats, STAT_OPTIONS);
+            return sortedStats.map(s => {
+                const val = statValues[s] ? ` <span class="stat-value">${statValues[s]}</span>` : '';
+                return `<span class="tag stat-tag stat-${toSlug(s)}">${escapeHtml(s)}${val}</span>`;
+            }).join('');
+        }
+
+        function buildRaritySwitcherHtml(item) {
+            if (!item.variants || item.variants.length <= 1) return '';
+            const sortedVariants = [...item.variants].sort((a, b) => {
+                const order = { blue: 0, purple: 1, legendary: 2 };
+                return (order[a.rarity] || 0) - (order[b.rarity] || 0);
+            });
+            const defaultRarity = sortedVariants.find(v => v.rarity === 'blue') || sortedVariants[0];
+            const defaultIndex = sortedVariants.indexOf(defaultRarity);
+            let buttons = sortedVariants.map((v, idx) => {
+                const label = v.rarity === 'blue' ? 'BLU' : v.rarity === 'purple' ? 'PUR' : 'LEG';
+                const activeClass = idx === defaultIndex ? ' active' : '';
+                return `<button class="rarity-btn${activeClass}" data-rarity="${v.rarity}" data-rarity-index="${idx}">${label}</button>`;
+            }).join('');
+            return `<div class="rarity-switcher" data-default-index="${defaultIndex}">${buttons}</div>`;
+        }
+
         function renderItemRow(item, index) {
             const primaryType = getPrimaryType(item);
             const typeColorClass = getTypeColorClass(primaryType);
             const sortedTypes = sortByOrder(item.types, TYPE_OPTIONS);
             const sortedClasses = sortByOrder(item.classes, CLASS_OPTIONS);
-            const sortedStats = sortByOrder(item.stats, STAT_OPTIONS);
             const typeTags = sortedTypes.map(t => `<span class="tag type-tag type-${toSlug(t)}">${escapeHtml(t)}</span>`).join('');
-            const statTags = sortedStats.map(s => {
-                const val = (item.statValues && item.statValues[s]) ? ` <span class="stat-value">${item.statValues[s]}</span>` : '';
-                return `<span class="tag stat-tag stat-${toSlug(s)}">${escapeHtml(s)}${val}</span>`;
-            }).join('');
             const classTags = sortedClasses.map(cls => `<span class="tag class-${cls}">${CLASS_LABELS[cls]}</span>`).join('');
+
+            const switcherHtml = buildRaritySwitcherHtml(item);
+            const defaultIndex = item.variants && item.variants.length > 1 ? (item.variants.findIndex(v => v.rarity === 'blue') !== -1 ? item.variants.findIndex(v => v.rarity === 'blue') : 0) : 0;
+            const statTagsHtml = buildStatTagsHtml(item, defaultIndex);
 
             let detailHtml = '';
             if ((isWeapon(item) || item.types.includes('Shield')) && hasAbilities(item)) {
@@ -987,7 +1090,7 @@
             const rowClass = detailHtml ? ' item-row-has-details' : '';
             const clickHandler = detailHtml ? ` data-action="toggle-item-detail" data-item-id="${item.id}"` : '';
 
-            return `<tr class="item-main-row${rowClass}"${clickHandler}>
+            return `<tr class="item-main-row${rowClass}" data-item-id="${item.id}"${clickHandler}>
                 <td>
                     <span class="item-name ${typeColorClass}">
                         ${escapeHtml(item.name)}
@@ -996,7 +1099,10 @@
                 </td>
                 <td><div class="tag-container">${typeTags}</div></td>
                 <td><div class="tag-container">${classTags}</div></td>
-                <td><div class="tag-container">${statTags}</div></td>
+                <td>
+                    ${switcherHtml}
+                    <div class="tag-container stat-tags-container">${statTagsHtml}</div>
+                </td>
             </tr>
             ${detailHtml ? `
             <tr class="item-detail-row" data-item-detail="${item.id}" style="display:none;">
@@ -1057,6 +1163,9 @@
 
         function renderAll() {
             const container = document.getElementById('zones-container');
+            allItemsMap.clear();
+            appData.zones.forEach(z => z.dungeons.forEach(d => d.loot.forEach(item => allItemsMap.set(item.id, item))));
+
             if (appData.zones.length === 0) {
                 container.innerHTML = `<div style="text-align:center;padding:60px 20px;color:var(--text-dim);">
                     <div style="font-size:3rem;margin-bottom:16px;">🗺️</div>
@@ -1183,6 +1292,7 @@
         function setupItemDetailToggle() {
             const container = document.getElementById('zones-container');
             container.addEventListener('click', (e) => {
+                if (e.target.closest('.rarity-btn')) return;
                 const mainRow = e.target.closest('[data-action="toggle-item-detail"]');
                 if (!mainRow) return;
 
@@ -1205,6 +1315,32 @@
                     });
                     detailRow.style.display = 'table-row';
                     mainRow.classList.add('expanded');
+                }
+            });
+        }
+
+        function setupRaritySwitcher() {
+            const container = document.getElementById('zones-container');
+            container.addEventListener('click', (e) => {
+                const btn = e.target.closest('.rarity-btn');
+                if (!btn) return;
+                e.stopPropagation();
+                const switcher = btn.closest('.rarity-switcher');
+                const row = switcher.closest('tr.item-main-row');
+                const itemId = row.dataset.itemId;
+                const item = allItemsMap.get(itemId);
+                if (!item || !item.variants) return;
+
+                const rarity = btn.dataset.rarity;
+                const variantIndex = item.variants.findIndex(v => v.rarity === rarity);
+                if (variantIndex === -1) return;
+
+                switcher.querySelectorAll('.rarity-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const statContainer = row.querySelector('.stat-tags-container');
+                if (statContainer) {
+                    statContainer.innerHTML = buildStatTagsHtml(item, variantIndex);
                 }
             });
         }
@@ -1345,6 +1481,7 @@
             setupFilterDropdowns();
             setupGlobalListeners();
             setupItemDetailToggle();
+            setupRaritySwitcher();
             setupSuggestionModal();
             renderAll();
             document.body.classList.remove('loading');
