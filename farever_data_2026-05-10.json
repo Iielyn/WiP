@@ -1,5 +1,5 @@
 {
-"version": "v52",
+"version": "v53",
   "zones": [
     {
       "name": "Meridion",
@@ -757,6 +757,29 @@
                 "Vitality",
                 "Dexterity",
                 "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Fins of the First Fish",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "mage",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
               ],
               "skill1": "",
               "skill2": "",
