@@ -1,5 +1,5 @@
 {
-"version": "v55",
+"version": "v56",
   "zones": [
     {
       "name": "Meridion",
@@ -221,6 +221,9 @@
               "stats": [
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor Penetration": 26
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -326,6 +329,12 @@
                 "Dexterity",
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor": 53,
+                "Vitality": 3,
+                "Dexterity": 5,
+                "Armor Penetration": 13
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -589,6 +598,14 @@
                 "Critical",
                 "Fervor"
               ],
+              "statValues": {
+                "Armor": 142,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Faith": 3,
+                "Critical": 10,
+                "Fervor": 10
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -766,6 +783,12 @@
                 "Dexterity",
                 "Critical"
               ],
+              "statValues": {
+                "Armor": 128,
+                "Vitality": 5,
+                "Dexterity": 6,
+                "Critical": 18
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -789,6 +812,14 @@
                 "Critical",
                 "Magic Penetration"
               ],
+              "statValues": {
+                "Armor": 123,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Intelligence": 3,
+                "Critical": 9,
+                "Magic Penetration": 9
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -842,6 +873,9 @@
               "stats": [
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor Penetration": 26
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -1114,6 +1148,14 @@
                 "Critical",
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor": 161,
+                "Vitality": 5,
+                "Strength": 2,
+                "Dexterity": 3,
+                "Critical": 9,
+                "Armor Penetration": 9
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -1246,6 +1288,12 @@
                 "Dexterity",
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor": 53,
+                "Vitality": 3,
+                "Dexterity": 5,
+                "Armor Penetration": 13
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -1289,6 +1337,12 @@
                 "Dexterity",
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor": 138,
+                "Vitality": 5,
+                "Dexterity": 6,
+                "Armor Penetration": 18
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -1938,6 +1992,12 @@
                 "Dexterity",
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor": 138,
+                "Vitality": 5,
+                "Dexterity": 6,
+                "Armor Penetration": 18
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -1981,6 +2041,9 @@
               "stats": [
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor Penetration": 26
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
@@ -2488,6 +2551,14 @@
                 "Critical",
                 "Armor Penetration"
               ],
+              "statValues": {
+                "Armor": 161,
+                "Vitality": 5,
+                "Strength": 2,
+                "Dexterity": 3,
+                "Critical": 9,
+                "Armor Penetration": 9
+              },
               "skill1": "",
               "skill2": "",
               "skill3": "",
