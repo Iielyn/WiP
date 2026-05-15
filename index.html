@@ -238,7 +238,13 @@
         .tag.stat-armor-penetration { background:rgba(232,121,94,0.22); border-color:#e8795e; color:#f4a28e; }
         .tag.stat-magic-penetration { background:rgba(192,132,252,0.20); border-color:#c084fc; color:#e0b4ff; }
         .tag.stat-fervor { background:rgba(251,146,60,0.22); border-color:#fb923c; color:#fdb980; }
-        .stat-value { font-size:0.8rem; font-weight:600; color:#ffffff; margin-left:2px; text-shadow:0 0 4px rgba(255,255,255,0.25); }
+         .stat-value { font-size:0.8rem; font-weight:600; color:#ffffff; margin-left:2px; text-shadow:0 0 4px rgba(255,255,255,0.25); }
+        .item-damage-line {
+            font-size: 0.75rem;
+            color: #ffffff;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
         .rarity-switcher { display:flex; gap:4px; margin-bottom:6px; }
         .rarity-btn { padding:2px 6px; font-size:0.58rem; font-weight:700; letter-spacing:0.05em; border-radius:8px; border:1px solid transparent; background:transparent; color:var(--text-dim); cursor:pointer; transition:all var(--transition); font-family:var(--font); text-transform:uppercase; }
         .rarity-btn:hover { background:var(--surface2); color:var(--text); }
@@ -580,14 +586,13 @@
                     damageHtml = `<div class="item-damage-line" data-item-damage="${item.id}"><strong class="${typeColorClass}">Damage:</strong> ${dmgMin} - ${dmgMax}</div>`;
                 }
             }
-            detailHtml = damageHtml + detailHtml;
             const rowClass = detailHtml ? ' item-row-has-details' : '';
             const clickHandler = detailHtml ? ` data-action="toggle-item-detail" data-item-id="${item.id}"` : '';
             return `<tr class="item-main-row${rowClass}" data-item-id="${item.id}"${clickHandler}>
                 <td><span class="item-name ${typeColorClass}">${escapeHtml(item.name)}${detailHtml ? ' <span class="detail-indicator">▶</span>' : ''}</span></td>
                 <td><div class="tag-container">${typeTags}</div></td>
                 <td><div class="tag-container">${classTags}</div></td>
-                <td>${switcherHtml}<div class="tag-container stat-tags-container">${statTagsHtml}</div></td>
+                <td>${switcherHtml}${damageHtml}<div class="tag-container stat-tags-container">${statTagsHtml}</div></td>
             </tr>
             ${detailHtml ? `<tr class="item-detail-row" data-item-detail="${item.id}" style="display:none;"><td colspan="4" class="item-detail-cell"><div class="item-detail-content">${detailHtml}</div></td></tr>` : ''}`;
         }
@@ -708,7 +713,7 @@
                 btn.classList.add('active');
                 const statContainer = row.querySelector('.stat-tags-container');
                 if(statContainer) { statContainer.innerHTML = buildStatTagsHtml(item, variantIndex); }
-                const damageLine = row.closest('table')?.querySelector(`.item-damage-line[data-item-damage="${itemId}"]`);
+                const damageLine = row.querySelector(`.item-damage-line[data-item-damage="${itemId}"]`);
                 if(damageLine && item.variants[variantIndex]) {
                     const v = item.variants[variantIndex];
                     const dmgMin = v.damageMin !== undefined ? v.damageMin : '';
