@@ -1,5 +1,5 @@
 {
-"version": "v51",
+"version": "v52",
   "zones": [
     {
       "name": "Meridion",
@@ -728,6 +728,26 @@
               "name": "Burden of the Abyss",
               "types": [
                 "Hands"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Critical"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Bleak Shell's Knee Pads",
+              "types": [
+                "Feet"
               ],
               "classes": [
                 "rogue"
@@ -1641,6 +1661,26 @@
                 "Strength",
                 "Dexterity",
                 "Armor Penetration",
+                "Fervor"
+              ],
+              "skill1": "",
+              "skill2": "",
+              "skill3": "",
+              "passive": "",
+              "trinketPassive": ""
+            },
+            {
+              "name": "Silhouette of Apix",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
                 "Fervor"
               ],
               "skill1": "",
