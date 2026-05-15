@@ -1,5 +1,5 @@
 {
-"version": "v65",
+"version": "v66",
   "zones": [
     {
       "name": "Meridion",
@@ -365,7 +365,45 @@
               ],
               "skill1": "\nTear\n0.75s\n45% Strength + 45% Dexterity · Physical\nDeals 45% Strength + 45% Dexterity Physical to an enemy and resets the cooldown of Bonethrow if this critically strikes.",
               "skill2": "\nBonethrow\ncd 15s · 0.4s\n65% Strength + 65% Dexterity · Physical\nThrows a sharpen bone at an enemy, dealing 65% Strength + 65% Dexterity Physical and causing them to bleed for 40% of the damage dealt over 8. The bone then jumps to 2 enemies.",
-              "passive": "\nBloodrage Aura\ncd 3s\nIncreases the [CritChance] of all allies within 40 by 3% to 5%."
+              "passive": "\nBloodrage Aura\ncd 3s\nIncreases the [CritChance] of all allies within 40 by 3% to 5%.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 9,
+                  "damageMax": 12,
+                  "statValues": {
+                    "Vitality": 20,
+                    "Strength": 9,
+                    "Dexterity": 10,
+                    "Critical": 28,
+                    "Armor Penetration": 28
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 9,
+                  "damageMax": 12,
+                  "statValues": {
+                    "Vitality": 23,
+                    "Strength": 10,
+                    "Dexterity": 12,
+                    "Critical": 31,
+                    "Armor Penetration": 31
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 9,
+                  "damageMax": 12,
+                  "statValues": {
+                    "Vitality": 27,
+                    "Strength": 12,
+                    "Dexterity": 14,
+                    "Critical": 33,
+                    "Armor Penetration": 33
+                  }
+                }
+              ]
             },
             {
               "name": "Raclette Pan",
@@ -449,7 +487,39 @@
               "skill1": "\nSearing Furnace\n1s\n100% Faith · Magic\nQuickly casts a fire bolt dealing 100% Faith Magic to an enemy, increasing all damage dealt to them by 4% for 10s.",
               "skill2": "\nHeat Emission\ncd 8s · 0.35s\nAll your Flamies simultaneously burst some heat around, dealing 50% Faith Magic to nearby enemies.",
               "skill3": "\nHot, hot, hot!\ncd 20s · 0.1s\nConjures a heat zone in the targeted area for 4. Allies within the zone receive a temporary Flamie for 8.",
-              "passive": "\nFlamie\nYou are permanently followed by a Flamie, healing 10% Faith every 2."
+              "passive": "\nFlamie\nYou are permanently followed by a Flamie, healing 10% Faith every 2.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 7,
+                  "damageMax": 9,
+                  "statValues": {
+                    "Vitality": 22,
+                    "Faith": 17,
+                    "Critical": 57
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 7,
+                  "damageMax": 9,
+                  "statValues": {
+                    "Vitality": 26,
+                    "Faith": 20,
+                    "Critical": 62
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 8,
+                  "damageMax": 10,
+                  "statValues": {
+                    "Vitality": 30,
+                    "Faith": 23,
+                    "Critical": 66
+                  }
+                }
+              ]
             },
             {
               "name": "Spirit of the Spelunker",
@@ -613,7 +683,33 @@
                 "Armor"
               ],
               "skill1": "\nDepth Shield\ncd 15s\nSpawns a bubble with 3 charges. When an enemy is nearby, the bubble consumes a charge to pulse, dealing 55% Faith Magic to enemies and healing allies for 30% Faith Magic.",
-              "passive": "\nShell of the Devourer\nYour [ComboAttack]s and [AttackBlock]s grant you a stack of Water Infusion. At 4 stacks, your next [AttackBlock] is empowered, dealing 250% Faith Magic to nearby enemies.\n\n"
+              "passive": "\nShell of the Devourer\nYour [ComboAttack]s and [AttackBlock]s grant you a stack of Water Infusion. At 4 stacks, your next [AttackBlock] is empowered, dealing 250% Faith Magic to nearby enemies.\n\n",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Armor": 403
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Armor": 436
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Armor": 468
+                  }
+                }
+              ]
             },
             {
               "name": "Boots of Abyssal Essence",
@@ -674,12 +770,52 @@
               "stats": [
                 "Vitality",
                 "Dexterity",
-                "Critical"
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
               ],
               "skill1": "\nSink to the Bottom\n0.7s\n30% Dexterity + 30% Intellect + 30% Dexterity + 30% Intellect · Physical\nDelivers a strong punch dealing 30% Dexterity + 30% Intellect Physical to an enemy and reduces the cooldown of one random [WeaponSkill] by 0.5.",
               "skill2": "\nTide Rising Uppercut\ncd 22s · 0.75s\n60% Dexterity + 60% Intellect · Magic\nUnleashes an upward surge of water, dealing 60% Dexterity + 60% Intellect Magic to all nearby enemies. Using a [Skill] increases the damage of your next Tide Rising Uppercut by 50%, stacking up to 10 times.",
               "skill3": "\nTwin Claws\ncd 6s · 0.4s\n70% Dexterity · Physical · 70% Intellect · Magic\nQuickly strikes with both hands, dealing 70% Dexterity Physical + 70% Intellect Magic to an enemy.",
-              "passive": "\nGoing With the Flow\n20% Intellect + 26% Intellect · Magic\nErupts water, dealing 20% Intellect + 26% Intellect Magic to nearby enemies when using a [ComboAttack] or [WeaponSkill] different from the last action."
+              "passive": "\nGoing With the Flow\n20% Intellect + 26% Intellect · Magic\nErupts water, dealing 20% Intellect + 26% Intellect Magic to nearby enemies when using a [ComboAttack] or [WeaponSkill] different from the last action.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 8,
+                  "damageMax": 10,
+                  "statValues": {
+                    "Vitality": 20,
+                    "Dexterity": 10,
+                    "Intelligence": 10,
+                    "Critical": 28,
+                    "Magic Penetration": 28
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 8,
+                  "damageMax": 10,
+                  "statValues": {
+                    "Vitality": 23,
+                    "Dexterity": 12,
+                    "Intelligence": 12,
+                    "Critical": 31,
+                    "Magic Penetration": 31
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 9,
+                  "damageMax": 11,
+                  "statValues": {
+                    "Vitality": 27,
+                    "Dexterity": 14,
+                    "Intelligence": 14,
+                    "Critical": 33,
+                    "Magic Penetration": 33
+                  }
+                }
+              ]
             },
             {
               "name": "Wings of the Phophet",
@@ -772,12 +908,12 @@
                 "Fervor"
               ],
               "statValues": {
-                "Armor": 142,
-                "Vitality": 5,
-                "Dexterity": 3,
+                "Armor": 170,
+                "Vitality": 7,
+                "Dexterity": 4,
                 "Faith": 3,
-                "Critical": 10,
-                "Fervor": 10
+                "Critical": 12,
+                "Fervor": 12
               }
             },
             {
@@ -1670,7 +1806,45 @@
               "skill1": "\nFloral Euphoria\n0.8s\n5% Dexterity + 5% Faith + 40% Dexterity + 40% Faith · Physical\nStrikes the ground, dealing 5% Dexterity + 5% Faith Physical to nearby enemies and increasing your [CritChance] by 2% for 15, stacking up to 4 times.",
               "skill2": "\nFlower Spiral\ncd 12s\n18% Dexterity + 18% Faith + 18% Dexterity + 18% Faith · Magic\nSpins to deal 18% Dexterity + 18% Faith Magic to nearby enemies. Consumes all stacks of Psychoactive Petal to spin additional times. During combat, generates a stack of Psychoactive Petal every 4 and after every [ComboAttack], stacking up to 6 times.",
               "skill3": "\nBloom\ncd 16s · 0.4s\nFor 4, all damage you deal heals allies within 15 for 25% of the damage dealt.",
-              "passive": "\nNectar-infused Blade\n12% Faith · Magic\nYour [Attack]s deal an additional 12% Faith Magic and slow enemies by 70% for 3."
+              "passive": "\nNectar-infused Blade\n12% Faith · Magic\nYour [Attack]s deal an additional 12% Faith Magic and slow enemies by 70% for 3.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 10,
+                  "damageMax": 14,
+                  "statValues": {
+                    "Vitality": 20,
+                    "Dexterity": 10,
+                    "Faith": 9,
+                    "Magic Penetration": 28,
+                    "Fervor": 28
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 10,
+                  "damageMax": 14,
+                  "statValues": {
+                    "Vitality": 23,
+                    "Dexterity": 12,
+                    "Faith": 10,
+                    "Magic Penetration": 31,
+                    "Fervor": 31
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 10,
+                  "damageMax": 14,
+                  "statValues": {
+                    "Vitality": 27,
+                    "Dexterity": 14,
+                    "Faith": 12,
+                    "Magic Penetration": 33,
+                    "Fervor": 33
+                  }
+                }
+              ]
             },
             {
               "name": "Flying Trousers Prototype",
@@ -1865,7 +2039,42 @@
               "skill1": "\nScatterbloom\n1.1s\n20% Dexterity + 20% Intellect · Physical\nThrows three sharpened petals dealing 20% Dexterity + 20% Intellect Physical to an enemy. Each Petal has a 0.35 chance to plant a stack of Ravenous Sprout.",
               "skill2": "\nHarvesting Scythe\ncd 15s · 1s\n150% Dexterity + 195% Dexterity · Physical\nThrows a rotating flower in the targeted direction, dealing 150% Dexterity + 195% Dexterity Physical to enemies. Harvests all Ravenous Sprout stacks, releasing a poison dealing 35% Intellect Magic over 6.",
               "skill3": "\nVerdant Impetus\ncd 24s · 0.5s\nYour Ranged [Attack]s become bouncing for 6, dealing 15% increased damage and planting a stack of Ravenous Sprout.",
-              "passive": "\nNatural Ascendancy\nYour damage and healing done to a target increase by 2% for each different periodic effect on them, up to 6%."
+              "passive": "\nNatural Ascendancy\nYour damage and healing done to a target increase by 2% for each different periodic effect on them, up to 6%.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 15,
+                  "damageMax": 19,
+                  "statValues": {
+                    "Vitality": 20,
+                    "Dexterity": 10,
+                    "Intelligence": 10,
+                    "Fervor": 57
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 15,
+                  "damageMax": 19,
+                  "statValues": {
+                    "Vitality": 23,
+                    "Dexterity": 12,
+                    "Intelligence": 12,
+                    "Fervor": 62
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 15,
+                  "damageMax": 19,
+                  "statValues": {
+                    "Vitality": 27,
+                    "Dexterity": 14,
+                    "Intelligence": 14,
+                    "Fervor": 66
+                  }
+                }
+              ]
             },
             {
               "name": "Whirring Gem of Apix",
@@ -1906,7 +2115,45 @@
               ],
               "skill1": "\nHive Bite\n0.75s\n42.5% Strength + 42.5% Faith · Physical · 20% Faith\nA thrust that deals 42.5% Strength + 42.5% Faith Physical to an enemy, healing you and all nearby allies for 20% Faith.",
               "skill2": "\nHive's Sunder\ncd 18s · 0.7s\n100% Strength + 100% Faith · Physical\nPerforms a strong cleave dealing 100% Strength + 100% Faith Physical to nearby enemies and reducing their [MagicArmor] by -30% to -40% for 10.",
-              "passive": "\nSwarm Lord\nYour Weapon Skills surround you with an Hive Swarm for 10. Hive Swarm deals 30% Faith Magic to nearby enemies and heals you for that amount every 2."
+              "passive": "\nSwarm Lord\nYour Weapon Skills surround you with an Hive Swarm for 10. Hive Swarm deals 30% Faith Magic to nearby enemies and heals you for that amount every 2.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 9,
+                  "damageMax": 12,
+                  "statValues": {
+                    "Vitality": 22,
+                    "Strength": 9,
+                    "Faith": 9,
+                    "Armor Penetration": 28,
+                    "Magic Penetration": 28
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 9,
+                  "damageMax": 12,
+                  "statValues": {
+                    "Vitality": 26,
+                    "Strength": 10,
+                    "Faith": 10,
+                    "Armor Penetration": 31,
+                    "Magic Penetration": 31
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 9,
+                  "damageMax": 12,
+                  "statValues": {
+                    "Vitality": 30,
+                    "Strength": 12,
+                    "Faith": 12,
+                    "Armor Penetration": 33,
+                    "Magic Penetration": 33
+                  }
+                }
+              ]
             },
             {
               "name": "Flight of the Rumblebee",
@@ -2099,7 +2346,33 @@
                 "Armor"
               ],
               "skill1": "Furnace Roar\ncd 18s\n45% Intellect · Magic\nChannels a fire breath dealing up to 45% Intellect Magic over 3 to enemies in front of you.",
-              "passive": "Cinder Coat\n15% Armor · Physical\nBlocking an attack engulfs you in flames for 4, dealing 30% Intellect Magic to nearby enemies every 1."
+              "passive": "Cinder Coat\n15% Armor · Physical\nBlocking an attack engulfs you in flames for 4, dealing 30% Intellect Magic to nearby enemies every 1.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Armor": 403
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Armor": 436
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Armor": 468
+                  }
+                }
+              ]
             },
             {
               "name": "Unity of the Thirty Kingdoms ",
@@ -2358,7 +2631,15 @@
                 "Dexterity",
                 "Critical",
                 "Armor Penetration"
-              ]
+              ],
+              "statValues": {
+                "Armor": 214,
+                "Vitality": 7,
+                "Strength": 3,
+                "Dexterity": 4,
+                "Critical": 12,
+                "Armor Penetration": 12
+              }
             },
             {
               "name": "Wings of the Prophet ",
@@ -2435,7 +2716,15 @@
                 "Critical",
                 "Faith",
                 "Fervor"
-              ]
+              ],
+              "statValues": {
+                "Armor": 170,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Faith": 3,
+                "Fervor": 12,
+                "Critical": 12
+              }
             },
             {
               "name": "Burden of the Abyss",
@@ -2505,15 +2794,47 @@
               ],
               "stats": [
                 "Vitality",
-                "Faith",
                 "Strength",
+                "Faith",
                 "Armor Penetration",
                 "Magic Penetration"
               ],
               "skill1": "\n33% Strength · Physical\nHoney Crush\n1s\n89.5% Strength + 89.5% Faith · Physical\nSmashes the ground and deals 89.5% Strength + 89.5% Faith Physical to enemies, knocking them back and generating 2 stacks of Buzzing.",
               "skill2": "\nReverse Honey Spin\ncd 16s · 1.5s\n40% Strength + 40% Faith + 150% Strength + 150% Faith · Magic\nDraws all nearby enemies before you, dealing them 40% Strength + 40% Faith Magic, then slams the ground, dealing 150% Strength + 150% Faith Magic.",
               "skill3": "\nBrood Leap\ncd 24s · 0.1s\n125% Strength + 125% Faith + 156.3% Strength + 156.3% Faith + 100% Faith + 125% Faith + 40% Faith · Physical\nLeaps through the air towards the targeted area, dealing 125% Strength + 125% Faith + 156.25% Strength + 156.25% Faith Physical and leaving an area upon arrival dealing 100% Faith + 125% Faith Physical over 12.",
-              "passive": "\nMad Buzz\nDealing and taking damage has a 0.2 chance to generate a stack of Buzzing, stacking up to 10 times. At 10 stacks, summons an angry bee that starts attacking enemies for 15, dealing 80% Faith Magic every 3."
+              "passive": "\nMad Buzz\nDealing and taking damage has a 0.2 chance to generate a stack of Buzzing, stacking up to 10 times. At 10 stacks, summons an angry bee that starts attacking enemies for 15, dealing 80% Faith Magic every 3.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 24,
+                  "damageMax": 30,
+                  "statValues": {
+                    "Vitality": 22,
+                    "Strength": 9,
+                    "Faith": 9,
+                    "Armor Penetration": 28,
+                    "Magic Penetration": 28
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 24,
+                  "damageMax": 30,
+                  "statValues": {
+                    "Vitality": 26,
+                    "Strength": 10,
+                    "Faith": 10,
+                    "Armor Penetration": 31,
+                    "Magic Penetration": 31
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {}
+                }
+              ]
             },
             {
               "name": "Wingsabers",
@@ -2534,7 +2855,45 @@
               "skill1": "\nRoyal Severance\n0.85s\n50% Strength · Physical · 50% Intellect · Magic\nStrikes with both weapons, dealing 50% Strength Physical, 50% Intellect Magic to enemies in a frontal cone and generate a stack of Bladeleaf, stacking up to 2 times. Using your [SignatureSkill] consumes all stacks and throws them at the nearest enemy, each dealing them 35% Strength + 35% Intellect Magic.",
               "skill2": "\nHiveborn Blossom\ncd 12s · 0.7s\n25% Strength + 25% Strength · Physical · 25% Intellect + 25% Intellect · Magic\nSpins to deal 50% Strength Physical, 50% Intellect Magic to nearby enemies. You can recast this within the next 4 seconds, with damage increased by 100%.",
               "skill3": "\nSwarmstrike Accord\ncd 45s · 0.65s\nGrants a blessing to all allies within 40, causing all their [Attack]s to deal an additional 30% Intellect Magic for 8.",
-              "passive": "\nQueen's Decree\ncd 30s\n20% Intellect · Magic\nThe next time one of your skills deals [Magic] damage, it is increased by 100% (30 cooldown)."
+              "passive": "\nQueen's Decree\ncd 30s\n20% Intellect · Magic\nThe next time one of your skills deals [Magic] damage, it is increased by 100% (30 cooldown).",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 15,
+                  "damageMax": 19,
+                  "statValues": {
+                    "Vitality": 22,
+                    "Strength": 9,
+                    "Intelligence": 10,
+                    "Armor Penetration": 28,
+                    "Fervor": 28
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 15,
+                  "damageMax": 19,
+                  "statValues": {
+                    "Vitality": 26,
+                    "Strength": 10,
+                    "Intelligence": 12,
+                    "Armor Penetration": 31,
+                    "Fervor": 31
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 15,
+                  "damageMax": 19,
+                  "statValues": {
+                    "Vitality": 30,
+                    "Strength": 12,
+                    "Intelligence": 14,
+                    "Armor Penetration": 33,
+                    "Fervor": 33
+                  }
+                }
+              ]
             },
             {
               "name": "Flying Trousers Prototype",
@@ -2572,18 +2931,53 @@
                 "rogue"
               ],
               "stats": [
-                "Dexterity",
                 "Vitality",
+                "Dexterity",
                 "Intelligence",
                 "Fervor"
               ],
               "skill1": "\nScatterbloom\n1.1s\n20% Dexterity + 20% Intellect · Physical\nThrows three sharpened petals dealing 20% Dexterity + 20% Intellect Physical to an enemy. Each Petal has a 0.35 chance to plant a stack of Ravenous Sprout.",
               "skill2": "\nHarvesting Scythe\ncd 15s · 1s\n150% Dexterity + 195% Dexterity · Physical\nThrows a rotating flower in the targeted direction, dealing 150% Dexterity + 195% Dexterity Physical to enemies. Harvests all Ravenous Sprout stacks, releasing a poison dealing 35% Intellect Magic over 6.",
               "skill3": "\nVerdant Impetus\ncd 24s · 0.5s\nYour Ranged [Attack]s become bouncing for 6, dealing 15% increased damage and planting a stack of Ravenous Sprout.",
-              "passive": "\nNatural Ascendancy\nYour damage and healing done to a target increase by 2% for each different periodic effect on them, up to 6%."
+              "passive": "\nNatural Ascendancy\nYour damage and healing done to a target increase by 2% for each different periodic effect on them, up to 6%.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 15,
+                  "damageMax": 19,
+                  "statValues": {
+                    "Vitality": 20,
+                    "Dexterity": 10,
+                    "Intelligence": 10,
+                    "Fervor": 57
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 15,
+                  "damageMax": 19,
+                  "statValues": {
+                    "Vitality": 23,
+                    "Dexterity": 12,
+                    "Intelligence": 12,
+                    "Fervor": 62
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 15,
+                  "damageMax": 19,
+                  "statValues": {
+                    "Vitality": 27,
+                    "Dexterity": 14,
+                    "Intelligence": 14,
+                    "Fervor": 66
+                  }
+                }
+              ]
             },
             {
-              "name": "Hive Spouts",
+              "name": "Hive Sprouts",
               "types": [
                 "Shoulders"
               ],
@@ -2595,7 +2989,13 @@
                 "Armor",
                 "Intelligence",
                 "Fervor"
-              ]
+              ],
+              "statValues": {
+                "Armor": 108,
+                "Vitality": 6,
+                "Fervor": 18,
+                "Intelligence": 6
+              }
             },
             {
               "name": "Reflective Vest of the Hive Worker",
@@ -2709,7 +3109,13 @@
                 "Vitality",
                 "Dexterity",
                 "Fervor"
-              ]
+              ],
+              "statValues": {
+                "Armor": 138,
+                "Vitality": 5,
+                "Dexterity": 6,
+                "Fervor": 18
+              }
             }
           ]
         }
@@ -2733,12 +3139,47 @@
               "stats": [
                 "Vitality",
                 "Strength",
-                "Fervor",
-                "Faith"
+                "Faith",
+                "Fervor"
               ],
               "skill1": "\nSmite\n0.75s\n71.5% Strength · Physical · 20% Faith\nDeals 71.5% Strength Physical to an enemy and generates a stack of Benediction, stacking up to 5 times.",
               "skill2": "\nRam Veil\ncd 8s · 0.5s\n80% Faith · Magic\nEmits bright light around you, dealing 80% Faith Magic to nearby enemies and consuming all Benediction stacks. If 5 stacks are consumed, this increases your [CritChance] and [Fervor] by 10% for 15.",
-              "passive": "\nBlessing\nYour [WeaponSkill] empower your next 2 [Attack]s that will deal an additional ::dmg:: and generate a Benediction stack, stacking up to 5 times."
+              "passive": "\nBlessing\nYour [WeaponSkill] empower your next 2 [Attack]s that will deal an additional ::dmg:: and generate a Benediction stack, stacking up to 5 times.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 9,
+                  "damageMax": 12,
+                  "statValues": {
+                    "Vitality": 22,
+                    "Strength": 9,
+                    "Faith": 9,
+                    "Fervor": 57
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 9,
+                  "damageMax": 12,
+                  "statValues": {
+                    "Vitality": 26,
+                    "Strength": 10,
+                    "Faith": 10,
+                    "Fervor": 62
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 9,
+                  "damageMax": 12,
+                  "statValues": {
+                    "Vitality": 30,
+                    "Strength": 12,
+                    "Faith": 12,
+                    "Fervor": 66
+                  }
+                }
+              ]
             },
             {
               "name": "Armored Docker Cap",
@@ -2755,7 +3196,14 @@
                 "Strength",
                 "Faith",
                 "Critical"
-              ]
+              ],
+              "statValues": {
+                "Armor": 168,
+                "Vitality": 8,
+                "Strength": 3,
+                "Faith": 3,
+                "Critical": 24
+              }
             },
             {
               "name": "Vision of the Cheeseslicer",
@@ -2854,7 +3302,45 @@
               "skill1": "\nSentence\n0.58s\n16.5% Strength + 16.5% Dexterity + 16.5% Strength + 16.5% Dexterity + 30% Faith · Physical\nStrikes with both weapons, dealing 33% Strength + 33% Dexterity + 30% Faith Physical to an enemy and sentencing them to die, increasing all damage you deal to them by 10%.",
               "skill2": "\nZealous Spins\ncd 10s · 0.55s\n7.5% Strength + 7.5% Dexterity + 8.6% Strength + 8.6% Dexterity + 7.5% Strength + 7.5% Dexterity + 8.6% Strength + 8.6% Dexterity + 7.5% Strength + 7.5% Dexterity + 8.6% Strength + 8.6% Dexterity · Physical\nSpins foward, dealing 7.5% Strength + 7.5% Dexterity + 8.625% Strength + 8.625% Dexterity Physical to enemies thrice on your path. If an enemy is hit, you can recast it within 3.",
               "skill3": "\nIron Cyclone\ncd 10s · 0.55s\n35% Strength + 35% Dexterity + 35% Strength + 35% Dexterity + 35% Strength + 35% Dexterity + 35% Strength + 35% Dexterity · Physical\nCharges straight ahead, dealing four times 35% Strength + 35% Dexterity Physical to enemies and stunning them for 1.",
-              "passive": "\nZeal\nYour [Attack]s and [WeaponSkill]s generate a stack of Zeal, stacking up to 10 times. At 10 stacks, your next [ComboAttack] consums all stacks to reset the cooldown of Zealous Spins and increase its damage by 50%."
+              "passive": "\nZeal\nYour [Attack]s and [WeaponSkill]s generate a stack of Zeal, stacking up to 10 times. At 10 stacks, your next [ComboAttack] consums all stacks to reset the cooldown of Zealous Spins and increase its damage by 50%.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 7,
+                  "damageMax": 9,
+                  "statValues": {
+                    "Vitality": 20,
+                    "Strength": 9,
+                    "Dexterity": 10,
+                    "Critical": 28,
+                    "Fervor": 28
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 7,
+                  "damageMax": 9,
+                  "statValues": {
+                    "Vitality": 23,
+                    "Strength": 10,
+                    "Dexterity": 12,
+                    "Critical": 31,
+                    "Fervor": 31
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 7,
+                  "damageMax": 9,
+                  "statValues": {
+                    "Vitality": 27,
+                    "Strength": 12,
+                    "Dexterity": 14,
+                    "Critical": 33,
+                    "Fervor": 33
+                  }
+                }
+              ]
             },
             {
               "name": "Miner Ramparts",
