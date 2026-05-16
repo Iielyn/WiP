@@ -1,5 +1,5 @@
 {
-"version": "v70",
+"version": "v71",
   "zones": [
     {
       "name": "Meridion",
@@ -335,6 +335,53 @@
                 "Dexterity": 3,
                 "Critical": 9,
                 "Armor Penetration": 9
+              }
+            },
+            {
+              "name": "Cloak of the Third Wave Apostle",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "mage",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "statValues": {
+                "Armor": 47,
+                "Vitality": 4,
+                "Dexterity": 3,
+                "Intelligence": 3,
+                "Critical": 7,
+                "Magic Penetration": 7
+              }
+            },
+            {
+              "name": "Submarine Torpedo Helmet",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Critical"
+              ],
+              "statValues": {
+                "Armor": 149,
+                "Vitality": 6,
+                "Dexterity": 8,
+                "Critical": 24
               }
             }
           ]
@@ -2894,37 +2941,19 @@
                   "rarity": "blue",
                   "damageMin": 0,
                   "damageMax": 0,
-                  "statValues": {
-                    "Vitality": 22,
-                    "Faith": 9,
-                    "Intelligence": 10,
-                    "Magic Penetration": 28,
-                    "Fervor": 28
-                  }
+                  "statValues": {}
                 },
                 {
                   "rarity": "purple",
                   "damageMin": 0,
                   "damageMax": 0,
-                  "statValues": {
-                    "Vitality": 26,
-                    "Faith": 10,
-                    "Intelligence": 12,
-                    "Magic Penetration": 31,
-                    "Fervor": 31
-                  }
+                  "statValues": {}
                 },
                 {
                   "rarity": "legendary",
                   "damageMin": 0,
                   "damageMax": 0,
-                  "statValues": {
-                    "Vitality": 30,
-                    "Faith": 12,
-                    "Intelligence": 14,
-                    "Magic Penetration": 33,
-                    "Fervor": 33
-                  }
+                  "statValues": {}
                 }
               ]
             }
