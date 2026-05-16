@@ -105,6 +105,7 @@
         .type-btn[data-type="Scepter"].active { background:rgba(168,85,247,0.20); border-color:#a855f7; color:#c084fc; box-shadow:0 0 10px rgba(168,85,247,0.38); }
         .type-btn[data-type="Crescent"].active { background:rgba(203,213,225,0.18); border-color:#cbd5e1; color:#e2e8f0; box-shadow:0 0 10px rgba(203,213,225,0.32); }
         .type-btn[data-type="Halos"].active { background:rgba(251,191,36,0.22); border-color:#fbbf24; color:#fde68a; box-shadow:0 0 12px rgba(251,191,36,0.40); }
+        .type-btn[data-type="Spellbook"].active { background:rgba(34,211,238,0.20); border-color:#22d3ee; color:#67e8f9; box-shadow:0 0 10px rgba(34,211,238,0.38); }
         .type-btn[data-type="Shield"].active { background:rgba(96,165,250,0.20); border-color:#60a5fa; color:#93c5fd; box-shadow:0 0 10px rgba(96,165,250,0.35); }
         .type-btn[data-type="Head"].active { background:rgba(192,132,252,0.20); border-color:#c084fc; color:#e0b4ff; box-shadow:0 0 10px rgba(192,132,252,0.35); }
         .type-btn[data-type="Shoulders"].active { background:rgba(148,163,184,0.20); border-color:#94a3b8; color:#cbd5e1; box-shadow:0 0 8px rgba(148,163,184,0.30); }
@@ -183,6 +184,7 @@
         .type-color-scepter { color:#c084fc; text-shadow:0 0 8px rgba(168,85,247,0.35); }
         .type-color-crescent { color:#e2e8f0; text-shadow:0 0 8px rgba(203,213,225,0.30); }
         .type-color-halos { color:#fde68a; text-shadow:0 0 10px rgba(251,191,36,0.38); }
+        .type-color-spellbook { color:#67e8f9; text-shadow:0 0 8px rgba(34,211,238,0.35); }
         .type-color-shield { color:#93c5fd; text-shadow:0 0 8px rgba(96,165,250,0.32); }
         .type-color-head { color:#e0b4ff; text-shadow:0 0 8px rgba(192,132,252,0.32); }
         .type-color-shoulders { color:#cbd5e1; text-shadow:0 0 6px rgba(148,163,184,0.28); }
@@ -224,6 +226,7 @@
         .tag.type-fists { background:rgba(239,68,68,0.24); border-color:#ef4444; color:#f87171; }
         .tag.type-scepter { background:rgba(168,85,247,0.20); border-color:#a855f7; color:#c084fc; }
         .tag.type-crescent { background:rgba(203,213,225,0.18); border-color:#cbd5e1; color:#e2e8f0; }
+        .tag.type-spellbook { background:rgba(34,211,238,0.20); border-color:#22d3ee; color:#67e8f9; }
         .tag.type-trinket { background:rgba(244,114,182,0.20); border-color:#f472b6; color:#f9a8d4; }
         .tag.stat-armor { background:rgba(156,163,175,0.20); border-color:#9ca3af; color:#d1d5db; }
         .tag.stat-vitality { background:rgba(52,211,153,0.20); border-color:#34d399; color:#6ee7b7; }
@@ -316,6 +319,26 @@
         .item-detail-content div { margin-bottom:4px; }
         .item-detail-content strong { font-size:0.95rem; font-weight:600; letter-spacing:0.02em; }
         @media (max-width:1000px) { .item-detail-cell { padding:8px 12px; font-size:0.75rem; } .item-detail-content strong { font-size:0.82rem; } }
+        .stat-match-toggle {
+            padding:6px 14px;
+            font-size:0.7rem;
+            font-weight:600;
+            letter-spacing:0.04em;
+            text-transform:uppercase;
+            border-radius:20px;
+            border:1px solid var(--border);
+            background:transparent;
+            color:var(--text-dim);
+            cursor:pointer;
+            transition:all var(--transition);
+            font-family:var(--font);
+            white-space:nowrap;
+            display:flex;
+            align-items:center;
+            gap:6px;
+        }
+        .stat-match-toggle:hover { background:var(--surface2); color:var(--text); border-color:#555; }
+        .stat-match-toggle[data-mode="any"] { background:rgba(74,222,128,0.1); border-color:var(--item-green); color:var(--item-green); }
     </style>
 </head>
 <body class="loading">
@@ -353,6 +376,7 @@
             <div class="filter-group-header"><span class="arrow">▼</span><span class="label">Type</span><span class="active-count" id="type-count" style="display:none">0</span></div>
             <div class="filter-dropdown" id="type-dropdown"></div>
         </div>
+        <button class="stat-match-toggle" id="stat-match-toggle" data-mode="all">Match: ALL</button>
         <button class="clear-all-btn" id="clear-all-btn" style="display:none;">✕ Clear</button>
     </div>
     <div class="main-content">
@@ -389,14 +413,15 @@
         const CLASS_OPTIONS = ['warrior', 'rogue', 'mage', 'priest'];
         const CLASS_LABELS = { warrior: 'War', rogue: 'Rog', mage: 'Mage', priest: 'Pri' };
         const STAT_OPTIONS = ['Armor','Vitality','Strength','Dexterity','Faith','Intelligence','Critical','Armor Penetration','Magic Penetration','Fervor'];
-        const WEAPON_TYPES = ['Sword','Dual Sword','Axe','Dual Axes','Daggers','Mace','Dual Maces','Spear','Fists','Two-Handed Axe','Two-Handed Mace','Bow','Thrown','Scepter','Crescent','Halos'];
-        const ARMOR_TYPES = ['Head','Shoulders','Chest','Hands','Legs','Feet','Waist','Back','Shield']; // Cape removed (Back now represents Cape)
+        const WEAPON_TYPES = ['Sword','Dual Sword','Axe','Dual Axes','Daggers','Mace','Dual Maces','Spear','Fists','Two-Handed Axe','Two-Handed Mace','Bow','Thrown','Scepter','Crescent','Halos','Spellbook'];
+        const ARMOR_TYPES = ['Head','Shoulders','Chest','Hands','Legs','Feet','Waist','Back','Shield'];
         const TRINKET_TYPES = ['Trinket'];
         const TYPE_OPTIONS = [...WEAPON_TYPES, ...ARMOR_TYPES, ...TRINKET_TYPES];
         let appData = { zones: [] };
         let filterClasses = [];
         let filterTypes = [];
         let filterStats = [];
+        let statMatchMode = 'all';
         let searchQuery = '';
         const allItemsMap = new Map();
         const escapeHtml = str => str ? str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;') : '';
@@ -414,7 +439,13 @@
         const itemPassesFilter = item => {
             if(filterClasses.length && !filterClasses.some(cls => item.classes.includes(cls))) return false;
             if(filterTypes.length && !filterTypes.some(t => item.types.includes(t))) return false;
-            if(filterStats.length && !filterStats.every(s => item.stats.includes(s))) return false;
+            if(filterStats.length) {
+                if(statMatchMode === 'all') {
+                    if(!filterStats.every(s => item.stats.includes(s))) return false;
+                } else {
+                    if(!filterStats.some(s => item.stats.includes(s))) return false;
+                }
+            }
             if(searchQuery && !item.name.toLowerCase().includes(searchQuery.toLowerCase())) return false;
             return true;
         };
@@ -426,14 +457,11 @@
                     dungeon.id = dungeon.id || generateId();
                     dungeon._open = dungeon._open || false;
                     dungeon.loot = (dungeon.loot || []).map(item => {
-                        // Unify Cape into Back
                         const types = Array.isArray(item.types) ? [...item.types] : [];
                         if (types.includes('Cape')) {
-                            // Replace Cape with Back if Back not already present
                             if (!types.includes('Back')) {
                                 types[types.indexOf('Cape')] = 'Back';
                             } else {
-                                // Both exist, remove Cape
                                 types.splice(types.indexOf('Cape'), 1);
                             }
                         }
@@ -652,7 +680,13 @@
                 const allItems = appData.zones.flatMap(z => z.dungeons.flatMap(d => d.loot));
                 const count = allItems.filter(item => {
                     if(filterClasses.length && !filterClasses.some(cls => item.classes.includes(cls))) return false;
-                    if(filterStats.length && !filterStats.every(s => item.stats.includes(s))) return false;
+                    if(filterStats.length) {
+                        if(statMatchMode === 'all') {
+                            if(!filterStats.every(s => item.stats.includes(s))) return false;
+                        } else {
+                            if(!filterStats.some(s => item.stats.includes(s))) return false;
+                        }
+                    }
                     if(searchQuery && !item.name.toLowerCase().includes(searchQuery.toLowerCase())) return false;
                     return item.types.includes(type);
                 }).length;
@@ -669,6 +703,9 @@
             updateTypeButtonCounts();
             const clearBtn = document.getElementById('clear-all-btn');
             if(filterClasses.length === 0 && filterTypes.length === 0 && filterStats.length === 0 && !searchQuery) { clearBtn.style.display = 'none'; } else { clearBtn.style.display = ''; }
+            const toggleBtn = document.getElementById('stat-match-toggle');
+            toggleBtn.textContent = statMatchMode === 'all' ? 'Match: ALL' : 'Match: ANY';
+            toggleBtn.setAttribute('data-mode', statMatchMode);
         }
         function toggleFilter(type, value) {
             if(type === 'class') { const idx = filterClasses.indexOf(value); idx === -1 ? filterClasses.push(value) : filterClasses.splice(idx,1); }
@@ -777,6 +814,10 @@
                 const dungeonHeader = e.target.closest('[data-action="toggle-dungeon"]');
                 if(dungeonHeader) { toggleDungeon(dungeonHeader.dataset.zoneId, dungeonHeader.dataset.dungeonId); }
             });
+            document.getElementById('stat-match-toggle').addEventListener('click', function() {
+                statMatchMode = statMatchMode === 'all' ? 'any' : 'all';
+                renderAll();
+            });
         }
         async function init() {
             const loaded = await loadData();
@@ -794,7 +835,6 @@
             document.body.classList.remove('loading');
             setInterval(checkForUpdate, 5*60*1000);
             checkForUpdate();
-            console.log('%c🗺️ Farever %c— Zones & dungeons hidden when empty.', 'color:#c9a44b;font-size:1.2em;', 'color:#d5d0c8;');
         }
         init();
     })();
