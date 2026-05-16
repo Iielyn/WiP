@@ -1,5 +1,5 @@
 {
-"version": "v69",
+"version": "v70",
   "zones": [
     {
       "name": "Meridion",
@@ -2376,6 +2376,27 @@
                 "Dexterity": 8,
                 "Fervor": 24
               }
+            },
+            {
+              "name": "Beewings",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Fervor"
+              ],
+              "statValues": {
+                "Armor": 138,
+                "Vitality": 5,
+                "Dexterity": 6,
+                "Fervor": 18
+              }
             }
           ]
         }
@@ -2847,6 +2868,65 @@
                 "Dexterity": 6,
                 "Critical": 18
               }
+            },
+            {
+              "name": "Book of Mi`Mizan",
+              "types": [
+                "Spellbook"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "skill1": "\nAbyssal Rise\ncd 10s · 0.4s\nSpawns a <val>Water Sphere</val> and consumes all stacks of Tide to spawn as much as additional spheres, up to 8. Walking through a sphere consumes it to grant a [Shield] absorbing 40% Faith Water. During combat, generates a stack of Tide every 4.",
+              "skill2": "\nExpulse\ncd 15s\nGrabs all nearby <val>Water Spheres</val>. You can recast this within 6 to throw them in the targeted direction, each dealing 40% Intellect + 40% Faith Magic to the first enemy encountered.",
+              "skill3": "\nExpulse\n0.35s\n40% Intellect + 40% Faith · Magic\nThrow orbs in the targeted direction, each dealing 40% Intellect + 40% Faith Magic to the first enemy encountered.",
+              "passive": "\nWater Veil\nApplying [Shield]s has a 0.35 chance to heal 30% Faith over 6.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Vitality": 22,
+                    "Faith": 9,
+                    "Intelligence": 10,
+                    "Magic Penetration": 28,
+                    "Fervor": 28
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Vitality": 26,
+                    "Faith": 10,
+                    "Intelligence": 12,
+                    "Magic Penetration": 31,
+                    "Fervor": 31
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Vitality": 30,
+                    "Faith": 12,
+                    "Intelligence": 14,
+                    "Magic Penetration": 33,
+                    "Fervor": 33
+                  }
+                }
+              ]
             }
           ]
         }
