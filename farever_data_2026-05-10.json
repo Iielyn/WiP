@@ -1,5 +1,5 @@
 {
-"version": "v71",
+"version": "v72",
   "zones": [
     {
       "name": "Meridion",
@@ -2941,19 +2941,37 @@
                   "rarity": "blue",
                   "damageMin": 0,
                   "damageMax": 0,
-                  "statValues": {}
+                  "statValues": {
+                    "Vitality": 22,
+                    "Faith": 9,
+                    "Intelligence": 10,
+                    "Magic Penetration": 28,
+                    "Fervor": 28
+                  }
                 },
                 {
                   "rarity": "purple",
                   "damageMin": 0,
                   "damageMax": 0,
-                  "statValues": {}
+                  "statValues": {
+                    "Vitality": 26,
+                    "Faith": 10,
+                    "Intelligence": 12,
+                    "Magic Penetration": 31,
+                    "Fervor": 31
+                  }
                 },
                 {
                   "rarity": "legendary",
                   "damageMin": 0,
                   "damageMax": 0,
-                  "statValues": {}
+                  "statValues": {
+                    "Vitality": 30,
+                    "Faith": 12,
+                    "Intelligence": 14,
+                    "Magic Penetration": 33,
+                    "Fervor": 33
+                  }
                 }
               ]
             }
