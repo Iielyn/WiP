@@ -1,5 +1,5 @@
 {
-"version": "v67",
+"version": "v68",
   "zones": [
     {
       "name": "Meridion",
@@ -611,6 +611,27 @@
                 "Strength": 2,
                 "Faith": 2,
                 "Critical": 18
+              }
+            },
+            {
+              "name": "Relic of the Four Hundred",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Armor Penetration"
+              ],
+              "statValues": {
+                "Armor": 117,
+                "Vitality": 4,
+                "Dexterity": 6,
+                "Armor Penetration": 18
               }
             }
           ]
@@ -1314,19 +1335,19 @@
               "variants": [
                 {
                   "rarity": "blue",
-                  "damageMin": 0,
-                  "damageMax": 0,
-                  "statValues": {}
+                  "damageMin": 10,
+                  "damageMax": 14,
+                  "statValues": {
+                    "Vitality": 22,
+                    "Dexterity": 26,
+                    "Critical": 64
+                  }
                 },
                 {
                   "rarity": "purple",
-                  "damageMin": 8,
-                  "damageMax": 10,
-                  "statValues": {
-                    "Vitality": 21,
-                    "Dexterity": 24,
-                    "Critical": 62
-                  }
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {}
                 },
                 {
                   "rarity": "legendary",
@@ -1750,13 +1771,7 @@
                 "Vitality",
                 "Dexterity",
                 "Armor Penetration"
-              ],
-              "statValues": {
-                "Armor": 117,
-                "Vitality": 4,
-                "Dexterity": 6,
-                "Armor Penetration": 18
-              }
+              ]
             }
           ]
         }
@@ -2485,7 +2500,33 @@
               "skill1": "\nSwift Strike\n1.1s\n62% Dexterity + 62% Faith · Physical · 25% Dexterity + 25% Faith · Magic\nStrikes forward, dealing 62% Dexterity + 62% Faith Physical to an enemy and increasing your [CritChance] by 3%, stacking up to 3 times.",
               "skill2": "\nSwirling Embers\ncd 18s · 0.5s\nSurrounds yourself with an embers whirlwind dealing 25% Dexterity + 25% Faith + 30% Dexterity + 30% Faith Magic to nearby enemies every 1 for 8.",
               "skill3": "\nEruption\ncd 20s · 1.3s\n15% Dexterity + 15% Faith + 150% Dexterity + 150% Faith · Magic\nPulls nearby enemies towards you, dealing 15% Dexterity + 15% Faith Magic. Then, releases a lava explosion dealing 150% Dexterity + 150% Faith Magic.",
-              "passive": "\nHeart of the Furnace\nYour [Skill]s and [Attack]s increase your [Armor] by 2%, stacking up to 15 times."
+              "passive": "\nHeart of the Furnace\nYour [Skill]s and [Attack]s increase your [Armor] by 2%, stacking up to 15 times.",
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Vitality": 20,
+                    "Dexterity": 10,
+                    "Faith": 9,
+                    "Critical": 28,
+                    "Armor Penetration": 28
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {}
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {}
+                }
+              ]
             },
             {
               "name": "Treasure Hunter's Straps",
@@ -2624,6 +2665,27 @@
               "trinketPassive": "our [Attack]s grant you 4 [CritChanceRating] for 10, stacking up to 20 times.",
               "statValues": {
                 "Armor Penetration": 26
+              }
+            },
+            {
+              "name": "Relic of the Four Hundred",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Armor Penetration"
+              ],
+              "statValues": {
+                "Armor": 117,
+                "Vitality": 4,
+                "Dexterity": 6,
+                "Armor Penetration": 18
               }
             }
           ]
