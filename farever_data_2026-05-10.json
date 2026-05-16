@@ -1,5 +1,5 @@
 {
-"version": "v73",
+"version": "v74",
   "zones": [
     {
       "name": "Meridion",
@@ -1251,6 +1251,10 @@
                 "Magic Penetration",
                 "Fervor"
               ],
+              "skill1": "\nAbyssal Rise\ncd 10s · 0.4s\nSpawns a <val>Water Sphere</val> and consumes all stacks of Tide to spawn as much as additional spheres, up to 8. Walking through a sphere consumes it to grant a [Shield] absorbing 40% Faith Water. During combat, generates a stack of Tide every 4.",
+              "skill2": "\nExpulse\ncd 15s\nGrabs all nearby <val>Water Spheres</val>. You can recast this within 6 to throw them in the targeted direction, each dealing 40% Intellect + 40% Faith Magic to the first enemy encountered.",
+              "skill3": "\nExpulse\n0.35s\n40% Intellect + 40% Faith · Magic\nThrow orbs in the targeted direction, each dealing 40% Intellect + 40% Faith Magic to the first enemy encountered.\n\n",
+              "passive": "\nWater Veil\nApplying [Shield]s has a 0.35 chance to heal 30% Faith over 6.",
               "variants": [
                 {
                   "rarity": "blue",
