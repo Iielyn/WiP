@@ -579,7 +579,7 @@
             let detailHtml = '';
             if((isWeapon(item) || item.types.includes('Shield')) && hasAbilities(item)) {
                 const abils = [];
-                if(item.skill1) abils.push(`<div><strong class="${typeColorClass}">Skill 1:</strong> ${escapeHtml(item.skill1)}</div>`);
+                if(item.skill1) abils.push(`<div><strong class="${typeColorClass}">Final Combo Attack:</strong> ${escapeHtml(item.skill1)}</div>`);
                 if(item.skill2) abils.push(`<div><strong class="${typeColorClass}">Skill 2:</strong> ${escapeHtml(item.skill2)}</div>`);
                 if(item.skill3) abils.push(`<div><strong class="${typeColorClass}">Skill 3:</strong> ${escapeHtml(item.skill3)}</div>`);
                 if(item.passive) abils.push(`<div><strong class="${typeColorClass}">Passive:</strong> ${escapeHtml(item.passive)}</div>`);
