@@ -163,10 +163,28 @@
         .dungeon-card.open .dungeon-body { display:block; }
         .loot-table { width:100%; border-collapse:collapse; font-size:0.82rem; min-width:900px; }
         .loot-table thead th { text-align:left; padding:8px 8px; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-dim); border-bottom:1px solid var(--border); font-weight:600; }
-        .loot-table tbody td { padding:7px 8px; border-bottom:1px solid rgba(255,255,255,0.03); vertical-align:top; }
-        .loot-table tbody tr { transition:background var(--transition); }
-        .loot-table tbody tr:hover { background:rgba(255,255,255,0.02); }
-        .loot-table tbody tr:last-child td { border-bottom:none; }
+        .loot-table tbody td {
+    padding: 10px 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    vertical-align: top;
+}
+.loot-table tbody tr.item-main-row:nth-child(even) {
+    background: rgba(255,255,255,0.02);
+}
+.loot-table tbody tr {
+    transition: background var(--transition);
+}
+.loot-table tbody tr:hover {
+    background: rgba(255,255,255,0.05);
+}
+.loot-table tbody tr:last-child td {
+    border-bottom: none;
+}
+.loot-table tbody tr.item-detail-row td {
+    padding: 10px 16px;
+    background: rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
         .item-name { font-weight:700; transition:color var(--transition); display:inline-flex; align-items:center; gap:4px; }
         .type-color-sword { color:#bae6fd; text-shadow:0 0 8px rgba(125,211,252,0.35); }
         .type-color-dual-sword { color:#7dd3fc; text-shadow:0 0 8px rgba(56,189,248,0.35); }
