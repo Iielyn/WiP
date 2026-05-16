@@ -168,7 +168,7 @@
     border-bottom: 1px solid rgba(255,255,255,0.08);
     vertical-align: top;
 }
-.loot-table tbody tr.item-main-row:nth-child(even) {
+.loot-table tbody tr.item-main-row.striped {
     background: rgba(255,255,255,0.02);
 }
 .loot-table tbody tr {
@@ -690,6 +690,7 @@
                 </div>`;
             }).join('');
             container.innerHTML = zonesHtml;
+            applyTableStripes();
             updateFilterBarUI();
         }
         function updateTypeButtonCounts() {
@@ -773,11 +774,22 @@
                 }
             });
         }
-        function showToast(msg) {
-            const container = document.getElementById('toast-container');
-            const el = document.createElement('div'); el.className = 'toast'; el.textContent = msg;
-            container.appendChild(el); setTimeout(() => el.remove(), 2200);
-        }
+
+        
+function applyTableStripes() {
+    document.querySelectorAll('.loot-table tbody').forEach(tbody => {
+        const rows = tbody.querySelectorAll('tr.item-main-row');
+        rows.forEach((row, i) => {
+            row.classList.toggle('striped', i % 2 === 1);
+        });
+    });
+}
+
+function showToast(msg) {
+    const container = document.getElementById('toast-container');
+    const el = document.createElement('div'); el.className = 'toast'; el.textContent = msg;
+    container.appendChild(el); setTimeout(() => el.remove(), 2200);
+}
         function setupSuggestionModal() {
             const modal = document.getElementById('suggestion-modal');
             const openBtn = document.getElementById('open-suggestion-btn');
