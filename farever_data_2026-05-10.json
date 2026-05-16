@@ -1,5 +1,5 @@
 {
-"version": "v68",
+"version": "v69",
   "zones": [
     {
       "name": "Meridion",
@@ -1169,6 +1169,24 @@
                 "Critical": 9,
                 "Armor Penetration": 9
               }
+            },
+            {
+              "name": "Nepicur's Vacation Shorts",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "priest",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Critical",
+                "Fervor"
+              ]
             }
           ]
         }
