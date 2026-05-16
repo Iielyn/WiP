@@ -110,7 +110,6 @@
         .type-btn[data-type="Shoulders"].active { background:rgba(148,163,184,0.20); border-color:#94a3b8; color:#cbd5e1; box-shadow:0 0 8px rgba(148,163,184,0.30); }
         .type-btn[data-type="Chest"].active { background:rgba(248,113,113,0.20); border-color:#f87171; color:#fca5a5; box-shadow:0 0 10px rgba(248,113,113,0.35); }
         .type-btn[data-type="Back"].active { background:rgba(129,140,248,0.20); border-color:#818cf8; color:#b4bcfc; box-shadow:0 0 10px rgba(129,140,248,0.35); }
-        .type-btn[data-type="Cape"].active { background:rgba(167,139,250,0.20); border-color:#a78bfa; color:#c4b5fc; box-shadow:0 0 10px rgba(167,139,250,0.35); }
         .type-btn[data-type="Hands"].active { background:rgba(212,165,116,0.20); border-color:#d4a574; color:#e8c9a0; box-shadow:0 0 8px rgba(212,165,116,0.30); }
         .type-btn[data-type="Legs"].active { background:rgba(167,139,113,0.20); border-color:#a78b71; color:#c4a882; box-shadow:0 0 8px rgba(167,139,113,0.30); }
         .type-btn[data-type="Feet"].active { background:rgba(201,151,107,0.20); border-color:#c9976b; color:#e0b48a; box-shadow:0 0 8px rgba(201,151,107,0.30); }
@@ -189,7 +188,6 @@
         .type-color-shoulders { color:#cbd5e1; text-shadow:0 0 6px rgba(148,163,184,0.28); }
         .type-color-chest { color:#fca5a5; text-shadow:0 0 8px rgba(248,113,113,0.32); }
         .type-color-back { color:#b4bcfc; text-shadow:0 0 8px rgba(129,140,248,0.32); }
-        .type-color-cape { color:#c4b5fc; text-shadow:0 0 8px rgba(167,139,250,0.32); }
         .type-color-hands { color:#e8c9a0; text-shadow:0 0 8px rgba(212,165,116,0.28); }
         .type-color-legs { color:#c4a882; text-shadow:0 0 8px rgba(167,139,113,0.28); }
         .type-color-feet { color:#e0b48a; text-shadow:0 0 8px rgba(201,151,107,0.28); }
@@ -206,7 +204,6 @@
         .tag.type-shoulders { background:rgba(148,163,184,0.20); border-color:#94a3b8; color:#cbd5e1; }
         .tag.type-chest { background:rgba(248,113,113,0.20); border-color:#f87171; color:#fca5a5; }
         .tag.type-back { background:rgba(129,140,248,0.20); border-color:#818cf8; color:#b4bcfc; }
-        .tag.type-cape { background:rgba(167,139,250,0.20); border-color:#a78bfa; color:#c4b5fc; }
         .tag.type-legs { background:rgba(167,139,113,0.20); border-color:#a78b71; color:#c4a882; }
         .tag.type-feet { background:rgba(201,151,107,0.20); border-color:#c9976b; color:#e0b48a; }
         .tag.type-waist { background:rgba(184,132,92,0.20); border-color:#b8845c; color:#d4a074; }
@@ -393,7 +390,7 @@
         const CLASS_LABELS = { warrior: 'War', rogue: 'Rog', mage: 'Mage', priest: 'Pri' };
         const STAT_OPTIONS = ['Armor','Vitality','Strength','Dexterity','Faith','Intelligence','Critical','Armor Penetration','Magic Penetration','Fervor'];
         const WEAPON_TYPES = ['Sword','Dual Sword','Axe','Dual Axes','Daggers','Mace','Dual Maces','Spear','Fists','Two-Handed Axe','Two-Handed Mace','Bow','Thrown','Scepter','Crescent','Halos'];
-        const ARMOR_TYPES = ['Head','Shoulders','Chest','Hands','Legs','Feet','Waist','Back','Cape','Shield'];
+        const ARMOR_TYPES = ['Head','Shoulders','Chest','Hands','Legs','Feet','Waist','Back','Shield']; // Cape removed (Back now represents Cape)
         const TRINKET_TYPES = ['Trinket'];
         const TYPE_OPTIONS = [...WEAPON_TYPES, ...ARMOR_TYPES, ...TRINKET_TYPES];
         let appData = { zones: [] };
@@ -428,25 +425,38 @@
                 zone.dungeons = (zone.dungeons || []).map(dungeon => {
                     dungeon.id = dungeon.id || generateId();
                     dungeon._open = dungeon._open || false;
-                    dungeon.loot = (dungeon.loot || []).map(item => ({
-                        id: item.id || generateId(),
-                        name: item.name || '',
-                        types: Array.isArray(item.types) ? [...item.types] : [],
-                        classes: Array.isArray(item.classes) ? [...item.classes] : [],
-                        stats: Array.isArray(item.stats) ? [...item.stats] : [],
-                        statValues: (item.statValues && typeof item.statValues === 'object') ? {...item.statValues} : {},
-                        variants: Array.isArray(item.variants) ? item.variants.map(v => ({
-                            rarity: v.rarity || 'blue',
-                            damageMin: v.damageMin !== undefined ? v.damageMin : (v.damage ? parseInt(v.damage.split('-')[0]) || 0 : 0),
-                            damageMax: v.damageMax !== undefined ? v.damageMax : (v.damage ? parseInt(v.damage.split('-')[1]) || 0 : 0),
-                            statValues: (v.statValues && typeof v.statValues === 'object') ? {...v.statValues} : {}
-                        })) : [],
-                        skill1: item.skill1 || '',
-                        skill2: item.skill2 || '',
-                        skill3: item.skill3 || '',
-                        passive: item.passive || '',
-                        trinketPassive: item.trinketPassive || ''
-                    }));
+                    dungeon.loot = (dungeon.loot || []).map(item => {
+                        // Unify Cape into Back
+                        const types = Array.isArray(item.types) ? [...item.types] : [];
+                        if (types.includes('Cape')) {
+                            // Replace Cape with Back if Back not already present
+                            if (!types.includes('Back')) {
+                                types[types.indexOf('Cape')] = 'Back';
+                            } else {
+                                // Both exist, remove Cape
+                                types.splice(types.indexOf('Cape'), 1);
+                            }
+                        }
+                        return {
+                            id: item.id || generateId(),
+                            name: item.name || '',
+                            types: types,
+                            classes: Array.isArray(item.classes) ? [...item.classes] : [],
+                            stats: Array.isArray(item.stats) ? [...item.stats] : [],
+                            statValues: (item.statValues && typeof item.statValues === 'object') ? {...item.statValues} : {},
+                            variants: Array.isArray(item.variants) ? item.variants.map(v => ({
+                                rarity: v.rarity || 'blue',
+                                damageMin: v.damageMin !== undefined ? v.damageMin : (v.damage ? parseInt(v.damage.split('-')[0]) || 0 : 0),
+                                damageMax: v.damageMax !== undefined ? v.damageMax : (v.damage ? parseInt(v.damage.split('-')[1]) || 0 : 0),
+                                statValues: (v.statValues && typeof v.statValues === 'object') ? {...v.statValues} : {}
+                            })) : [],
+                            skill1: item.skill1 || '',
+                            skill2: item.skill2 || '',
+                            skill3: item.skill3 || '',
+                            passive: item.passive || '',
+                            trinketPassive: item.trinketPassive || ''
+                        };
+                    });
                     return dungeon;
                 });
                 return zone;
@@ -577,7 +587,6 @@
             } else if(isTrinket(item) && hasTrinketPassive(item)) {
                 detailHtml = `<div><strong class="${typeColorClass}">Passive:</strong> ${escapeHtml(item.trinketPassive)}</div>`;
             }
-            let damageHtml = '';
             const rowClass = detailHtml ? ' item-row-has-details' : '';
             const clickHandler = detailHtml ? ` data-action="toggle-item-detail" data-item-id="${item.id}"` : '';
             return `<tr class="item-main-row${rowClass}" data-item-id="${item.id}"${clickHandler}>
@@ -688,29 +697,27 @@
             });
         }
         function setupRaritySwitcher() {
-    const container = document.getElementById('zones-container');
-    container.addEventListener('click', (e) => {
-        const btn = e.target.closest('.rarity-btn');
-        if (!btn) return;
-        e.stopPropagation();
-        const switcher = btn.closest('.rarity-switcher');
-        const row = switcher.closest('tr.item-main-row');
-        const itemId = row.dataset.itemId;
-        const item = allItemsMap.get(itemId);
-        if (!item || !item.variants) return;
-        const rarity = btn.dataset.rarity;
-        const variantIndex = item.variants.findIndex(v => v.rarity === rarity);
-        if (variantIndex === -1) return;
-
-        switcher.querySelectorAll('.rarity-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        const statContainer = row.querySelector('.stat-tags-container');
-        if (statContainer) {
-            statContainer.innerHTML = buildStatTagsHtml(item, variantIndex);
+            const container = document.getElementById('zones-container');
+            container.addEventListener('click', (e) => {
+                const btn = e.target.closest('.rarity-btn');
+                if (!btn) return;
+                e.stopPropagation();
+                const switcher = btn.closest('.rarity-switcher');
+                const row = switcher.closest('tr.item-main-row');
+                const itemId = row.dataset.itemId;
+                const item = allItemsMap.get(itemId);
+                if (!item || !item.variants) return;
+                const rarity = btn.dataset.rarity;
+                const variantIndex = item.variants.findIndex(v => v.rarity === rarity);
+                if (variantIndex === -1) return;
+                switcher.querySelectorAll('.rarity-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const statContainer = row.querySelector('.stat-tags-container');
+                if (statContainer) {
+                    statContainer.innerHTML = buildStatTagsHtml(item, variantIndex);
+                }
+            });
         }
-    });
-}
         function showToast(msg) {
             const container = document.getElementById('toast-container');
             const el = document.createElement('div'); el.className = 'toast'; el.textContent = msg;
