@@ -1,5 +1,5 @@
 {
-"version": "v76",
+"version": "v77",
   "zones": [
     {
       "name": "Meridion",
@@ -1278,66 +1278,6 @@
                 "Fervor"
               ],
               "rare": false
-            },
-            {
-              "name": "Book of Mi`Mizan",
-              "types": [
-                "Spellbook"
-              ],
-              "classes": [
-                "mage",
-                "priest"
-              ],
-              "stats": [
-                "Vitality",
-                "Faith",
-                "Intelligence",
-                "Magic Penetration",
-                "Fervor"
-              ],
-              "skill1": "\nAbyssal Rise\ncd 10s · 0.4s\nSpawns a <val>Water Sphere</val> and consumes all stacks of Tide to spawn as much as additional spheres, up to 8. Walking through a sphere consumes it to grant a [Shield] absorbing 40% Faith Water. During combat, generates a stack of Tide every 4.",
-              "skill2": "\nExpulse\ncd 15s\nGrabs all nearby <val>Water Spheres</val>. You can recast this within 6 to throw them in the targeted direction, each dealing 40% Intellect + 40% Faith Magic to the first enemy encountered.",
-              "skill3": "\nExpulse\n0.35s\n40% Intellect + 40% Faith · Magic\nThrow orbs in the targeted direction, each dealing 40% Intellect + 40% Faith Magic to the first enemy encountered.\n\n",
-              "passive": "\nWater Veil\nApplying [Shield]s has a 0.35 chance to heal 30% Faith over 6.",
-              "rare": true,
-              "variants": [
-                {
-                  "rarity": "blue",
-                  "damageMin": 0,
-                  "damageMax": 0,
-                  "statValues": {
-                    "Vitality": 22,
-                    "Faith": 9,
-                    "Intelligence": 10,
-                    "Magic Penetration": 28,
-                    "Fervor": 28
-                  }
-                },
-                {
-                  "rarity": "purple",
-                  "damageMin": 0,
-                  "damageMax": 0,
-                  "statValues": {
-                    "Vitality": 26,
-                    "Faith": 10,
-                    "Intelligence": 12,
-                    "Magic Penetration": 31,
-                    "Fervor": 31
-                  }
-                },
-                {
-                  "rarity": "legendary",
-                  "damageMin": 0,
-                  "damageMax": 0,
-                  "statValues": {
-                    "Vitality": 30,
-                    "Faith": 12,
-                    "Intelligence": 14,
-                    "Magic Penetration": 33,
-                    "Fervor": 33
-                  }
-                }
-              ]
             }
           ]
         }
@@ -1468,28 +1408,6 @@
               }
             },
             {
-              "name": "Gorgon Ratsay's Toothpick",
-              "types": [
-                "Spear"
-              ],
-              "classes": [
-                "rogue",
-                "priest"
-              ],
-              "stats": [
-                "Vitality",
-                "Dexterity",
-                "Faith",
-                "Critical",
-                "Armor Penetration"
-              ],
-              "skill1": "\nSwift Strike\n1.1s\n62% Dexterity + 62% Faith · Physical · 25% Dexterity + 25% Faith · Magic\nStrikes forward, dealing 62% Dexterity + 62% Faith Physical to an enemy and increasing your [CritChance] by 3%, stacking up to 3 times.",
-              "skill2": "\nSwirling Embers\ncd 18s · 0.5s\nSurrounds yourself with an embers whirlwind dealing 25% Dexterity + 25% Faith + 30% Dexterity + 30% Faith Magic to nearby enemies every 1 for 8.",
-              "skill3": "\nEruption\ncd 20s · 1.3s\n15% Dexterity + 15% Faith + 150% Dexterity + 150% Faith · Magic\nPulls nearby enemies towards you, dealing 15% Dexterity + 15% Faith Magic. Then, releases a lava explosion dealing 150% Dexterity + 150% Faith Magic.",
-              "passive": "\nHeart of the Furnace\nYour [Skill]s and [Attack]s increase your [Armor] by 2%, stacking up to 15 times.",
-              "rare": true
-            },
-            {
               "name": "Twin Fangs of Ratsar",
               "types": [
                 "Daggers"
@@ -1585,48 +1503,6 @@
                 "Critical": 7,
                 "Magic Penetration": 7
               }
-            },
-            {
-              "name": "Magma Mia",
-              "types": [
-                "Shield"
-              ],
-              "classes": [
-                "warrior",
-                "mage"
-              ],
-              "stats": [
-                "Armor"
-              ],
-              "skill1": "\nFurnace Roar\ncd 18s\n45% Intellect · Magic\nChannels a fire breath dealing up to 45% Intellect Magic over 3 to enemies in front of you.",
-              "passive": "\nCinder Coat\n15% Armor · Physical\nBlocking an attack engulfs you in flames for 4, dealing 30% Intellect Magic to nearby enemies every 1.",
-              "rare": true,
-              "variants": [
-                {
-                  "rarity": "blue",
-                  "damageMin": 0,
-                  "damageMax": 0,
-                  "statValues": {
-                    "Armor": 403
-                  }
-                },
-                {
-                  "rarity": "legendary",
-                  "damageMin": 0,
-                  "damageMax": 0,
-                  "statValues": {
-                    "Armor": 468
-                  }
-                },
-                {
-                  "rarity": "purple",
-                  "damageMin": 0,
-                  "damageMax": 0,
-                  "statValues": {
-                    "Armor": 436
-                  }
-                }
-              ]
             },
             {
               "name": "Goldilock's Thrice Latched Jacket",
