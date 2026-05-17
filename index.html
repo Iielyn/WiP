@@ -336,6 +336,14 @@
         .item-detail-content { max-width:100%; word-break:break-word; }
         .item-detail-content div { margin-bottom:4px; }
         .item-detail-content strong { font-size:0.95rem; font-weight:600; letter-spacing:0.02em; }
+        .rare-star {
+            color: #fbbf24;
+            font-size: 0.85em;
+            margin-left: 4px;
+            text-shadow: 0 0 6px rgba(245, 158, 11, 0.8);
+            display: inline-block;
+            vertical-align: middle;
+        }
         @media (max-width:1000px) { .item-detail-cell { padding:8px 12px; font-size:0.75rem; } .item-detail-content strong { font-size:0.82rem; } }
         .stat-match-toggle {
             padding:6px 14px;
@@ -500,7 +508,8 @@
                             skill2: item.skill2 || '',
                             skill3: item.skill3 || '',
                             passive: item.passive || '',
-                            trinketPassive: item.trinketPassive || ''
+                            trinketPassive: item.trinketPassive || '',
+                            rare: item.rare === true ? true : false
                         };
                     });
                     return dungeon;
@@ -548,7 +557,8 @@
                             statValues: {...v.statValues}
                         })),
                         skill1: l.skill1, skill2: l.skill2, skill3: l.skill3,
-                        passive: l.passive, trinketPassive: l.trinketPassive
+                        passive: l.passive, trinketPassive: l.trinketPassive,
+                        rare: l.rare === true ? true : false
                     }))
                 }))
             })) };
@@ -633,10 +643,11 @@
             } else if(isTrinket(item) && hasTrinketPassive(item)) {
                 detailHtml = `<div><strong class="${typeColorClass}">Passive:</strong> ${escapeHtml(item.trinketPassive)}</div>`;
             }
+            const rareStarHtml = item.rare ? ' <span class="rare-star" title="Rare drop">⭐</span>' : '';
             const rowClass = detailHtml ? ' item-row-has-details' : '';
             const clickHandler = detailHtml ? ` data-action="toggle-item-detail" data-item-id="${item.id}"` : '';
             return `<tr class="item-main-row${rowClass}" data-item-id="${item.id}"${clickHandler}>
-                <td><span class="item-name ${typeColorClass}">${escapeHtml(item.name)}${detailHtml ? ' <span class="detail-indicator">▶</span>' : ''}</span></td>
+                <td><span class="item-name ${typeColorClass}">${escapeHtml(item.name)}${rareStarHtml}${detailHtml ? ' <span class="detail-indicator">▶</span>' : ''}</span></td>
                 <td><div class="tag-container">${typeTags}</div></td>
                 <td><div class="tag-container">${classTags}</div></td>
                 <td>${switcherHtml}<div class="tag-container stat-tags-container">${statTagsHtml}</div></td>
