@@ -1,5 +1,5 @@
 {
-"version": "v86",
+"version": "v87",
   "zones": [
     {
       "name": "Meridion",
@@ -5976,6 +5976,370 @@
                 "Dexterity": 4,
                 "Intelligence": 4,
                 "Fervor": 24
+              }
+            },
+            {
+              "name": "Vision of the Beekeeper",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 116,
+                "Vitality": 8,
+                "Faith": 3,
+                "Intelligence": 4,
+                "Magic Penetration": 12,
+                "Fervor": 12
+              }
+            },
+            {
+              "name": "Emblem of Radiant Nectar",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 170,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Faith": 3,
+                "Magic Penetration": 12,
+                "Fervor": 12
+              }
+            },
+            {
+              "name": "Casual Clothes of the Pollincess",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Fervor",
+                "Magic Penetration",
+                "Intelligence",
+                "Faith",
+                "Vitality",
+                "Armor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 149,
+                "Vitality": 8,
+                "Faith": 3,
+                "Intelligence": 4,
+                "Magic Penetration": 12,
+                "Fervor": 12
+              }
+            },
+            {
+              "name": "Flight of the Rumblebee",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 47,
+                "Vitality": 4,
+                "Dexterity": 3,
+                "Faith": 2,
+                "Magic Penetration": 7,
+                "Fervor": 7
+              }
+            },
+            {
+              "name": "Veil of the Royal Nymph (Back_RBee_Wiz) Unsure if this exists!",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 41,
+                "Vitality": 4,
+                "Intelligence": 5,
+                "Fervor": 13
+              }
+            },
+            {
+              "name": "Palmaryllis",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Faith": 5,
+                "Magic Penetration": 18
+              }
+            },
+            {
+              "name": "Vambraces of the Swarm ",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 104,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Intelligence": 3,
+                "Fervor": 18
+              }
+            },
+            {
+              "name": "Dancing Hivetree Belt",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Intelligence",
+                "Fervor",
+                "Vitality"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Intelligence": 6,
+                "Fervor": 18
+              }
+            },
+            {
+              "name": "Propolis Heart of Apix",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 104,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Faith": 2,
+                "Magic Penetration": 9,
+                "Fervor": 9
+              }
+            },
+            {
+              "name": "Zenobee's Breeches",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 133,
+                "Vitality": 8,
+                "Faith": 3,
+                "Intelligence": 4,
+                "Magic Penetration": 12,
+                "Fervor": 12
+              }
+            },
+            {
+              "name": "Silhouette of Apix",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 170,
+                "Vitality": 6,
+                "Dexterity": 8,
+                "Fervor": 24
+              }
+            },
+            {
+              "name": "Cleo's Ethereal Blossoms",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Vitality",
+                "Faith",
+                "Magic Penetration",
+                "Armor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 99,
+                "Vitality": 6,
+                "Faith": 5,
+                "Magic Penetration": 18
+              }
+            },
+            {
+              "name": "War Sabatons of Apix",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 113,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Intelligence": 3,
+                "Fervor": 18
+              }
+            },
+            {
+              "name": "Melain's Golden Greaves",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Armor Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 199,
+                "Vitality": 6,
+                "Strength": 5,
+                "Armor Penetration": 18
+              }
+            },
+            {
+              "name": "Eternal Flower Heart",
+              "types": [
+                "Trinket"
+              ],
+              "classes": [
+                "priest",
+                "warrior",
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Magic Penetration"
+              ],
+              "trinketPassive": "Your [WeaponSkill]s have a chance to summon a bee that will attack enemies for 10.",
+              "rare": false,
+              "statValues": {
+                "Magic Penetration": 26
               }
             }
           ]
