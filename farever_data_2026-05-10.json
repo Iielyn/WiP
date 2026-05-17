@@ -1,5 +1,5 @@
 {
-"version": "v87",
+"version": "v88",
   "zones": [
     {
       "name": "Meridion",
@@ -6615,6 +6615,388 @@
                 "Vitality": 6,
                 "Intelligence": 6,
                 "Magic Penetration": 18
+              }
+            },
+            {
+              "name": "Cheese-Covered Shoulderpads",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Armor Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 138,
+                "Vitality": 5,
+                "Dexterity": 6,
+                "Armor Penetration": 18
+              }
+            },
+            {
+              "name": "Brie von de Cape",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "mage",
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 60,
+                "Vitality": 4,
+                "Strength": 2,
+                "Intelligence": 3,
+                "Critical": 7,
+                "Magic Penetration": 7
+              }
+            },
+            {
+              "name": "Reversible Bib of the Cheese Taster",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Armor Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 53,
+                "Vitality": 3,
+                "Dexterity": 5,
+                "Armor Penetration": 13
+              }
+            },
+            {
+              "name": "Mystical Placemat of the Gourmet",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 41,
+                "Vitality": 4,
+                "Faith": 4,
+                "Critical": 13
+              }
+            },
+            {
+              "name": "Vows of Prosperity",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Faith": 2,
+                "Intelligence": 3,
+                "Critical": 9,
+                "Magic Penetration": 9
+              }
+            },
+            {
+              "name": "Gloves of Ninkilim the Envoy ",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Armor Penetration",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 104,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Faith": 2,
+                "Critical": 9,
+                "Armor Penetration": 9
+              }
+            },
+            {
+              "name": "Diskobold's Discus Throw Gloves",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Magic Penetration",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 132,
+                "Vitality": 6,
+                "Strength": 2,
+                "Intelligence": 3,
+                "Critical": 9,
+                "Magic Penetration": 9
+              }
+            },
+            {
+              "name": "Unity of the Thirty Kingdoms",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 132,
+                "Vitality": 6,
+                "Strength": 2,
+                "Faith": 2,
+                "Critical": 18
+              }
+            },
+            {
+              "name": "Relic of the Four Hundred",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Armor Penetration"
+              ],
+              "rare": false
+            },
+            {
+              "name": "Knotr'Edam",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Critical",
+                "Faith"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Critical": 18,
+                "Faith": 5
+              }
+            },
+            {
+              "name": "Garment of the Aurock Master",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "mage",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 151,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Intelligence": 4,
+                "Armor Penetration": 12,
+                "Magic Penetration": 12
+              }
+            },
+            {
+              "name": "Rat-Vachol's Patched Up Pants",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 133,
+                "Vitality": 8,
+                "Intelligence": 8,
+                "Magic Penetration": 24
+              }
+            },
+            {
+              "name": "Wrong Trousers",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 265,
+                "Vitality": 8,
+                "Strength": 7,
+                "Critical": 24
+              }
+            },
+            {
+              "name": "Gold Pouches",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 99,
+                "Vitality": 6,
+                "Faith": 2,
+                "Intelligence": 3,
+                "Critical": 9,
+                "Magic Penetration": 9
+              }
+            },
+            {
+              "name": "Spelunking Shoes of Emmen Tunnel",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Critical",
+                "Armor Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 113,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Faith": 2,
+                "Critical": 9,
+                "Armor Penetration": 9
+              }
+            },
+            {
+              "name": "Raclette Pan",
+              "types": [
+                "Trinket"
+              ],
+              "classes": [
+                "rogue",
+                "warrior",
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor Penetration"
+              ],
+              "trinketPassive": "our [Attack]s grant you 4 [CritChanceRating] for 10, stacking up to 20 times.",
+              "rare": false,
+              "statValues": {
+                "Armor Penetration": 26
               }
             }
           ]
