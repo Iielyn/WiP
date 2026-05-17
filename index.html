@@ -337,9 +337,6 @@
                         Zone · Dungeon · Class Loot Compendium
                         <span class="cap-badge">All stats at Lv20 cap</span>
                     </div>
-                    <div style="font-size:0.7rem; color:var(--gold); margin-top:4px; display:flex; align-items:center; gap:4px;">
-                        <span style="color:#fbbf24;">❓</span> Rare drop (seen only once/twice)
-                    </div>
                 </div>
             </div>
             <div class="header-right">
@@ -607,7 +604,7 @@
             } else if(isTrinket(item) && hasTrinketPassive(item)) {
                 detailHtml = `<div><strong class="${typeColorClass}">Passive:</strong> ${escapeHtml(item.trinketPassive)}</div>`;
             }
-            const rareStarHtml = item.rare ? ' <span class="rare-star" title="Rare drop">❓</span>' : '';
+            const rareStarHtml = '';
             const rowClass = detailHtml ? ' item-row-has-details' : '';
             const clickHandler = detailHtml ? ` data-action="toggle-item-detail" data-item-id="${item.id}"` : '';
             return `<tr class="item-main-row${rowClass}" data-item-id="${item.id}"${clickHandler}>
