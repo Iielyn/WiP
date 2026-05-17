@@ -1,5 +1,5 @@
 {
-"version": "v84",
+"version": "v85",
   "zones": [
     {
       "name": "Meridion",
@@ -4580,6 +4580,281 @@
                 "Dexterity": 6,
                 "Armor Penetration": 18
               }
+            },
+            {
+              "name": "Armored Docker Cap",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 168,
+                "Vitality": 8,
+                "Strength": 3,
+                "Faith": 3,
+                "Critical": 24
+              }
+            },
+            {
+              "name": "Dust Scarf",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Faith",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 116,
+                "Vitality": 8,
+                "Faith": 3,
+                "Intelligence": 4,
+                "Critical": 12,
+                "Magic Penetration": 12
+              }
+            },
+            {
+              "name": "Vision of the Cheeseslicer",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Magic Penetration",
+                "Armor Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 132,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Intelligence": 4,
+                "Armor Penetration": 12,
+                "Magic Penetration": 12
+              }
+            },
+            {
+              "name": "Miner Ramparts",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 215,
+                "Vitality": 6,
+                "Strength": 5,
+                "Critical": 18
+              }
+            },
+            {
+              "name": "Goldilock's Thrice Latched Jacket",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Critical",
+                "Faith"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 149,
+                "Vitality": 8,
+                "Faith": 7,
+                "Critical": 24
+              }
+            },
+            {
+              "name": "Reversible Bib of the Cheese Taster",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Armor Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 53,
+                "Vitality": 3,
+                "Dexterity": 5,
+                "Armor Penetration": 13
+              }
+            },
+            {
+              "name": "Mystical Placemat of the Gourmet",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 41,
+                "Vitality": 4,
+                "Faith": 4,
+                "Critical": 13
+              }
+            },
+            {
+              "name": "Gloves of Ninkilim the Envoy ",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Armor Penetration",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 104,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Faith": 2,
+                "Critical": 9,
+                "Armor Penetration": 9
+              }
+            },
+            {
+              "name": "Vows of Prosperity",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Faith": 2,
+                "Intelligence": 3,
+                "Critical": 9,
+                "Magic Penetration": 9
+              }
+            },
+            {
+              "name": "Diskobold's Discus Throw Gloves",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Magic Penetration",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 132,
+                "Vitality": 6,
+                "Strength": 2,
+                "Intelligence": 3,
+                "Critical": 9,
+                "Magic Penetration": 9
+              }
+            },
+            {
+              "name": "Buskins of Essential Emptiness ",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Strength",
+                "Vitality",
+                "Dexterity",
+                "Critical",
+                "Armor Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 161,
+                "Vitality": 5,
+                "Strength": 2,
+                "Dexterity": 3,
+                "Critical": 9,
+                "Armor Penetration": 9
+              }
             }
           ]
         }
@@ -4678,7 +4953,42 @@
               "skill2": "\nHunter Net\ncd 16s · 0.4s\n100% Dexterity + 100% Intellect · Physical\nThrows a net in the targeted direction dealing 100% Dexterity + 100% Intellect Physical to the first enemy hit and slowing them by -30% for 4. If an enemy is hit, you gain Big Game Hunter.\n\n",
               "skill3": "\nRam Trap\ncd 12s\n100% Dexterity · Physical\nDrops a spark trap on the targeted area. If an enemy steps on it, they are dealt 100% Dexterity Physical, are immobilized for 4 and you gain Big Game Hunter.",
               "passive": "\nThrill of the Hunter\nYour [WeaponSkill]s' damage mark the enemies for 10. Your next [Attack] against them consumes the mark and deal 50% increased damage.",
-              "rare": false
+              "rare": false,
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Vitality": 20,
+                    "Dexterity": 10,
+                    "Intelligence": 10,
+                    "Critical": 57
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Vitality": 23,
+                    "Dexterity": 12,
+                    "Intelligence": 12,
+                    "Critical": 62
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Vitality": 27,
+                    "Dexterity": 14,
+                    "Intelligence": 14,
+                    "Critical": 66
+                  }
+                }
+              ]
             },
             {
               "name": "Jacket of the Last Pirate",
