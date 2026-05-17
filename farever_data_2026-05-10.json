@@ -1,5 +1,5 @@
 {
-"version": "v82",
+"version": "v83",
   "zones": [
     {
       "name": "Meridion",
@@ -2860,7 +2860,45 @@
               "skill2": "Stingerang\ncd 8s\n125% Intellect · Magic · 180% Strength · Physical\nFires a piercing stinger in the targeted direction, dealing 125% Intellect Magic to enemies and knocking them back. After 2, the stinger returns to you, dealing 180% Strength Physical on its way back, drawing enemies toward you.",
               "skill3": "Apix Dash\ncd 12s\n45% Strength + 45% Intellect · Magic\nDashes forward and releases a burst of honey dealing 45% Strength + 45% Intellect Magic to nearby enemies.",
               "passive": "Unstable Goo\nMagic critical strikes coat enemies in goo for 8, slowing them by -30%. Physical critical strikes ignite Goo to deal 140% Intellect Magic over.",
-              "rare": false
+              "rare": false,
+              "variants": [
+                {
+                  "rarity": "blue",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Vitality": 22,
+                    "Strength": 9,
+                    "Intelligence": 10,
+                    "Armor Penetration": 28,
+                    "Fervor": 28
+                  }
+                },
+                {
+                  "rarity": "purple",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Vitality": 26,
+                    "Strength": 10,
+                    "Intelligence": 12,
+                    "Armor Penetration": 31,
+                    "Fervor": 31
+                  }
+                },
+                {
+                  "rarity": "legendary",
+                  "damageMin": 0,
+                  "damageMax": 0,
+                  "statValues": {
+                    "Vitality": 30,
+                    "Strength": 12,
+                    "Intelligence": 14,
+                    "Armor Penetration": 33,
+                    "Fervor": 33
+                  }
+                }
+              ]
             },
             {
               "name": "Thornlace",
@@ -3070,6 +3108,426 @@
                 "Dexterity": 3,
                 "Intelligence": 3,
                 "Fervor": 18
+              }
+            },
+            {
+              "name": "Royal Chamber Helmet",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Fervor",
+                "Armor Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 168,
+                "Vitality": 8,
+                "Strength": 3,
+                "Intelligence": 4,
+                "Armor Penetration": 12,
+                "Fervor": 12
+              }
+            },
+            {
+              "name": "Scout Antennae",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 132,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Intelligence": 4,
+                "Fervor": 24
+              }
+            },
+            {
+              "name": "Vision of the Beekeeper",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 116,
+                "Vitality": 8,
+                "Faith": 3,
+                "Intelligence": 4,
+                "Magic Penetration": 12,
+                "Fervor": 12
+              }
+            },
+            {
+              "name": "Beewings",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 138,
+                "Vitality": 5,
+                "Dexterity": 6,
+                "Fervor": 18
+              }
+            },
+            {
+              "name": "Hive Sprouts",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Vitality",
+                "Armor",
+                "Intelligence",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 108,
+                "Vitality": 6,
+                "Fervor": 18,
+                "Intelligence": 6
+              }
+            },
+            {
+              "name": "Queen Spikes",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 156,
+                "Vitality": 6,
+                "Strength": 2,
+                "Faith": 2,
+                "Armor Penetration": 9,
+                "Magic Penetration": 9
+              }
+            },
+            {
+              "name": "Emblem of Radiant Nectar",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 170,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Faith": 3,
+                "Magic Penetration": 12,
+                "Fervor": 12
+              }
+            },
+            {
+              "name": "Whirring Gem of Apix",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Armor Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 298,
+                "Vitality": 8,
+                "Strength": 7,
+                "Armor Penetration": 24
+              }
+            },
+            {
+              "name": "Reflective Vest of the Hive Worker",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Dexterity",
+                "Armor Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 67,
+                "Vitality": 4,
+                "Strength": 2,
+                "Dexterity": 3,
+                "Armor Penetration": 7,
+                "Fervor": 7
+              }
+            },
+            {
+              "name": "Veil of the Royal Nymph (Back_RBee_Wiz) Unsure if this exists!",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 41,
+                "Vitality": 4,
+                "Intelligence": 5,
+                "Fervor": 13
+              }
+            },
+            {
+              "name": "Palmaryllis",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Faith": 5,
+                "Magic Penetration": 18
+              }
+            },
+            {
+              "name": "Gauntlets of the Royal Guard",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Dexterity",
+                "Armor Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 147,
+                "Vitality": 5,
+                "Strength": 2,
+                "Dexterity": 3,
+                "Armor Penetration": 9,
+                "Fervor": 9
+              }
+            },
+            {
+              "name": "Propolis Heart of Apix",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 104,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Faith": 2,
+                "Magic Penetration": 9,
+                "Fervor": 9
+              }
+            },
+            {
+              "name": "Silhouette of Apix",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 170,
+                "Vitality": 6,
+                "Dexterity": 8,
+                "Fervor": 24
+              }
+            },
+            {
+              "name": "Zenobee's Breeches",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 133,
+                "Vitality": 8,
+                "Faith": 3,
+                "Intelligence": 4,
+                "Magic Penetration": 12,
+                "Fervor": 12
+              }
+            },
+            {
+              "name": "War Sabatons of Apix",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 113,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Intelligence": 3,
+                "Fervor": 18
+              }
+            },
+            {
+              "name": "Melain's Golden Greaves",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Armor Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 199,
+                "Vitality": 6,
+                "Strength": 5,
+                "Armor Penetration": 18
               }
             }
           ]
