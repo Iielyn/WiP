@@ -136,11 +136,14 @@
         .stat-btn[data-stat="Armor Penetration"].active { background:rgba(232,121,94,0.22); border-color:#e8795e; color:#f4a28e; box-shadow:0 0 10px rgba(232,121,94,0.38); }
         .stat-btn[data-stat="Magic Penetration"].active { background:rgba(192,132,252,0.20); border-color:#c084fc; color:#e0b4ff; box-shadow:0 0 10px rgba(192,132,252,0.38); }
         .stat-btn[data-stat="Fervor"].active { background:rgba(251,146,60,0.22); border-color:#fb923c; color:#fdb980; box-shadow:0 0 12px rgba(251,146,60,0.40); }
-        .main-content {
+.main-content {
     flex: 1;
-    margin-top: calc(var(--header-height) + 10px);
 }
-        .container { max-width:1300px; margin:0 auto; padding:8px 20px 48px; }
+        .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: calc(var(--header-height) + 8px) 20px 48px;
+}
         .zone-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); margin-bottom:20px; box-shadow:var(--shadow); overflow:hidden; transition:all var(--transition); }
         .zone-card:hover { border-color:#444; }
         .zone-header { display:flex; align-items:center; gap:12px; padding:16px 20px; cursor:pointer; user-select:none; background:var(--surface2); border-bottom:1px solid var(--border); transition:background var(--transition); }
@@ -301,7 +304,7 @@
             .item-detail-cell { padding:4px 8px; font-size:0.6rem; }
             .header { padding:14px 16px; min-height:auto; }
             .header h1 { font-size:1.3rem; }
-            .container { padding:16px 10px 36px; }
+            .container { padding: calc(var(--header-height) + 8px) 10px 36px; }
             .zone-header { padding:12px 14px; gap:8px; }
             .zone-body { padding:10px 12px 14px; }
             .dungeon-header { padding:10px 12px; gap:6px; }
