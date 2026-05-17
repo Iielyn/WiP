@@ -1,5 +1,5 @@
 {
-"version": "v79",
+"version": "v80",
   "zones": [
     {
       "name": "Meridion",
@@ -2004,6 +2004,126 @@
                 "Fervor"
               ],
               "rare": false
+            },
+            {
+              "name": "Tides Hood",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 116,
+                "Vitality": 8,
+                "Intelligence": 8,
+                "Magic Penetration": 24
+              }
+            },
+            {
+              "name": "Submarine Torpedo Helmet",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 149,
+                "Vitality": 6,
+                "Dexterity": 8,
+                "Critical": 24
+              }
+            },
+            {
+              "name": "Delicate Marine Aiglets",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 108,
+                "Vitality": 6,
+                "Faith": 2,
+                "Intelligence": 3,
+                "Magic Penetration": 9,
+                "Fervor": 9
+              }
+            },
+            {
+              "name": "Ceremonial Siren Gloves",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Intelligence": 6,
+                "Magic Penetration": 18
+              }
+            },
+            {
+              "name": "Ceremonial Nepsid Belt",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Faith": 2,
+                "Intelligence": 3,
+                "Magic Penetration": 9,
+                "Fervor": 9
+              }
             }
           ]
         }
