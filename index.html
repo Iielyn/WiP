@@ -22,7 +22,6 @@
             --transition: 0.2s ease;
             --font: 'Segoe UI', 'Helvetica Neue', system-ui, sans-serif;
             --font-display: 'Georgia', 'Times New Roman', serif;
-            --header-height: 110px;
             --dungeon-red: #f87171;
             --item-green: #4ade80;
             --dungeon-lv: #f0c060;
@@ -42,7 +41,7 @@
         .header {
             background: var(--surface); border-bottom:1px solid var(--border); padding:20px 32px;
             display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;
-            box-shadow:0 2px 16px rgba(0,0,0,0.4); position:sticky; top:0; z-index:100; min-height:var(--header-height);
+            box-shadow:0 2px 16px rgba(0,0,0,0.4);
         }
         .header-brand { display:flex; align-items:center; gap:12px; }
         .header-icon {
@@ -67,20 +66,15 @@
         .search-input:focus { border-color:var(--accent); box-shadow:0 0 10px rgba(91,140,189,0.2); width:240px; }
         .search-icon { position:absolute; left:12px; top:50%; transform:translateY(-50%); color:var(--text-dim); font-size:0.9rem; pointer-events:none; }
         .filter-bar {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    padding: 12px 32px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    align-items: center;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.4);
-    position: fixed;           
-    top: var(--header-height);
-    left: 0;
-    right: 0;
-    z-index: 90;
-}
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 32px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+        }
         .filter-group-wrapper { position:relative; }
         .filter-group-header { display:flex; align-items:center; gap:6px; cursor:pointer; user-select:none; padding:6px 12px; border-radius:20px; border:1px solid var(--border); background:transparent; transition:all var(--transition); white-space:nowrap; }
         .filter-group-header:hover { background:var(--surface2); border-color:#555; }
@@ -136,14 +130,8 @@
         .stat-btn[data-stat="Armor Penetration"].active { background:rgba(232,121,94,0.22); border-color:#e8795e; color:#f4a28e; box-shadow:0 0 10px rgba(232,121,94,0.38); }
         .stat-btn[data-stat="Magic Penetration"].active { background:rgba(192,132,252,0.20); border-color:#c084fc; color:#e0b4ff; box-shadow:0 0 10px rgba(192,132,252,0.38); }
         .stat-btn[data-stat="Fervor"].active { background:rgba(251,146,60,0.22); border-color:#fb923c; color:#fdb980; box-shadow:0 0 12px rgba(251,146,60,0.40); }
-.main-content {
-    flex: 1;
-}
-        .container {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: calc(var(--header-height) + 8px) 20px 48px;
-}
+        .main-content { flex:1; }
+        .container { max-width:1300px; margin:0 auto; padding:28px 20px 48px; }
         .zone-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); margin-bottom:20px; box-shadow:var(--shadow); overflow:hidden; transition:all var(--transition); }
         .zone-card:hover { border-color:#444; }
         .zone-header { display:flex; align-items:center; gap:12px; padding:16px 20px; cursor:pointer; user-select:none; background:var(--surface2); border-bottom:1px solid var(--border); transition:background var(--transition); }
@@ -179,28 +167,12 @@
         .dungeon-card.open .dungeon-body { display:block; }
         .loot-table { width:100%; border-collapse:collapse; font-size:0.82rem; min-width:900px; }
         .loot-table thead th { text-align:left; padding:8px 8px; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-dim); border-bottom:1px solid var(--border); font-weight:600; }
-        .loot-table tbody td {
-    padding: 10px 8px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-    vertical-align: top;
-}
-.loot-table tbody tr.item-main-row.striped {
-    background: rgba(255,255,255,0.02);
-}
-.loot-table tbody tr {
-    transition: background var(--transition);
-}
-.loot-table tbody tr:hover {
-    background: rgba(255,255,255,0.05);
-}
-.loot-table tbody tr:last-child td {
-    border-bottom: none;
-}
-.loot-table tbody tr.item-detail-row td {
-    padding: 10px 16px;
-    background: rgba(0,0,0,0.25);
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-}
+        .loot-table tbody td { padding:10px 8px; border-bottom:1px solid rgba(255,255,255,0.08); vertical-align:top; }
+        .loot-table tbody tr.item-main-row.striped { background:rgba(255,255,255,0.02); }
+        .loot-table tbody tr { transition:background var(--transition); }
+        .loot-table tbody tr:hover { background:rgba(255,255,255,0.05); }
+        .loot-table tbody tr:last-child td { border-bottom:none; }
+        .loot-table tbody tr.item-detail-row td { padding:10px 16px; background:rgba(0,0,0,0.25); border-bottom:1px solid rgba(255,255,255,0.06); }
         .item-name { font-weight:700; transition:color var(--transition); display:inline-flex; align-items:center; gap:4px; }
         .type-color-sword { color:#bae6fd; text-shadow:0 0 8px rgba(125,211,252,0.35); }
         .type-color-dual-sword { color:#7dd3fc; text-shadow:0 0 8px rgba(56,189,248,0.35); }
@@ -272,13 +244,8 @@
         .tag.stat-armor-penetration { background:rgba(232,121,94,0.22); border-color:#e8795e; color:#f4a28e; }
         .tag.stat-magic-penetration { background:rgba(192,132,252,0.20); border-color:#c084fc; color:#e0b4ff; }
         .tag.stat-fervor { background:rgba(251,146,60,0.22); border-color:#fb923c; color:#fdb980; }
-         .stat-value { font-size:0.8rem; font-weight:600; color:#ffffff; margin-left:2px; text-shadow:0 0 4px rgba(255,255,255,0.25); }
-        .item-damage-line {
-            font-size: 0.75rem;
-            color: #ffffff;
-            margin-bottom: 4px;
-            font-weight: 600;
-        }
+        .stat-value { font-size:0.8rem; font-weight:600; color:#ffffff; margin-left:2px; text-shadow:0 0 4px rgba(255,255,255,0.25); }
+        .item-damage-line { font-size:0.75rem; color:#ffffff; margin-bottom:4px; font-weight:600; }
         .rarity-switcher { display:flex; gap:4px; margin-bottom:6px; }
         .rarity-btn { padding:2px 6px; font-size:0.58rem; font-weight:700; letter-spacing:0.05em; border-radius:8px; border:1px solid transparent; background:transparent; color:var(--text-dim); cursor:pointer; transition:all var(--transition); font-family:var(--font); text-transform:uppercase; }
         .rarity-btn:hover { background:var(--surface2); color:var(--text); }
@@ -302,9 +269,9 @@
             .tag { font-size:0.5rem; padding:1px 4px; }
             .badge { font-size:0.55rem; padding:1px 5px; }
             .item-detail-cell { padding:4px 8px; font-size:0.6rem; }
-            .header { padding:14px 16px; min-height:auto; }
+            .header { padding:14px 16px; }
             .header h1 { font-size:1.3rem; }
-            .container { padding: calc(var(--header-height) + 8px) 10px 36px; }
+            .container { padding:16px 10px 36px; }
             .zone-header { padding:12px 14px; gap:8px; }
             .zone-body { padding:10px 12px 14px; }
             .dungeon-header { padding:10px 12px; gap:6px; }
@@ -352,77 +319,55 @@
         .item-detail-content { max-width:100%; word-break:break-word; }
         .item-detail-content div { margin-bottom:4px; }
         .item-detail-content strong { font-size:0.95rem; font-weight:600; letter-spacing:0.02em; }
-        .rare-star {
-            color: #fbbf24;
-            font-size: 0.85em;
-            margin-left: 4px;
-            text-shadow: 0 0 6px rgba(245, 158, 11, 0.8);
-            display: inline-block;
-            vertical-align: middle;
-        }
+        .rare-star { color:#fbbf24; font-size:0.85em; margin-left:4px; text-shadow:0 0 6px rgba(245,158,11,0.8); display:inline-block; vertical-align:middle; }
         @media (max-width:1000px) { .item-detail-cell { padding:8px 12px; font-size:0.75rem; } .item-detail-content strong { font-size:0.82rem; } }
-        .stat-match-toggle {
-            padding:6px 14px;
-            font-size:0.7rem;
-            font-weight:600;
-            letter-spacing:0.04em;
-            text-transform:uppercase;
-            border-radius:20px;
-            border:1px solid var(--border);
-            background:transparent;
-            color:var(--text-dim);
-            cursor:pointer;
-            transition:all var(--transition);
-            font-family:var(--font);
-            white-space:nowrap;
-            display:flex;
-            align-items:center;
-            gap:6px;
-        }
+        .stat-match-toggle { padding:6px 14px; font-size:0.7rem; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; border-radius:20px; border:1px solid var(--border); background:transparent; color:var(--text-dim); cursor:pointer; transition:all var(--transition); font-family:var(--font); white-space:nowrap; display:flex; align-items:center; gap:6px; }
         .stat-match-toggle:hover { background:var(--surface2); color:var(--text); border-color:#555; }
         .stat-match-toggle[data-mode="any"] { background:rgba(74,222,128,0.1); border-color:var(--item-green); color:var(--item-green); }
     </style>
 </head>
 <body class="loading">
-    <header class="header">
-        <div class="header-brand">
-            <div class="header-icon">⚔️</div>
-            <div>
-                <h1>Farever</h1>
-                <div class="header-subtitle">
-                    Zone · Dungeon · Class Loot Compendium
-                    <span class="cap-badge">All stats at Lv20 cap</span>
+    <div style="position: sticky; top: 0; z-index: 100;">
+        <header class="header">
+            <div class="header-brand">
+                <div class="header-icon">⚔️</div>
+                <div>
+                    <h1>Farever</h1>
+                    <div class="header-subtitle">
+                        Zone · Dungeon · Class Loot Compendium
+                        <span class="cap-badge">All stats at Lv20 cap</span>
+                    </div>
+                    <div style="font-size:0.7rem; color:var(--gold); margin-top:4px; display:flex; align-items:center; gap:4px;">
+                        <span style="color:#fbbf24;">❓</span> Rare drop (seen only once/twice)
+                    </div>
                 </div>
-                <div style="font-size:0.7rem; color:var(--gold); margin-top:4px; display:flex; align-items:center; gap:4px;">
-    <span style="color:#fbbf24;">❓</span> Rare drop (seen only once/twice)
-</div>
             </div>
-        </div>
-        <div class="header-right">
-            <div class="search-wrapper">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-input" id="search-input" placeholder="Search items..." autocomplete="off">
+            <div class="header-right">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" id="search-input" placeholder="Search items..." autocomplete="off">
+                </div>
+                <button class="suggest-btn" id="open-suggestion-btn" title="Send a private suggestion">
+                    💡 <span class="suggest-text">Suggest</span>
+                </button>
             </div>
-            <button class="suggest-btn" id="open-suggestion-btn" title="Send a private suggestion">
-                💡 <span class="suggest-text">Suggest</span>
-            </button>
+        </header>
+        <div class="filter-bar" id="filter-bar">
+            <div class="filter-group-wrapper" id="class-wrapper">
+                <div class="filter-group-header"><span class="arrow">▼</span><span class="label">Class</span><span class="active-count" id="class-count" style="display:none">0</span></div>
+                <div class="filter-dropdown" id="class-dropdown"></div>
+            </div>
+            <div class="filter-group-wrapper" id="stat-wrapper">
+                <div class="filter-group-header"><span class="arrow">▼</span><span class="label">Stats</span><span class="active-count" id="stat-count" style="display:none">0</span></div>
+                <div class="filter-dropdown" id="stat-dropdown"></div>
+            </div>
+            <div class="filter-group-wrapper" id="type-wrapper">
+                <div class="filter-group-header"><span class="arrow">▼</span><span class="label">Type</span><span class="active-count" id="type-count" style="display:none">0</span></div>
+                <div class="filter-dropdown" id="type-dropdown"></div>
+            </div>
+            <button class="stat-match-toggle" id="stat-match-toggle" data-mode="all">Match: ALL</button>
+            <button class="clear-all-btn" id="clear-all-btn" style="display:none;">✕ Clear</button>
         </div>
-    </header>
-    <div class="filter-bar" id="filter-bar">
-        <div class="filter-group-wrapper" id="class-wrapper">
-            <div class="filter-group-header"><span class="arrow">▼</span><span class="label">Class</span><span class="active-count" id="class-count" style="display:none">0</span></div>
-            <div class="filter-dropdown" id="class-dropdown"></div>
-        </div>
-        <div class="filter-group-wrapper" id="stat-wrapper">
-            <div class="filter-group-header"><span class="arrow">▼</span><span class="label">Stats</span><span class="active-count" id="stat-count" style="display:none">0</span></div>
-            <div class="filter-dropdown" id="stat-dropdown"></div>
-        </div>
-        <div class="filter-group-wrapper" id="type-wrapper">
-            <div class="filter-group-header"><span class="arrow">▼</span><span class="label">Type</span><span class="active-count" id="type-count" style="display:none">0</span></div>
-            <div class="filter-dropdown" id="type-dropdown"></div>
-        </div>
-        <button class="stat-match-toggle" id="stat-match-toggle" data-mode="all">Match: ALL</button>
-        <button class="clear-all-btn" id="clear-all-btn" style="display:none;">✕ Clear</button>
     </div>
     <div class="main-content">
         <main class="container" id="zones-container"></main>
@@ -804,22 +749,19 @@
                 }
             });
         }
-
-        
-function applyTableStripes() {
-    document.querySelectorAll('.loot-table tbody').forEach(tbody => {
-        const rows = tbody.querySelectorAll('tr.item-main-row');
-        rows.forEach((row, i) => {
-            row.classList.toggle('striped', i % 2 === 1);
-        });
-    });
-}
-
-function showToast(msg) {
-    const container = document.getElementById('toast-container');
-    const el = document.createElement('div'); el.className = 'toast'; el.textContent = msg;
-    container.appendChild(el); setTimeout(() => el.remove(), 2200);
-}
+        function applyTableStripes() {
+            document.querySelectorAll('.loot-table tbody').forEach(tbody => {
+                const rows = tbody.querySelectorAll('tr.item-main-row');
+                rows.forEach((row, i) => {
+                    row.classList.toggle('striped', i % 2 === 1);
+                });
+            });
+        }
+        function showToast(msg) {
+            const container = document.getElementById('toast-container');
+            const el = document.createElement('div'); el.className = 'toast'; el.textContent = msg;
+            container.appendChild(el); setTimeout(() => el.remove(), 2200);
+        }
         function setupSuggestionModal() {
             const modal = document.getElementById('suggestion-modal');
             const openBtn = document.getElementById('open-suggestion-btn');
