@@ -22,7 +22,7 @@
             --transition: 0.2s ease;
             --font: 'Segoe UI', 'Helvetica Neue', system-ui, sans-serif;
             --font-display: 'Georgia', 'Times New Roman', serif;
-            --header-height: 110px;
+            --header-height: 88px;
             --dungeon-red: #f87171;
             --item-green: #4ade80;
             --dungeon-lv: #f0c060;
@@ -67,10 +67,20 @@
         .search-input:focus { border-color:var(--accent); box-shadow:0 0 10px rgba(91,140,189,0.2); width:240px; }
         .search-icon { position:absolute; left:12px; top:50%; transform:translateY(-50%); color:var(--text-dim); font-size:0.9rem; pointer-events:none; }
         .filter-bar {
-            background:var(--surface); border-bottom:1px solid var(--border); padding:12px 32px;
-            display:flex; flex-wrap:wrap; gap:12px; align-items:center; box-shadow:0 2px 12px rgba(0,0,0,0.4);
-            position:sticky; top:var(--header-height); z-index:90;
-        }
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    position: fixed;           
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    z-index: 90;
+}
         .filter-group-wrapper { position:relative; }
         .filter-group-header { display:flex; align-items:center; gap:6px; cursor:pointer; user-select:none; padding:6px 12px; border-radius:20px; border:1px solid var(--border); background:transparent; transition:all var(--transition); white-space:nowrap; }
         .filter-group-header:hover { background:var(--surface2); border-color:#555; }
@@ -126,7 +136,10 @@
         .stat-btn[data-stat="Armor Penetration"].active { background:rgba(232,121,94,0.22); border-color:#e8795e; color:#f4a28e; box-shadow:0 0 10px rgba(232,121,94,0.38); }
         .stat-btn[data-stat="Magic Penetration"].active { background:rgba(192,132,252,0.20); border-color:#c084fc; color:#e0b4ff; box-shadow:0 0 10px rgba(192,132,252,0.38); }
         .stat-btn[data-stat="Fervor"].active { background:rgba(251,146,60,0.22); border-color:#fb923c; color:#fdb980; box-shadow:0 0 12px rgba(251,146,60,0.40); }
-        .main-content { flex:1; }
+        .main-content {
+    flex: 1;
+    margin-top: calc(var(--header-height) + 50px);
+}
         .container { max-width:1300px; margin:0 auto; padding:28px 20px 48px; }
         .zone-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); margin-bottom:20px; box-shadow:var(--shadow); overflow:hidden; transition:all var(--transition); }
         .zone-card:hover { border-color:#444; }
