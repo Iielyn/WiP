@@ -22,7 +22,7 @@
             --transition: 0.2s ease;
             --font: 'Segoe UI', 'Helvetica Neue', system-ui, sans-serif;
             --font-display: 'Georgia', 'Times New Roman', serif;
-            --header-height: 88px;
+            --header-height: 110px;
             --dungeon-red: #f87171;
             --item-green: #4ade80;
             --dungeon-lv: #f0c060;
@@ -378,7 +378,7 @@
                     <span class="cap-badge">All stats at Lv20 cap</span>
                 </div>
                 <div style="font-size:0.7rem; color:var(--gold); margin-top:4px; display:flex; align-items:center; gap:4px;">
-    <span style="color:#fbbf24;">⭐</span> Rare drop (seen only once/twice)
+    <span style="color:#fbbf24;">❓</span> Rare drop (seen only once/twice)
 </div>
             </div>
         </div>
@@ -646,7 +646,7 @@
             } else if(isTrinket(item) && hasTrinketPassive(item)) {
                 detailHtml = `<div><strong class="${typeColorClass}">Passive:</strong> ${escapeHtml(item.trinketPassive)}</div>`;
             }
-            const rareStarHtml = item.rare ? ' <span class="rare-star" title="Rare drop">⭐</span>' : '';
+            const rareStarHtml = item.rare ? ' <span class="rare-star" title="Rare drop">❓</span>' : '';
             const rowClass = detailHtml ? ' item-row-has-details' : '';
             const clickHandler = detailHtml ? ` data-action="toggle-item-detail" data-item-id="${item.id}"` : '';
             return `<tr class="item-main-row${rowClass}" data-item-id="${item.id}"${clickHandler}>
