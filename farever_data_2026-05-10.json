@@ -1,5 +1,5 @@
 {
-"version": "v83",
+"version": "v84",
   "zones": [
     {
       "name": "Meridion",
@@ -3895,6 +3895,350 @@
                 "Dexterity": 6,
                 "Fervor": 18
               }
+            },
+            {
+              "name": "Royal Chamber Helmet",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Fervor",
+                "Armor Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 168,
+                "Vitality": 8,
+                "Strength": 3,
+                "Intelligence": 4,
+                "Armor Penetration": 12,
+                "Fervor": 12
+              }
+            },
+            {
+              "name": "Vision of the Beekeeper",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 116,
+                "Vitality": 8,
+                "Faith": 3,
+                "Intelligence": 4,
+                "Magic Penetration": 12,
+                "Fervor": 12
+              }
+            },
+            {
+              "name": "Scout Antennae",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 132,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Intelligence": 4,
+                "Fervor": 24
+              }
+            },
+            {
+              "name": "Queen Spikes",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 156,
+                "Vitality": 6,
+                "Strength": 2,
+                "Faith": 2,
+                "Armor Penetration": 9,
+                "Magic Penetration": 9
+              }
+            },
+            {
+              "name": "Hive Sprouts",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Vitality",
+                "Armor",
+                "Intelligence",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 108,
+                "Vitality": 6,
+                "Fervor": 18,
+                "Intelligence": 6
+              }
+            },
+            {
+              "name": "Casual Clothes of the Pollincess",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Fervor",
+                "Magic Penetration",
+                "Intelligence",
+                "Faith",
+                "Vitality",
+                "Armor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 149,
+                "Vitality": 8,
+                "Faith": 3,
+                "Intelligence": 4,
+                "Magic Penetration": 12,
+                "Fervor": 12
+              }
+            },
+            {
+              "name": "Veil of the Royal Nymph (Back_RBee_Wiz) Unsure if this exists!",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 41,
+                "Vitality": 4,
+                "Intelligence": 5,
+                "Fervor": 13
+              }
+            },
+            {
+              "name": "Vambraces of the Swarm ",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 104,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Intelligence": 3,
+                "Fervor": 18
+              }
+            },
+            {
+              "name": "Palmaryllis",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Faith": 5,
+                "Magic Penetration": 18
+              }
+            },
+            {
+              "name": "Dancing Hivetree Belt",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Intelligence",
+                "Fervor",
+                "Vitality"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Intelligence": 6,
+                "Fervor": 18
+              }
+            },
+            {
+              "name": "Flying Trousers Prototype",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 191,
+                "Vitality": 8,
+                "Strength": 3,
+                "Faith": 3,
+                "Armor Penetration": 12,
+                "Magic Penetration": 12
+              }
+            },
+            {
+              "name": "Zenobee's Breeches",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 133,
+                "Vitality": 8,
+                "Faith": 3,
+                "Intelligence": 4,
+                "Magic Penetration": 12,
+                "Fervor": 12
+              }
+            },
+            {
+              "name": "Cleo's Ethereal Blossoms",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Vitality",
+                "Faith",
+                "Magic Penetration",
+                "Armor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 99,
+                "Vitality": 6,
+                "Faith": 5,
+                "Magic Penetration": 18
+              }
+            },
+            {
+              "name": "Melain's Golden Greaves",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Armor Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 199,
+                "Vitality": 6,
+                "Strength": 5,
+                "Armor Penetration": 18
+              }
             }
           ]
         }
@@ -4824,6 +5168,31 @@
                 "Vitality": 5,
                 "Dexterity": 6,
                 "Fervor": 18
+              }
+            },
+            {
+              "name": "Scout Antennae",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 132,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Intelligence": 4,
+                "Fervor": 24
               }
             }
           ]
