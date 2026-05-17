@@ -1,5 +1,5 @@
 {
-"version": "v80",
+"version": "v81",
   "zones": [
     {
       "name": "Meridion",
@@ -2686,6 +2686,156 @@
                 "Armor Penetration"
               ],
               "rare": false
+            },
+            {
+              "name": "Armored Docker Cap",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 168,
+                "Vitality": 8,
+                "Strength": 3,
+                "Faith": 3,
+                "Critical": 24
+              }
+            },
+            {
+              "name": "Dust Scarf",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Faith",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 116,
+                "Vitality": 8,
+                "Faith": 3,
+                "Intelligence": 4,
+                "Critical": 12,
+                "Magic Penetration": 12
+              }
+            },
+            {
+              "name": "Mystical Placemat of the Gourmet",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 41,
+                "Vitality": 4,
+                "Faith": 4,
+                "Critical": 13
+              }
+            },
+            {
+              "name": "Garment of the Aurock Master",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "mage",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 151,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Intelligence": 4,
+                "Armor Penetration": 12,
+                "Magic Penetration": 12
+              }
+            },
+            {
+              "name": "Rat-Vachol's Patched Up Pants",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 133,
+                "Vitality": 8,
+                "Intelligence": 8,
+                "Magic Penetration": 24
+              }
+            },
+            {
+              "name": "Gold Pouches",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 99,
+                "Vitality": 6,
+                "Faith": 2,
+                "Intelligence": 3,
+                "Critical": 9,
+                "Magic Penetration": 9
+              }
             }
           ]
         }
