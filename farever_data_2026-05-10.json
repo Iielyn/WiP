@@ -1,5 +1,5 @@
 {
-"version": "v81",
+"version": "v82",
   "zones": [
     {
       "name": "Meridion",
@@ -2571,33 +2571,6 @@
                 "Intelligence": 3,
                 "Critical": 9,
                 "Magic Penetration": 9
-              }
-            },
-            {
-              "name": "Garment of the Aurock Master",
-              "types": [
-                "Legs"
-              ],
-              "classes": [
-                "mage",
-                "rogue"
-              ],
-              "stats": [
-                "Armor",
-                "Vitality",
-                "Dexterity",
-                "Intelligence",
-                "Armor Penetration",
-                "Magic Penetration"
-              ],
-              "rare": false,
-              "statValues": {
-                "Armor": 151,
-                "Vitality": 7,
-                "Dexterity": 4,
-                "Intelligence": 4,
-                "Armor Penetration": 12,
-                "Magic Penetration": 12
               }
             },
             {
