@@ -1,5 +1,5 @@
 {
-"version": "v75",
+"version": "v76",
   "zones": [
     {
       "name": "Meridion",
@@ -1487,7 +1487,7 @@
               "skill2": "\nSwirling Embers\ncd 18s · 0.5s\nSurrounds yourself with an embers whirlwind dealing 25% Dexterity + 25% Faith + 30% Dexterity + 30% Faith Magic to nearby enemies every 1 for 8.",
               "skill3": "\nEruption\ncd 20s · 1.3s\n15% Dexterity + 15% Faith + 150% Dexterity + 150% Faith · Magic\nPulls nearby enemies towards you, dealing 15% Dexterity + 15% Faith Magic. Then, releases a lava explosion dealing 150% Dexterity + 150% Faith Magic.",
               "passive": "\nHeart of the Furnace\nYour [Skill]s and [Attack]s increase your [Armor] by 2%, stacking up to 15 times.",
-              "rare": false
+              "rare": true
             },
             {
               "name": "Twin Fangs of Ratsar",
@@ -1600,7 +1600,7 @@
               ],
               "skill1": "\nFurnace Roar\ncd 18s\n45% Intellect · Magic\nChannels a fire breath dealing up to 45% Intellect Magic over 3 to enemies in front of you.",
               "passive": "\nCinder Coat\n15% Armor · Physical\nBlocking an attack engulfs you in flames for 4, dealing 30% Intellect Magic to nearby enemies every 1.",
-              "rare": false,
+              "rare": true,
               "variants": [
                 {
                   "rarity": "blue",
