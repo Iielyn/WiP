@@ -1,5 +1,5 @@
 {
-"version": "v85",
+"version": "v86",
   "zones": [
     {
       "name": "Meridion",
@@ -5098,6 +5098,479 @@
                   }
                 }
               ]
+            },
+            {
+              "name": "Crown of the Sea",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "warrior"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Armor Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 232,
+                "Vitality": 8,
+                "Strength": 7,
+                "Armor Penetration": 24
+              }
+            },
+            {
+              "name": "Tides Hood",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 116,
+                "Vitality": 8,
+                "Intelligence": 8,
+                "Magic Penetration": 24
+              }
+            },
+            {
+              "name": "Submarine Torpedo Helmet",
+              "types": [
+                "Head"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 149,
+                "Vitality": 6,
+                "Dexterity": 8,
+                "Critical": 24
+              }
+            },
+            {
+              "name": "Abyssal Shoulderplates",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "warrior",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Dexterity",
+                "Critical",
+                "Armor Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 174,
+                "Vitality": 5,
+                "Strength": 2,
+                "Dexterity": 3,
+                "Critical": 9,
+                "Armor Penetration": 9
+              }
+            },
+            {
+              "name": "Fins of the First Fish",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 123,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Intelligence": 3,
+                "Critical": 9,
+                "Magic Penetration": 9
+              }
+            },
+            {
+              "name": "Delicate Marine Aiglets",
+              "types": [
+                "Shoulders"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 108,
+                "Vitality": 6,
+                "Faith": 2,
+                "Intelligence": 3,
+                "Magic Penetration": 9,
+                "Fervor": 9
+              }
+            },
+            {
+              "name": "Charm of the Fisher King",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 149,
+                "Vitality": 8,
+                "Faith": 7,
+                "Fervor": 24
+              }
+            },
+            {
+              "name": "Fin Armor",
+              "types": [
+                "Chest"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 215,
+                "Vitality": 8,
+                "Strength": 3,
+                "Intelligence": 4,
+                "Armor Penetration": 12,
+                "Magic Penetration": 12
+              }
+            },
+            {
+              "name": "Jenny Hanibal's Armored Cape",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Armor Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 60,
+                "Vitality": 4,
+                "Strength": 2,
+                "Faith": 2,
+                "Armor Penetration": 7,
+                "Fervor": 7
+              }
+            },
+            {
+              "name": "Cloak of the Third Wave Apostle",
+              "types": [
+                "Back"
+              ],
+              "classes": [
+                "mage",
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 47,
+                "Vitality": 4,
+                "Dexterity": 3,
+                "Intelligence": 3,
+                "Critical": 7,
+                "Magic Penetration": 7
+              }
+            },
+            {
+              "name": "Palm of the Lagoon",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "warrior",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Faith",
+                "Armor Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 132,
+                "Vitality": 6,
+                "Strength": 2,
+                "Faith": 2,
+                "Armor Penetration": 9,
+                "Fervor": 9
+              }
+            },
+            {
+              "name": "Ceremonial Siren Gloves",
+              "types": [
+                "Hands"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Magic Penetration",
+                "Intelligence"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Intelligence": 6,
+                "Magic Penetration": 18
+              }
+            },
+            {
+              "name": "Ceremonial Nepsid Belt",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "mage",
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Intelligence",
+                "Magic Penetration",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 91,
+                "Vitality": 6,
+                "Faith": 2,
+                "Intelligence": 3,
+                "Magic Penetration": 9,
+                "Fervor": 9
+              }
+            },
+            {
+              "name": "Emblem of the Third Wave",
+              "types": [
+                "Waist"
+              ],
+              "classes": [
+                "rogue",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Intelligence",
+                "Critical",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 104,
+                "Vitality": 5,
+                "Dexterity": 3,
+                "Intelligence": 3,
+                "Critical": 9,
+                "Magic Penetration": 9
+              }
+            },
+            {
+              "name": "Nepicur's Vacation Shorts",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "rogue",
+                "priest"
+              ],
+              "stats": [
+                "Vitality",
+                "Dexterity",
+                "Faith",
+                "Fervor",
+                "Critical",
+                "Armor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 151,
+                "Vitality": 7,
+                "Dexterity": 4,
+                "Faith": 3,
+                "Critical": 12,
+                "Fervor": 12
+              }
+            },
+            {
+              "name": "High-speed Clamdiggers",
+              "types": [
+                "Legs"
+              ],
+              "classes": [
+                "priest"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Faith",
+                "Fervor"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 133,
+                "Vitality": 8,
+                "Faith": 7,
+                "Fervor": 24
+              }
+            },
+            {
+              "name": "Boots of Abyssal Essence",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "warrior",
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Strength",
+                "Intelligence",
+                "Armor Penetration",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 144,
+                "Vitality": 6,
+                "Strength": 2,
+                "Intelligence": 3,
+                "Armor Penetration": 9,
+                "Magic Penetration": 9
+              }
+            },
+            {
+              "name": "Spare Sandals of Young Nephisto ",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "mage"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Intelligence",
+                "Magic Penetration"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 99,
+                "Vitality": 6,
+                "Intelligence": 6,
+                "Magic Penetration": 18
+              }
+            },
+            {
+              "name": "Bleak Shell's Knee Pads",
+              "types": [
+                "Feet"
+              ],
+              "classes": [
+                "rogue"
+              ],
+              "stats": [
+                "Armor",
+                "Vitality",
+                "Dexterity",
+                "Critical"
+              ],
+              "rare": false,
+              "statValues": {
+                "Armor": 128,
+                "Vitality": 5,
+                "Dexterity": 6,
+                "Critical": 18
+              }
             }
           ]
         }
